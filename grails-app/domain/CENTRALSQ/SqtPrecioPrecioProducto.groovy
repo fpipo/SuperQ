@@ -21,7 +21,7 @@ class SqtPrecioPrecioProducto {
     String sugeridoPor
     Double pctVarianza
     Date fechaMod
-    String usuarioMod
+    SqtUsuario usuarioMod
     int enviado
     Double montoIsb
 

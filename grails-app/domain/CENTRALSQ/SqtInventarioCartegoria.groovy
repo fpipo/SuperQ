@@ -3,7 +3,7 @@ package CENTRALSQ
 class SqtInventarioCartegoria {
 
     Date fechamod
-    String usuariomod
+    SqtUsuario usuarioMod
     int enviado
 
     static constraints = {

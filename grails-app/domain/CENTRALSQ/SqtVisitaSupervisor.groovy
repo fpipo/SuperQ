@@ -2,7 +2,7 @@ package CENTRALSQ
 
 class SqtVisitaSupervisor {
     Date llegada
-    String usuarioMod
+    SqtUsuario usuarioMod
 
     static constraints = {
     }

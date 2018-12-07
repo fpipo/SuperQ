@@ -8,7 +8,7 @@ class SqtRecaudacion {
     Date fechaPago
     String archivo
     Date fechaMod
-    String usuarioMod
+    SqtUsuario usuarioMod
     int enviado
     String identificador
 

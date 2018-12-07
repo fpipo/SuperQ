@@ -5,7 +5,7 @@ class SqtDepositos {
     String referencia
     Date diaOperacion
     Date fechaDeposito
-    String usuario
+    SqtUsuario usuario
     String comentarios
     int enviado
     Date fechaMod

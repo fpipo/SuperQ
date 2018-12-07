@@ -14,7 +14,7 @@ class SqtLogServicel {
     Date fechaRespuestaServicel
     String saldoInicial
     String saldoFinal
-    String usuarioMod
+    SqtUsuario usuarioMod
     int enviado
 
     static constraints = {

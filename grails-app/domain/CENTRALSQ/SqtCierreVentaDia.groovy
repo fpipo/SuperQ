@@ -1,7 +1,7 @@
 package CENTRALSQ
 
 class SqtCierreVentaDia {
-    String tienda
+    SqtTienda tienda
     Date fecha
     String descripcionProducto
     String promPaq

@@ -4,7 +4,7 @@ class SqtPolizaExpLog {
     String tipopoliza
     int Error
     String descripcion
-    String usuarioMod
+    SqtUsuario usuarioMod
     Date fechaMod
 
     static constraints = {

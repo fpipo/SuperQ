@@ -16,7 +16,7 @@ class SqtPedido {
     Date cierreCaja
     Date cierreDia
     String archivo
-    String usuarioMod
+    SqtUsuario usuarioMod
     Date fechaMod
     int enviado
 

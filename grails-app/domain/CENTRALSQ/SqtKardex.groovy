@@ -16,7 +16,7 @@ class SqtKardex {
     Double montoIvaPrecioVenta
     Double montoFs
     Double margenUtilidad
-    String usuarioMod
+    SqtUsuario usuarioMod
     Date fechaMod
     int enviado
     Double montoIbs

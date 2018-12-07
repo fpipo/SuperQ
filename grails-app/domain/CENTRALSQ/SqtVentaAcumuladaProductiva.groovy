@@ -2,7 +2,7 @@ package CENTRALSQ
 
 class SqtVentaAcumuladaProductiva {
 
-    String tienda
+    SqtTienda tienda
     String clasificacion
     String jefeOperaciones
     String supervisor

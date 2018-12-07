@@ -3,7 +3,7 @@ package CENTRALSQ
 class SqtMapeoProducto {
 
     Date fechaInicio
-    String usuarioMod
+    SqtUsuario usuarioMod
     Date fechaMod
     int enviado
 

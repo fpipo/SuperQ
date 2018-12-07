@@ -2,8 +2,8 @@ package CENTRALSQ
 
 class SqtResposableTienda {
 
-    String tienda
-    String usuario
+    SqtTienda tienda
+    SqtUsuario usuario
     Date fechaInicio
     Date fechaFin
     int enviado

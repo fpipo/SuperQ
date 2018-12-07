@@ -5,7 +5,7 @@ class SqtKardexBanamex {
     String corresponsal
     String oficina
     String mac
-    String usuario
+    SqtUsuario usuario
     String nombreOperador
     String maternoOperador
     String paternoOperador

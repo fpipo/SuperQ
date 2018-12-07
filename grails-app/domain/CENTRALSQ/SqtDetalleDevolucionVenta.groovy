@@ -23,7 +23,7 @@ class SqtDetalleDevolucionVenta {
     SqtImpuesto impuesto
     SqtPoliza poliza
 
-    static belongsTo = [ajuste:SqtDevolucionVenta]
+    static belongsTo = [devoluciones:SqtDevolucionVenta]
 
     static constraints = {
     }

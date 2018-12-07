@@ -25,7 +25,8 @@ class SqtDetalleAjuste {
     SqtFactura factura
     SqtPoliza poliza
 
-    static belongsTo = [ajuste:SqtAjuste]
+    static belongsTo = [ajustes:SqtAjuste]
+
     static constraints = {
     }
 }

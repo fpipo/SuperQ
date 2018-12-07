@@ -5,7 +5,7 @@ class SqtFolio {
     String serie
     int folio
     Date fechaMod
-    String usuarioMod
+    SqtUsuario usuarioMod
     int enviado
 
     static constraints = {

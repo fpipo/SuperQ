@@ -14,7 +14,7 @@ class SqtDetalleFactura {
     Double montoIsb
     String catSat
 
-    static belongsTo = [ajuste:SqtFactura]
+    static belongsTo = [facturas:SqtFactura]
 
     static constraints = {
         descripcion maxSize: 50

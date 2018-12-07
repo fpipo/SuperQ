@@ -19,7 +19,7 @@ class SqtPreciosCompra {
     int aplicaPrecioCompra
     Double montoFs
     Date fechaMod
-    String usuarioMod
+    SqtUsuario usuarioMod
     int enviado
 
     static constraints = {

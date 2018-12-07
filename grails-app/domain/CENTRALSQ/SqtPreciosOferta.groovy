@@ -22,7 +22,7 @@ class SqtPreciosOferta {
     Double margenUtilidad
     int aplicaOferta
     Date fechaMod
-    String usuarioMod
+    SqtUsuario usuarioMod
     int enviado
     Double montoIsb
 

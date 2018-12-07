@@ -16,7 +16,7 @@ class SqtExistenciaTienda {
     int sugerido
     Double diferencia
     Date fechaMod
-    String usuarioMod
+    SqtUsuario usuarioMod
     int enviado
     int cambioStock
 

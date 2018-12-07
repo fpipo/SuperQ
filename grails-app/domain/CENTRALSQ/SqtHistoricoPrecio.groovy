@@ -21,7 +21,7 @@ class SqtHistoricoPrecio {
     String sugeridoPor
     Double pctVarianza
     Date fechaMod
-    String usuarioMod
+    SqtUsuario usuarioMod
     Double montoIsb
 
     static constraints = {

@@ -5,7 +5,7 @@ class SqtInventarioGeneral {
     String descripcion
     Date fecha
     Date fechaMod
-    String usuarioMod
+    SqtUsuario usuarioMod
     int enviado
 
     static constraints = {

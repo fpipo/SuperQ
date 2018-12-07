@@ -10,7 +10,7 @@ class SqtInventarioFisico {
     Double salidas
     int ajustado
     Date fechaMod
-    String usuarioMod
+    SqtUsuario usuarioMod
     String enviado
 
     static constraints = {

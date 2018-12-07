@@ -10,7 +10,7 @@ class SqtDevolucion {
     Double total
     String comentarios
     int impresion
-    String usuarioMod
+    SqtUsuario usuarioMod
     Date fechaMod
     int enviado
     static constraints = {

@@ -3,7 +3,7 @@ package CENTRALSQ
 class SqtUsuarioIusa {
 
     String password
-    String tienda
+    SqtTienda tienda
 
     static constraints = {
     }

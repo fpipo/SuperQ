@@ -15,7 +15,7 @@ class SqtHistoricoOferta {
     Double precioVentaCiva
     int aplicaOferta
     Date fechaMod
-    String usuarioMod
+    SqtUsuario usuarioMod
 
     static constraints = {
     }

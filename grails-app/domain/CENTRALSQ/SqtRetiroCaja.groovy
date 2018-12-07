@@ -11,7 +11,7 @@ class SqtRetiroCaja {
     int	aplica
     int	retiroAlCierre
     Date	fechamod
-    String	usuariomod
+    SqtUsuario	usuarioMod
     int	enviado
 
     static constraints = {

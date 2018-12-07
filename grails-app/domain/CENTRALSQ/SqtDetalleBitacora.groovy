@@ -4,7 +4,7 @@ class SqtDetalleBitacora {
     Double cantidad
     Double precioVenta
     Date fechamod
-    String usuariomod
+    SqtUsuario usuarioMod
     int enviado
     static constraints = {
     }

@@ -2,7 +2,7 @@ package CENTRALSQ
 
 class SqtPresupuestoVentas {
 
-    String tienda
+    SqtTienda tienda
     int anio
     int mes
     Double ventaproy

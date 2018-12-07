@@ -11,7 +11,7 @@ class SqtInventario {
     String comentarios
     int opcion
     Date fechaMod
-    String usuarioMod
+    SqtUsuario usuarioMod
     int enviado
 
     static constraints = {

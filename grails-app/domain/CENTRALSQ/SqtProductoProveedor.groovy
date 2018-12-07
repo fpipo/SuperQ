@@ -2,7 +2,7 @@ package CENTRALSQ
 
 class SqtProductoProveedor {
     Date fechaMod
-    String usuarioMod
+    SqtUsuario usuarioMod
     int enviado
 
     static constraints = {

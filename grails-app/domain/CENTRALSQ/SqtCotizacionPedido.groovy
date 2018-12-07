@@ -7,7 +7,7 @@ class SqtCotizacionPedido {
     Double precioRegalo
     Double precioUnitario
     Date fechaMod
-    String usuarioMod
+    SqtUsuario usuarioMod
     int enviado
     static constraints = {
     }

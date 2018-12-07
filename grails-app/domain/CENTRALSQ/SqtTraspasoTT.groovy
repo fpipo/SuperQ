@@ -13,7 +13,7 @@ class SqtTraspasoTT {
     int numTransacciont
     Double pctEfectividad
     Double cantidadNoSolicitada
-    String usuarioMod
+    SqtUsuario usuarioMod
     Date fechaMod
     int enviado
     Double totalSugerido

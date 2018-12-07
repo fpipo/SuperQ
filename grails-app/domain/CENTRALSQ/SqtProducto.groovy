@@ -23,7 +23,7 @@ class SqtProducto {
     int completo
     int paraDevolucion
     Date fechamod
-    String usuariomod
+    SqtUsuario usuarioMod
     int enviado
     int preinactivo
     int ta

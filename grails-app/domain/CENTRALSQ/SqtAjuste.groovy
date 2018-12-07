@@ -16,7 +16,7 @@ class SqtAjuste {
     SqtEstatus estatus
     SqtInventario inventario
 
-    static hasMany = [detalles:SqtDetalleAjuste]
+    static hasMany = [ajustes:SqtDetalleAjuste]
 
     static mapping = {
         id generator: 'uuid', name:'id'

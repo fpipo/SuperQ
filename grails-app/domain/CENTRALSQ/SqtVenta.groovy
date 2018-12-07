@@ -19,9 +19,8 @@ class SqtVenta {
     Date cierrecajero
     Date cierrecaja
     Date cierredia
-    String usuariomod
+    SqtUsuario usuarioMod
     Date fechamod
-    String usuarioAutorizacion
     int enviado
     Date fecha
 
