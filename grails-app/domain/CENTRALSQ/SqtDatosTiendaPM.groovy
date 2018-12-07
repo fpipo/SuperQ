@@ -1,13 +1,13 @@
 package CENTRALSQ
 
-class SqtDatosTiendaCierrePm {
+class SqtDatosTiendaPM {
     String territorio
     String gerencia
-    String noTienda
     String colocacion
     String pop
     String operacion
     String an
+    SqtTienda tienda
     static constraints = {
     }
 }
