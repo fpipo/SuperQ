@@ -20,7 +20,7 @@ class SqtDetallePoliza {
     SqtSegmentos segmentos
     SqtGrupo grupo
 
-    static belongsTo = [ajuste:SqtPoliza]
+    static belongsTo = [ajuste: SqtPoliza]
 
     static constraints = {
         cuentaContable maxSize: 30, nullable: false

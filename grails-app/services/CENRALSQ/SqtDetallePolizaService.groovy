@@ -1,4 +1,4 @@
-package CENRALSQ
+package CENTRALSQ
 
 import grails.gorm.services.Service
 
