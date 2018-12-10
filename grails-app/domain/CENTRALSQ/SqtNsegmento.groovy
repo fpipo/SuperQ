@@ -1,9 +1,11 @@
 package CENTRALSQ
 
-class SQtNsegmentos {
+class SqtNsegmento {
+
 
     int segmento
-
     static constraints = {
+
+
     }
 }
