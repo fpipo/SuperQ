@@ -1,8 +1,8 @@
 package CENTRALSQ
 
 class SqtPolizaExpLog {
-    String tipopoliza
-    int Error
+    String tipoPoliza
+    int error
     String descripcion
     SqtUsuario usuarioMod
     Date fechaMod
