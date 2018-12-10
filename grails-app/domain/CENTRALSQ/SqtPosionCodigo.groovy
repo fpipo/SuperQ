@@ -6,7 +6,7 @@ class SqtPosionCodigo {
     int	posicionFin
     int	digitos
     int	digitoInicio
-    int enviado
+    int	enviado
 
     static constraints = {
     }

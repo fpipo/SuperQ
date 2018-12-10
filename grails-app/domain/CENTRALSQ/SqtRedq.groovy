@@ -13,7 +13,7 @@ class SqtRedq {
     int error
     Double saldo
     int enviado
-    int enviadoRedQ
+    int enviadoRedq
     SqtVenta venta
     SqtTienda tienda
     SqtCaja caja
@@ -23,9 +23,9 @@ class SqtRedq {
     }
 
     static constraints = {
-        plaza maxSize: 5
-        idTarjeta maxSize: 20
-        autorizacion maxSize: 30
-        referencia maxSize: 50
+        plaza maxSize: 5, nullable: false
+        idTarjeta maxSize: 20, nullable: false
+        autorizacion maxSize: 30, nullable: false
+        referencia maxSize: 50, nullable: false
     }
 }

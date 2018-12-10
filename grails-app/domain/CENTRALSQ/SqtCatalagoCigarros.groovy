@@ -1,14 +1,14 @@
 package CENTRALSQ
 
 class SqtCatalagoCigarros {
-    int enviado
+    int	enviado
     Double	pzasPaq
     String 	descripcionProv
-    String fa
+    String	fa
     Double	minimoVisual
-    String codigoActivo
-    String estatusCambioCodigo
-    int	codigoAds
+    String	codigoActivo
+    String	statusCambioCodigo
+    int	codigoADS
     SqtEstatus estatus
     SqtProducto codigo
 
@@ -16,6 +16,6 @@ class SqtCatalagoCigarros {
         descripcionProv maxSize: 50, nullable: false
         fa maxSize: 50, nullable: true
         codigoActivo maxSize: 100, nullable: true
-        estatusCambioCodigo maxSize: 100, nullable: true
+        statusCambioCodigo maxSize: 100, nullable: true
     }
 }

@@ -7,8 +7,8 @@ class SqtClaveContabilizacion {
     int enviado
 
     static constraints = {
-        descripcion maxSize: 50
-        tipoMovimiento maxSize: 1
-        tipoContabilizacion maxSize: 1, nullable: true
+        descripcion maxSize: 50, nullable: false
+        tipoMovimiento maxSize: 1, nullable: false
+        tipoContabilizacion maxSize: 1
     }
 }

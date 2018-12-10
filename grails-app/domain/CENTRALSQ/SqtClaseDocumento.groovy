@@ -6,7 +6,7 @@ class SqtClaseDocumento {
     int enviado
 
     static constraints = {
-        clave maxSize: 2
-        descripcion maxSize: 50
+        clave maxSize: 2, nullable: false
+        descripcion maxSize: 50, nullable: false
     }
 }

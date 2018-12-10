@@ -3,11 +3,11 @@ package CENTRALSQ
 class SqtInventarioCompensacionCategoria {
 
     int partida
-    Double subTotal
+    Double subtotal
     Double montoIva
     Double montoIsb
     Double total
-    int pMaxima
+    int pmaxima
 
     static constraints = {
     }

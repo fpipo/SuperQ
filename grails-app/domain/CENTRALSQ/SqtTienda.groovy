@@ -18,10 +18,10 @@ class SqtTienda {
     }
 
     static constraints = {
-        descripcion maxSize: 80
-        tipo maxSize: 2
-        centroCostos maxSize: 30
-        serie maxSize: 5
-        cc maxSize: 3
+        descripcion maxSize: 80, nullable: false
+        tipo maxSize: 2, nullable: false
+        centroCostos maxSize: 30, nullable: false
+        serie maxSize: 5, nullable: false
+        cc maxSize: 3, nullable: false
     }
 }

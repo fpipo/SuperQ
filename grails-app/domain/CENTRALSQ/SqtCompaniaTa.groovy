@@ -15,8 +15,9 @@ class SqtCompaniaTa {
     String refCarrie
     int cadena
 
+
     static constraints = {
-        descripcion maxSize: 30
+        descripcion maxSize: 30, nullable: false
         ipRemota maxSize: 15, nullable: true
         socket maxSize: 5, nullable: true
         cel maxSize: 10, nullable: true

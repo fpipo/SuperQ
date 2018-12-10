@@ -4,8 +4,8 @@ class SqtFactura {
     String id
     Date diaOperacion
     String nombre
-    String aPaterno
-    String aMaterno
+    String apaterno
+    String amaterno
     String rfc
     String razonSocial
     String calle

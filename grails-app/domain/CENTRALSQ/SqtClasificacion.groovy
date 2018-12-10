@@ -8,7 +8,7 @@ class SqtClasificacion {
     SqtSegmentos segmentos
 
     static constraints = {
-        descripcion maxSize: 50
-        cuentaContable maxSize: 30
+        descripcion maxSize: 50, nullable: false
+        cuentaContable maxSize: 30, nullable: false
     }
 }

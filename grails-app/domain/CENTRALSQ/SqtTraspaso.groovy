@@ -2,7 +2,7 @@ package CENTRALSQ
 
 class SqtTraspaso {
 
-    String tipoTraspaso
+    String tipotraspaso
     Date fechaProceso
     Date fechaSurte
     Date fechaCierre

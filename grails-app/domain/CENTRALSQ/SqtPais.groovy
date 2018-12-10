@@ -5,6 +5,6 @@ class SqtPais {
     int enviado
 
     static constraints = {
-        descripcion maxSize: 30
+        descripcion maxSize: 30, nullable: false
     }
 }

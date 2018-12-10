@@ -11,8 +11,8 @@ class SqtRetiroCaja {
     int	aplica
     int	retiroAlCierre
     Date	fechamod
-    SqtUsuario usuarioMod
-    int enviado
+    SqtUsuario	usuarioMod
+    int	enviado
 
     static constraints = {
     }

@@ -28,8 +28,8 @@ class SqtCierreVentaDia {
     SqtProducto producto
 
     static constraints = {
-        promPaq maxSize: 100
-        indicadorIva maxSize: 3
+        promPaq maxSize: 100, nullable: false
+        indicadorIva maxSize: 3, nullable: false
         preinactivo maxSize: 3, nullable: true
     }
 }

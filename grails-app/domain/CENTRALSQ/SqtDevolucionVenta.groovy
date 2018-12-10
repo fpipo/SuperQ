@@ -21,7 +21,6 @@ class SqtDevolucionVenta {
     Date fecha
     SqtTienda tienda
     SqtUsuario usuarioMod
-    SqtUsuario usuarioAutorizacion
     SqtEstatus estatus
     SqtVenta venta
     SqtReembolso reembolso

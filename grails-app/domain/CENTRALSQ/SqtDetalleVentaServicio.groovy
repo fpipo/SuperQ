@@ -17,7 +17,6 @@ class SqtDetalleVentaServicio {
     SqtVenta venta
     SqtServicio servicio
     SqtEstatus estatus
-    SqtUsuario usuarioAutorizacion
     SqtUsuario usuarioMod
     SqtPoliza poliza
     SqtPoliza polizaMensual
