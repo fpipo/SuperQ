@@ -6,8 +6,8 @@ class SqtPresupuestoVentas {
     int anio
     int mes
     Double ventaproy
-    Double tktPromproy
-    Double trnproy
+    Double tktPromProy
+    Double trnProy
 
     static constraints = {
     }

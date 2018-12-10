@@ -16,7 +16,7 @@ class SqtDeudor {
     static constraints = {
         nombre maxSize: 70
         rfc maxSize: 13, nullable: true
-        subcuenta maxSize: 5, nullable: true
+        subCuenta maxSize: 5, nullable: true
         usuarioMod nullable: false
     }
 }

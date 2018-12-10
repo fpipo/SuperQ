@@ -34,6 +34,6 @@ class SqtCliente {
         municipio maxSize: 50, nullable: true
         cp maxSize: 5, nullable: true
         ciudad axSize: 50, nullable: true
-        email maxSize: 50, nullable: true
+        email email: true, maxSize: 50, nullable: true
     }
 }

@@ -12,7 +12,7 @@ class SqtComisionUsuario {
     SqtUsuario usuario
 
     static constraints = {
-        mes maxSize: 2, nullable: false
-        anio maxSize: 4, nullable: false
+        mes maxSize: 2
+        anio maxSize: 4
     }
 }

@@ -2,7 +2,6 @@ package CENTRALSQ
 
 class SqtRemesas {
 
-
     String desTranType
     String mensaje
     String operador

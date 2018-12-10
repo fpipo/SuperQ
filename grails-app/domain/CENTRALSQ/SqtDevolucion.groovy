@@ -2,7 +2,6 @@ package CENTRALSQ
 
 class SqtDevolucion {
 
-
     Date fecha
     String caja
     Double subtotal

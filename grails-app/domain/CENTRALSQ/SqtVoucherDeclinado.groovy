@@ -17,7 +17,6 @@ class SqtVoucherDeclinado {
     String modoIngreso
     String partida
 
-
     static constraints = {
     }
 }

@@ -6,12 +6,12 @@ class SqtHistoricoOferta {
     Date fechaInicio
     Date fechaFin
     Double precioCompraCiva
-    Double montoivaPrecioCompra
+    Double montoIvaPrecioCompra
     Double margenUtilidad
     Double pctDescuento
     Double montoDescuento
     Double precioVentaSiva
-    Double montoivaPrecioVenta
+    Double montoIvaPrecioVenta
     Double precioVentaCiva
     int aplicaOferta
     Date fechaMod

@@ -8,8 +8,8 @@ class SqtMotivoDevolucion {
     String origen
 
     static constraints = {
-        clave maxSize: 3, nullable: false
-        descripcion maxSize: 50, nullable: false
-        origen maxSize: 10
+        clave maxSize: 3
+        descripcion maxSize: 50
+        origen maxSize: 10, nullable: true
     }
 }

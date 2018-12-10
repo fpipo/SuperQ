@@ -5,6 +5,6 @@ class SqtMarca {
     int enviado
 
     static constraints = {
-        descripcion maxSize: 50, nullable: false
+        descripcion maxSize: 50
     }
 }

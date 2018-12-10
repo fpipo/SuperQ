@@ -1,7 +1,7 @@
 package CENTRALSQ
 
 class SqtTiendaTipoVenta {
-    String tipoventa
+    String tipoVenta
     int cambioPrecios
     int enviado
 

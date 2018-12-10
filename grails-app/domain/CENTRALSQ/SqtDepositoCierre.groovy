@@ -3,7 +3,7 @@ package CENTRALSQ
 class SqtDepositoCierre {
     Date fecha
     Double monto
-    String numcuenta
+    String numCuenta
     static constraints = {
     }
 }

@@ -18,8 +18,8 @@ class SqtPoliza {
     }
 
     static constraints = {
-        sociedad maxSize: 4, nullable: false
-        periodo maxSize: 2, nullable: false
-        comentarios maxSize: 250
+        sociedad maxSize: 4
+        periodo maxSize: 2
+        comentarios maxSize: 250, nullable: true
     }
 }

@@ -8,7 +8,7 @@ class SqtUnidadMedida {
     int enviado
 
     static constraints = {
-        descCorta maxSize: 3, nullable: false
-        descripcion maxSize: 50, nullable: false
+        descCorta maxSize: 3
+        descripcion maxSize: 50
     }
 }

@@ -8,7 +8,7 @@ class SqtTipo {
     int enviado
 
     static constraints = {
-        descripcion maxSize: 50, nullable: false
-        tipo maxSize: 2, nullable: true
+        descripcion maxSize: 50
+        tipo maxSize: 2
     }
 }

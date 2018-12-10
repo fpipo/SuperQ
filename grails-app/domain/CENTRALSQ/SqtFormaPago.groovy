@@ -10,9 +10,9 @@ class SqtFormaPago {
     int orden
 
     static constraints = {
-        clave maxSize: 3, nullable: false
-        descripcion maxSize: 50, nullable: false
+        clave maxSize: 3
+        descripcion maxSize: 50
         tipo maxSize: 2, nullable: true
-        cuentaContable maxSize: 30
+        cuentaContable maxSize: 30, nullable: true
     }
 }
