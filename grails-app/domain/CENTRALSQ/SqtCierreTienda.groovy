@@ -4,7 +4,7 @@ class SqtCierreTienda {
     Date diaOperacion
     Date fechamod
     int enviado
-    SqtUsuario Usuario
+    SqtUsuario usuario
     SqtTienda tienda
     static constraints = {
     }

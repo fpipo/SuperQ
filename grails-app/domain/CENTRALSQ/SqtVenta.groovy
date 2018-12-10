@@ -1,7 +1,7 @@
 package CENTRALSQ
 
 class SqtVenta {
-
+    String id
     Date diaOperacion
     String caja
     Double ivaNeto
@@ -25,7 +25,7 @@ class SqtVenta {
     Date fecha
 
     static mapping = {
-        id generator: 'uuid'
+        id generator: 'uuid', name:'id'
     }
     static constraints = {
     }

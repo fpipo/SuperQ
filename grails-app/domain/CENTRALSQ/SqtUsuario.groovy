@@ -12,7 +12,7 @@ class SqtUsuario {
     String  email
     Date fechaMod
     int numIntentos
-    String enviado
+    int enviado
     Date fechaNacimiento
     String seguroSocial
     String curp

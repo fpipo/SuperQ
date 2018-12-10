@@ -2,7 +2,7 @@ package CENTRALSQ
 
 class SqtCategoria {
     String descripcion
-    int  enviado
+    int enviado
 
     static constraints = {
         descripcion maxSize: 50, nullable: false

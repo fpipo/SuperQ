@@ -5,7 +5,7 @@ class SqtClasificacion {
     String cuentaContable
     int enviado
     SqtGrupo grupo
-    SqtSegmentos Segmentos
+    SqtSegmentos segmentos
 
     static constraints = {
         descripcion maxSize: 50, nullable: false

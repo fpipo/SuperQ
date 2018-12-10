@@ -2,7 +2,7 @@ package CENTRALSQ
 
 class SqtPassword {
 
-    String passwoed
+    String password
     Date fechaMod
 
     static constraints = {

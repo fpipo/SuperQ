@@ -1,15 +1,15 @@
 package CENTRALSQ
 
 class SqtCatalagoCigarros {
-    int	enviado
+    int enviado
     Double	pzasPaq
     String 	descripcionProv
-    String	fa
+    String fa
     Double	minimoVisual
-    String	codigoActivo
-    String	statusCambioCodigo
+    String codigoActivo
+    String statusCambioCodigo
     int	codigoADS
-    SqtEstatus Estatus
+    SqtEstatus estatus
     SqtProducto codigo
 
     static constraints = {

@@ -18,7 +18,7 @@ class SqtRemesas {
     String total
     String totalPagar
     String tc
-    String enviado
+    int enviado
     String mensajeTicket
     String caja
     String origen

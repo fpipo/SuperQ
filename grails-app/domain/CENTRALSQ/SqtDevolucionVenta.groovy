@@ -17,9 +17,9 @@ class SqtDevolucionVenta {
     Date cierreDia
     Date fechamod
     String tipoVenta
-    String enviado
+    int enviado
     Date fecha
-    SqtTienda Tienda
+    SqtTienda tienda
     SqtUsuario usuarioMod
     SqtUsuario usuarioAutorizacion
     SqtEstatus estatus

@@ -7,7 +7,7 @@ class SqtCatalogoAjustes {
     int orden
     String referenciaAjuste
     SqtClaseDocumento claseDocumento
-    int Consumible
+    int consumible
     SqtEstatus estatus
     int enviado
     Date fechaMod

@@ -11,7 +11,7 @@ class SqtInventarioFisico {
     int ajustado
     Date fechaMod
     SqtUsuario usuarioMod
-    String enviado
+    int enviado
 
     static constraints = {
     }

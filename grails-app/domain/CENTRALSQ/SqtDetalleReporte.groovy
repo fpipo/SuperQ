@@ -2,7 +2,7 @@ package CENTRALSQ
 
 class SqtDetalleReporte {
 
-    String	campo
+    String campo
     String tipo
     String tipoDato
     String direccion
