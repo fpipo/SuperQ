@@ -10,12 +10,9 @@ class SqtAjusteProducto {
     SqtProducto producto
 
     static constraints = {
-
         pctCobro nullable: true
         conCargo nullable:true
         pctVenta nullable:true
         enviado nullable:true
-
-
     }
 }

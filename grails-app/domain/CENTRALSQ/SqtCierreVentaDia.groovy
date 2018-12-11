@@ -1,7 +1,6 @@
 package CENTRALSQ
 
 class SqtCierreVentaDia {
-    SqtTienda tienda
     Date fecha
     String descripcionProducto
     String promPaq
@@ -23,13 +22,15 @@ class SqtCierreVentaDia {
     String preinactivo
     int prmPaq
     Double uVendidasPaqPrm
+
+    SqtTienda tienda
     SqtEstatus estatus
     SqtProveedor proveedor
     SqtProducto producto
 
     static constraints = {
-        promPaq maxSize: 100, nullable: false
-        indicadorIva maxSize: 3, nullable: false
+        promPaq maxSize: 100
+        indicadorIva maxSize: 3
         preinactivo maxSize: 3, nullable: true
     }
 }

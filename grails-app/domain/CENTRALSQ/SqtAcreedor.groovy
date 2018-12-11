@@ -14,8 +14,6 @@ class SqtAcreedor {
     SqtCondicionPago condicionPago
     SqtUsuario usuarioMod
 
-
-
     static constraints = {
         nombre maxSize: 70
         rfc maxSize: 16

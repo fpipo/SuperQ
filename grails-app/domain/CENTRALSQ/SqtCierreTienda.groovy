@@ -4,8 +4,11 @@ class SqtCierreTienda {
     Date diaOperacion
     Date fechamod
     int enviado
-    SqtUsuario usuario
+
+    SqtUsuario usuarioMod
     SqtTienda tienda
+
     static constraints = {
+        enviado nuluable: true
     }
 }

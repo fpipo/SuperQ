@@ -15,7 +15,6 @@ class SqtAjuste {
     SqtMovimiento movimiento
     SqtArea area
     SqtEstatus estatus
-
     SqtInventario inventario
 
     static hasMany = [ajustes:SqtDetalleAjuste]
@@ -28,6 +27,5 @@ class SqtAjuste {
         comentarios maxSize: 250
         referencia maxSize: 32 ,nullable: true
         enviado nullable:true
-
     }
 }

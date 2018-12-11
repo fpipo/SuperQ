@@ -12,6 +12,7 @@ class SqtBitacora {
     static mapping = {
         id generator: 'uuid', name:'id'
     }
+
     static constraints = {
         enviado nullable:true
     }

@@ -7,8 +7,11 @@ class SqtCantidadTienda {
     int aplica
     int enviado
     Double sobrante
+
     SqtTienda tienda
     SqtFormaPago formaPago
+
     static constraints = {
+        enviado nuluable: true
     }
 }

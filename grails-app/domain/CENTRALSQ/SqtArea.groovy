@@ -8,5 +8,6 @@ class SqtArea {
     static constraints = {
         descripcion maxSize: 50
         centroCostos maxSize: 30
+        enviado nullable: true
     }
 }

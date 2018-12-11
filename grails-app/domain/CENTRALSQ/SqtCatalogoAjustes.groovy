@@ -3,18 +3,20 @@ package CENTRALSQ
 class SqtCatalogoAjustes {
     String descripcion
     String tipoAjuste
-    SqtAlmacen almacen
     int orden
     String referenciaAjuste
-    SqtClaseDocumento claseDocumento
     int consumible
-    SqtEstatus estatus
     int enviado
     Date fechaMod
 
+    SqtAlmacen almacen
+    SqtClaseDocumento claseDocumento
+    SqtEstatus estatus
+
     static constraints = {
-        descripcion maxSize: 50, nullable: false
-        tipoAjuste maxSize: 2,nullable: false
-        referenciaAjuste maxSize: 3
+        descripcion maxSize: 50
+        tipoAjuste maxSize: 2
+        referenciaAjuste maxSize: 3, nullable: true
+        enviado nullable: true
     }
 }

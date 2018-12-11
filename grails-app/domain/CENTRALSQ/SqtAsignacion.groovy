@@ -6,6 +6,7 @@ class SqtAsignacion {
     Double cantidadInicial
     Date fechaMod
     int enviado
+
     SqtTienda tienda
     SqtEstatus estatus
     SqtUsuario usuarioMod
@@ -13,6 +14,5 @@ class SqtAsignacion {
     static constraints = {
         comentarios maxSize: 250
         enviado nullable:true
-
     }
 }

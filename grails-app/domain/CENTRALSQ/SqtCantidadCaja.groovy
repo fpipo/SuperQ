@@ -3,6 +3,7 @@ package CENTRALSQ
 class SqtCantidadCaja {
     Double cantidad
     String caja
+
     SqtTienda tienda
     SqtAsignacion asignacion
     SqtFormaPago formaPago
