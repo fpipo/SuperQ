@@ -1,7 +1,7 @@
 package CENTRALSQ
 
 class SqtPedido {
-    String caja
+    String id
     Date fechaProceso
     Date fechaCierre
     Double subtotal
@@ -19,6 +19,15 @@ class SqtPedido {
     SqtUsuario usuarioMod
     Date fechaMod
     int enviado
+
+    SqtTienda tienda
+    SqtCaja caja
+    SqtEstatus estatus
+    SqtProveedor proveedor
+    SqtPoliza poliza
+    static mapping = {
+        id generator: 'uuid', name:'id'
+    }
 
     static constraints = {
     }

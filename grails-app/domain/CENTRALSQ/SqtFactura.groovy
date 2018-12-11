@@ -28,9 +28,12 @@ class SqtFactura {
     String usoCfdi
     String serie
     String metodoPago
+
+    SqtTienda tienda
     SqtCliente cliente
     SqtEstado estado
     SqtPais pais
+
     SqtEstatus estatus
     SqtUsuario usuarioMod
     SqtUsuario usuarioAutorizacion

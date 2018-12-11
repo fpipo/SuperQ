@@ -3,7 +3,6 @@ package CENTRALSQ
 class SqtVenta {
     String id
     Date diaOperacion
-    String caja
     Double ivaNeto
     Double totalNeto
     Double subtotal
@@ -23,6 +22,14 @@ class SqtVenta {
     Date fechamod
     int enviado
     Date fecha
+
+    SqtTienda tienda
+    SqtCaja caja
+    SqtListaPrecios listaPrecios
+    SqtEstatus estatus
+    SqtFactura factura
+
+
 
     static mapping = {
         id generator: 'uuid', name:'id'

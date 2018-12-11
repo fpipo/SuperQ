@@ -1,7 +1,7 @@
 package CENTRALSQ
 
 class SqtTraspaso {
-
+    String id
     String tipotraspaso
     Date fechaProceso
     Date fechaSurte
@@ -14,11 +14,21 @@ class SqtTraspaso {
     int numTransaccionT
     Double pctEfectividad
     Double cantidadNoSolicitada
-    SqtUsuario usuarioMod
+
     Date fechaMod
     int enviado
     Double totalSugerido
     Double totalSurtido
+
+    SqtTienda tiendaOrigen
+    SqtTienda tiendaDestino
+    SqtMovimiento movimiento
+    SqtEstatus estatus
+    SqtUsuario usuarioMod
+
+    static mapping = {
+        id generator: 'uuid', name:'id'
+    }
 
     static constraints = {
     }

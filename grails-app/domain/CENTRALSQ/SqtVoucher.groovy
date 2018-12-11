@@ -1,6 +1,7 @@
 package CENTRALSQ
 
 class SqtVoucher {
+    String id
     String tarjeta
     String emisor
     Double monto
@@ -19,12 +20,17 @@ class SqtVoucher {
     int partida
     String tipo
     Double montoCash
+
     SqtTienda tienda
     SqtAfiliacion afiliacion
     SqtVenta referencia
     SqtEstatus estatus
     SqtMovimiento movimiento
 
+
+    static mapping = {
+        id generator: 'uuid', name:'id'
+    }
     static constraints = {
         tarjeta maxSize: 16
         emisor maxSize: 30

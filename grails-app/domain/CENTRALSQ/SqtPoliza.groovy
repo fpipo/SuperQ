@@ -10,6 +10,9 @@ class SqtPoliza {
     Date fechaMod
     int enviado
     SqtUsuario usuarioMod
+    SqtMovimiento movimiento
+    SqtTienda tienda
+
 
     static hasMany = [detalles:SqtDetallePoliza]
 

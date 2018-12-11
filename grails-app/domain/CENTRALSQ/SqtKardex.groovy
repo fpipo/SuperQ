@@ -1,7 +1,7 @@
 package CENTRALSQ
 
 class SqtKardex {
-
+    String id
     Date fecha
     String hora
     Double existenciaInical
@@ -21,6 +21,20 @@ class SqtKardex {
     int enviado
     Double montoIbs
     Double precioVentaSivaComp
+
+    SqtTienda tienda
+    SqtProducto producto
+    SqtMovimiento movimiento
+    SqtArea area
+    SqtPoliza poliza
+    SqtFactura factura
+    SqtImpuesto impuesto
+
+
+    static mapping = {
+        id generator: 'uuid', name:'id'
+    }
+
 
     static constraints = {
     }
