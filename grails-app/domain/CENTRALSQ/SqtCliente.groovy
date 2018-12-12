@@ -16,6 +16,7 @@ class SqtCliente {
     int enviado
     int numInt
     int numExt
+
     SqtEstado estado
     SqtPais pais
     SqtTelefono telefono

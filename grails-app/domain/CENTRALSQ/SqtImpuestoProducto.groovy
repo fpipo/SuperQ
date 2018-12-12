@@ -11,6 +11,11 @@ class SqtImpuestoProducto {
     int enviado
     int isb
 
+    SqtProducto producto
+
     static constraints = {
+
+        enviado nullable:true
+
     }
 }

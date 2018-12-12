@@ -1,6 +1,7 @@
 package CENTRALSQ
 
 class SqtDetalleDevolucionVenta {
+
     int partida
     Double precioNeto
     Double ivaNeto
@@ -16,6 +17,7 @@ class SqtDetalleDevolucionVenta {
     Double precioCompraSiva
     int enviado
     Double montoIsb
+
     SqtTienda tienda
     SqtProducto producto
     SqtProducto codigo
@@ -23,8 +25,9 @@ class SqtDetalleDevolucionVenta {
     SqtImpuesto impuesto
     SqtPoliza poliza
 
-    static belongsTo = [devoluciones:SqtDevolucionVenta]
+    static belongsTo = [devolucion:SqtDevolucionVenta]
 
     static constraints = {
+        enviado nullable:true
     }
 }

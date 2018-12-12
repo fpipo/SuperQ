@@ -20,6 +20,11 @@ class SqtExistenciaTienda {
     int enviado
     int cambioStock
 
+    SqtAlmacen almacen
+    SqtProducto producto
+
     static constraints = {
+        enviado nullable:true
+
     }
 }

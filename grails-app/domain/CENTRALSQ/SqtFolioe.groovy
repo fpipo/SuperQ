@@ -5,9 +5,17 @@ class SqtFolioe {
     String serie
     int generado
     Date fechaMod
-    SqtUsuario usuarioMod
     int enviado
 
+    SqtTienda tienda
+    SqtFolio folio
+    SqtEstatus estatus
+    SqtUsuario usuarioMod
+
     static constraints = {
+        enviado nullable:true
+
+
+
     }
 }

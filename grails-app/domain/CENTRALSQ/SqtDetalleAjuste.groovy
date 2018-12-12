@@ -18,6 +18,7 @@ class SqtDetalleAjuste {
     int conCargo
     int enviado
     Double montoISB
+
     SqtTienda tienda
     SqtProducto producto
     SqtMovimiento movimiento
@@ -25,8 +26,11 @@ class SqtDetalleAjuste {
     SqtFactura factura
     SqtPoliza poliza
 
-    static belongsTo = [ajustes:SqtAjuste]
+    static belongsTo = [ajuste:SqtAjuste]
 
     static constraints = {
+
+        enviado nullable:true
+
     }
 }

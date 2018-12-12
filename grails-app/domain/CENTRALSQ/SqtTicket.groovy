@@ -5,6 +5,8 @@ class SqtTicket {
     Date diaOperacion
     int enviado
 
+    SqtVenta operacion
+
     static constraints = {
     }
 }

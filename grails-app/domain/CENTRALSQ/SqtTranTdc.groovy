@@ -1,13 +1,15 @@
 package CENTRALSQ
 
-class SqtGrupo {
-    String descripcion
+class SqtTranTdc {
+
+    String diaOperacion
+    Date fechaMod
     int enviado
 
-    SqtCategoria categoria
+    SqtTienda tienda
+
 
     static constraints = {
-        descripcion maxSize: 50
         enviado nullable:true
 
     }

@@ -11,9 +11,23 @@ class SqtInventario {
     String comentarios
     int opcion
     Date fechaMod
-    SqtUsuario usuarioMod
+    String UsuarioMod
+
     int enviado
 
+    SqtTienda tienda
+    SqtUsuario usuario
+    SqtEstatus estatus
+    SqtFactura factura
+    SqtPoliza poliza
+
+
+
     static constraints = {
+        horaFin maxSize: 10
+        horaInicio maxSize: 10
+        comentarios maxSize: 3000
+        enviado nullable:true
+
     }
 }

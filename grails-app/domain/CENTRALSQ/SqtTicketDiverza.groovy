@@ -10,6 +10,7 @@ class SqtTicketDiverza {
     int  enviado
     String mensaje
 
+    SqtVenta venta
     static constraints = {
     }
 }

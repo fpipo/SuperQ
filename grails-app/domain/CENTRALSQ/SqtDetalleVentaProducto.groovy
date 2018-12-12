@@ -16,6 +16,7 @@ class SqtDetalleVentaProducto {
     Double precioCompraSiva
     int enviado
     Double montoIsb
+
     SqtTienda tienda
     SqtProducto producto
     SqtProducto codigo
@@ -24,5 +25,7 @@ class SqtDetalleVentaProducto {
     SqtPoliza poliza
 
     static constraints = {
+        enviado nullable:true
+
     }
 }

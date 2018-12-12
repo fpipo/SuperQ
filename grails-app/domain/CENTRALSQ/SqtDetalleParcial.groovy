@@ -10,15 +10,21 @@ class SqtDetalleParcial {
     Double total
     Date fechaAplicacion
     int impresion
-    String numFactura
-    String numRemision
     Double montoFs
     Double totalFactura
     String comentarios
     int enviado
 
 
+    SqtPedido pedido
+    SqtTienda tienda
+    SqtProducto producto
+    SqtFactura numFactura
+    SqtTicket numRemision
+
 
     static constraints = {
+        comentarios maxSize: 255
+        enviado nullable:true
     }
 }

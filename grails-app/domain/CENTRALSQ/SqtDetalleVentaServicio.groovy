@@ -13,6 +13,7 @@ class SqtDetalleVentaServicio {
     Date fechamod
     int enviado
     Double montoSiniva
+
     SqtTienda tienda
     SqtVenta venta
     SqtServicio servicio
@@ -23,5 +24,6 @@ class SqtDetalleVentaServicio {
 
     static constraints = {
         comentarios maxSize: 250
+        enviado nullable:true
     }
 }
