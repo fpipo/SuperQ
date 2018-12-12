@@ -12,6 +12,8 @@ class SqtPedido {
     String tipoPrecio
     String tipo
     String comentarios
+    String numFactura
+    String numRemision
     Date cierreCajero
     Date cierreCaja
     Date cierreDia
@@ -22,13 +24,24 @@ class SqtPedido {
 
     SqtTienda tienda
     SqtCaja caja
+    SqtMovimiento movimiento
     SqtEstatus estatus
     SqtProveedor proveedor
     SqtPoliza poliza
+    SqtPedido referenciaPedido
+    SqtTransaccion transaccion
+
+
     static mapping = {
         id generator: 'uuid', name:'id'
     }
 
     static constraints = {
+
+        comentarios maxSize: 255
+        numFactura maxSize: 30
+        numRemision maxSize: 30
+        archivo maxSize: 30
+        enviado nullable:true
     }
 }

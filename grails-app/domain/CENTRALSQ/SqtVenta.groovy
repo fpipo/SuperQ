@@ -3,6 +3,7 @@ package CENTRALSQ
 class SqtVenta {
     String id
     Date diaOperacion
+    String caja
     Double ivaNeto
     Double totalNeto
     Double subtotal
@@ -24,7 +25,7 @@ class SqtVenta {
     Date fecha
 
     SqtTienda tienda
-    SqtCaja caja
+
     SqtListaPrecios listaPrecios
     SqtEstatus estatus
     SqtFactura factura
@@ -35,5 +36,10 @@ class SqtVenta {
         id generator: 'uuid', name:'id'
     }
     static constraints = {
+        caja maxSize:3
+        comentarios maxSize: 3000
+        enviado nullable:true
+
+
     }
 }

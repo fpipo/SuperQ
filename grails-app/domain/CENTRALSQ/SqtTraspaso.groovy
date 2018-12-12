@@ -31,5 +31,8 @@ class SqtTraspaso {
     }
 
     static constraints = {
+
+        comentarios maxSize: 250
+        enviado nullable:true
     }
 }

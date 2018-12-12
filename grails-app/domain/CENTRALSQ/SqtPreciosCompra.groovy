@@ -22,6 +22,14 @@ class SqtPreciosCompra {
     SqtUsuario usuarioMod
     int enviado
 
+    SqtProveedor proveedor
+    SqtProducto producto
+    SqtGrupoTienda grupoTienda
+
+
+
     static constraints = {
+        enviado nullable:true
+
     }
 }

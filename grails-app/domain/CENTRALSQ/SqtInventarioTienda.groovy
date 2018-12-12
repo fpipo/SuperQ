@@ -6,6 +6,10 @@ class SqtInventarioTienda {
     Date fecha
     int enviado
 
+    SqtTienda tienda
+
     static constraints = {
+        enviado nullable:true
+
     }
 }

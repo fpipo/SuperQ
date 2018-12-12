@@ -1,6 +1,7 @@
 package CENTRALSQ
 
 class SqtUsuario {
+
     String nombre
     String aPaterno
     String aMaterno
@@ -42,6 +43,7 @@ class SqtUsuario {
     }
 
     static constraints = {
+        foto maxSize: 50
         nombre maxSize: 50
         aPaterno maxSize: 50
         aMaterno maxSize: 50

@@ -12,6 +12,14 @@ class SqtRecaudacion {
     int enviado
     String identificador
 
+   SqtTienda tienda
+    SqtEstatus estatus
+
+
     static constraints = {
+        contrato maxSize: 30
+        archivo maxSize: 50
+        enviado nullable:true
+        identificador maxSize: 50
     }
 }

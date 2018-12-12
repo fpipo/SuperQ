@@ -21,6 +21,14 @@ class SqtInventarioCompensacion {
     int enviado
     Double montoIsb
 
+    SqtInventario inventario
+    SqtTienda tienda
+    SqtProducto producto
+    SqtImpuesto impuesto
+
+
     static constraints = {
+        enviado nullable:true
+
     }
 }

@@ -6,6 +6,11 @@ class SqtSubgrupo {
     int enviado
     Double pctCompra
 
+    SqtGrupo grupo
+
+
     static constraints = {
+
+        enviado nullable:true
     }
 }

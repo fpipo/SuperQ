@@ -32,6 +32,16 @@ class SqtProducto {
     int inactivoCompra
     int ventaConExis
 
+    SqtMarca marca
+    SqtCategoria categoria
+    SqtGrupo grupo
+    SqtSubgrupo subgrupo
+    SqtUnidadMedida unidadMedida
+
+
     static constraints = {
+
+        enviado nullable:true
+
     }
 }

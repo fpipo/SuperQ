@@ -24,6 +24,7 @@ class SqtPagoIusa {
     String poblacion
     String cuenta
     Date fechaAlta
+
     String tarifa
     SqtTienda tienda
     SqtVenta venta
@@ -44,5 +45,6 @@ class SqtPagoIusa {
         poblacion maxSize: 50
         cuenta maxSize: 50
         tarifa maxSize: 20
+        enviado nullable:true
     }
 }

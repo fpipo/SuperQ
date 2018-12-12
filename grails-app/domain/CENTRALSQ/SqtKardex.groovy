@@ -20,7 +20,7 @@ class SqtKardex {
     Date fechaMod
     int enviado
     Double montoIbs
-    Double precioVentaSivaComp
+
 
     SqtTienda tienda
     SqtProducto producto
@@ -37,5 +37,9 @@ class SqtKardex {
 
 
     static constraints = {
+        hora maxSize: 12
+        comentarios maxSize: 1000
+        enviado nullable:true
+
     }
 }

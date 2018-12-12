@@ -13,6 +13,14 @@ class SqtInventarioFisico {
     SqtUsuario usuarioMod
     int enviado
 
+
+    SqtInventario inventario
+    SqtTienda tienda
+    SqtProducto producto
+
     static constraints = {
+
+        enviado nullable:true
+
     }
 }

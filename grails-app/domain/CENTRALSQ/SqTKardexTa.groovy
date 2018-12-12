@@ -9,7 +9,19 @@ class SqTKardexTa {
     String hora
     int enviado
     String legal
-    String ticket
+    int ticket
+
+    SqtKardex kardex
+    SqtTienda tienda
+    SqtProducto producto
+    SqtMovimiento movimiento
+    SqtTransaccion transaccion
+
     static constraints = {
+        autcod maxSize: 50
+        telefono maxSize: 20
+        hora maxSize: 12
+        enviado nullable:true
+        legal maxSize: 255
     }
 }

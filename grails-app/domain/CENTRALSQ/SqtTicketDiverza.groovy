@@ -10,7 +10,17 @@ class SqtTicketDiverza {
     int  enviado
     String mensaje
 
-    SqtVenta venta
+    SqtTienda tienda
+    SqtEstatus estatus
+
     static constraints = {
+
+        referenciaDiverza maxSize: 500
+        tipo maxSize: 3
+        archivo maxSize: 500
+        batchId maxSize: 500
+        mensaje maxSize: 8000
+        enviado nullable:true
+
     }
 }
