@@ -5,6 +5,7 @@ class SqtCodigoProducto {
     int enviado
 
     SqtProducto producto
+
     static constraints = {
         codigo maxSize: 30
         enviado nullable:true

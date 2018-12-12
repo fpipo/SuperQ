@@ -5,6 +5,7 @@ class SqtCodigoCambio {
     String codigoNuevo
     Date fechaMod
     int enviado
+
     SqtProducto producto
     SqtEstatus estatus
     SqtUsuario usuarioMod
@@ -13,6 +14,5 @@ class SqtCodigoCambio {
         codigoAnterior maxSize: 30
         codigoNuevo maxSize: 30
         enviado nullable:true
-
     }
 }

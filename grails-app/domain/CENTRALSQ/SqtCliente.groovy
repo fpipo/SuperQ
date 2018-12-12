@@ -21,7 +21,7 @@ class SqtCliente {
     SqtPais pais
     SqtTelefono telefono
     SqtEstatus estatus
-    SqtTienda tienda
+    SqtUsuario usuarioMod
     SqtTipo tipoCliente
 
     static constraints = {
@@ -36,5 +36,6 @@ class SqtCliente {
         cp maxSize: 5, nullable: true
         ciudad axSize: 50, nullable: true
         email maxSize: 50, nullable: true
+        enviado nuluable: true
     }
 }

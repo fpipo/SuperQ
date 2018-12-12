@@ -6,6 +6,8 @@ class SqtComisionRango {
     Double pctComision
     int enviado
     Date fecha
+
     static constraints = {
+        enviado nulluable: true
     }
 }

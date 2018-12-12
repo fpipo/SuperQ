@@ -15,9 +15,10 @@ class SqtCompaniaTa {
     String refCarrie
     int cadena
 
+    SqtGrupo grupo
 
     static constraints = {
-        descripcion maxSize: 30, nullable: false
+        descripcion maxSize: 30
         ipRemota maxSize: 15, nullable: true
         socket maxSize: 5, nullable: true
         cel maxSize: 10, nullable: true
@@ -28,5 +29,6 @@ class SqtCompaniaTa {
         ftpDirectorio maxSize: 30, nullable: true
         pagWeb maxSize: 50, nullable: true
         refCarrie maxSize: 3, nullable: true
+        enviado nullable: true
     }
 }
