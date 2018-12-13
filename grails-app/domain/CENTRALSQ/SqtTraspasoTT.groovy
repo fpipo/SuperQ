@@ -18,7 +18,7 @@ class SqtTraspasoTT {
     Double totalSugerido
     Double totalSurtido
 
-    SqtTienda Origen, destino
+    SqtTienda origen, destino
     SqtMovimiento movimiento
     SqtEstatus estatus
     SqtUsuario usuarioMod

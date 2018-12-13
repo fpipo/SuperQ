@@ -1,7 +1,6 @@
 package CENTRALSQ
 
 class SqtExistenciaTienda {
-
     Double existencia
     Double contenidoExistencia
     Double stockMaximo
@@ -16,15 +15,16 @@ class SqtExistenciaTienda {
     int sugerido
     Double diferencia
     Date fechaMod
-    SqtUsuario usuarioMod
     int enviado
     int cambioStock
 
+    SqtTienda tienda
     SqtAlmacen almacen
-    SqtProducto producto
+    SqtUsuario usuarioMod
+    SqtProducto producto, codigo
 
     static constraints = {
         enviado nullable:true
-
+        codigo maxSize: 30
     }
 }

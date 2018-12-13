@@ -7,7 +7,8 @@ class SqtEstatus {
     int enviado
 
     static constraints = {
-        clave maxSize: 3, nullable: false
-        descripcion maxSize: 50, nullable: false
+        clave maxSize: 3
+        descripcion maxSize: 50
+        enviado nulluable: true
     }
 }
