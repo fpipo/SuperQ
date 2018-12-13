@@ -7,6 +7,7 @@ class SqtDeudor {
     int enviado
     String subCuenta
     int conbinacion
+
     SqtUsuario usuarioMod
     SqtTipo tipo
     SqtCliente cliente

@@ -2,8 +2,6 @@ package CENTRALSQ
 
 class SqtDetalleTraspasoTT {
 
-
-    String distino
     Double cantidadSugerida
     Double cantidadSurtida
     Double cantidadRecibida
@@ -12,14 +10,14 @@ class SqtDetalleTraspasoTT {
     int enviado
     Double ventasemana
 
-
     SqtTraspaso traspaso
-    SqtTienda tienda
+    SqtTienda origen, destino
     SqtProducto producto
     SqtMotivoDevolucion motivoDevolucion
 
+    static belongsTo = [traspasos: SqtTraspasoTT]
+
     static constraints = {
         enviado nullable:true
-
     }
 }

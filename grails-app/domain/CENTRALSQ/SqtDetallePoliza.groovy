@@ -13,6 +13,7 @@ class SqtDetallePoliza {
     String textoDetalle
     String referenciaCabeceraOriginal
     int enviado
+
     SqtTienda tienda
     SqtMovimiento movimiento
     SqtImpuesto impuesto

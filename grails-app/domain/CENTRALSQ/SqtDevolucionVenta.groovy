@@ -3,7 +3,6 @@ package CENTRALSQ
 class SqtDevolucionVenta {
     String id
     Date diaOperacion
-    String caja
     Double ivaNeto
     Double totalNeto
     Double subtotal
@@ -19,7 +18,8 @@ class SqtDevolucionVenta {
     String tipoVenta
     int enviado
     Date fecha
-    SqtTienda tienda
+
+    SqtTienda tienda, caja
     SqtUsuario usuarioMod
     SqtEstatus estatus
     SqtVenta venta
@@ -33,6 +33,7 @@ class SqtDevolucionVenta {
     }
 
     static constraints = {
+        ticket maxSize: 2, nullable: true
         comentarios maxSize: 500, nullable: true
         tipoVenta maxSize: 3, nullable: true
     }

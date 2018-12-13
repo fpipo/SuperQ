@@ -22,6 +22,7 @@ class SqtDetalleParcial {
     SqtFactura numFactura
     SqtTicket numRemision
 
+    static  belongsTo = [pedido:SqtPedido]
 
     static constraints = {
         comentarios maxSize: 255

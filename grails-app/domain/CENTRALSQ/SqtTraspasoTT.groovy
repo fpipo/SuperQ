@@ -13,12 +13,22 @@ class SqtTraspasoTT {
     int numTransacciont
     Double pctEfectividad
     Double cantidadNoSolicitada
-    SqtUsuario usuarioMod
     Date fechaMod
     int enviado
     Double totalSugerido
     Double totalSurtido
 
+    SqtTienda Origen, destino
+    SqtMovimiento movimiento
+    SqtEstatus estatus
+    SqtUsuario usuarioMod
+
+    static hasMany = [traspaso:SqtDetalleTraspaso]
+
     static constraints = {
+        tipoTraspaso maxSize: 2
+        comentarios maxSize: 250, nullable: true
+        impresionDestino maxSize: 10, nullable: true
+        enviado nulluable: true
     }
 }

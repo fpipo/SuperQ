@@ -10,6 +10,8 @@ class SqtCodigoCambio {
     SqtEstatus estatus
     SqtUsuario usuarioMod
 
+    static hasMany = [cambios:SqtDetalleCodigoCambio]
+
     static constraints = {
         codigoAnterior maxSize: 30
         codigoNuevo maxSize: 30

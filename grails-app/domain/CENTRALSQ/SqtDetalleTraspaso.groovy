@@ -10,6 +10,13 @@ class SqtDetalleTraspaso {
     int enviado
     Double ventaSemana
 
+    SqtTienda tienda
+    SqtProducto producto
+    SqtMotivoDevolucion motivoDevolucion
+
+    static belongsTo = [traspasos: SqtTraspaso]
+
     static constraints = {
+        enviado nulluable: true
     }
 }

@@ -4,7 +4,7 @@ class SqtDetallePedido {
 
     Double cantidadSugerida
     Double precioCompraSiva
-    Double subtotal
+    Double subTotal
     Double iva
     Double total
     String codigoCaja
@@ -16,12 +16,14 @@ class SqtDetallePedido {
     SqtTienda tienda
     SqtProducto producto
     SqtImpuesto impuesto
+    SqtUnidadMedida unidadMedida
+
+    static  belongsTo = [pedido:SqtPedido]
 
     static constraints = {
         codigoCaja maxSize: 30
         presentacion maxSize: 10
         archivo maxSize: 30
         enviado nullable:true
-
     }
 }

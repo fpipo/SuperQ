@@ -30,6 +30,8 @@ class SqtTraspaso {
         id generator: 'uuid', name:'id'
     }
 
+    static hasMany = [traspaso:SqtDetalleTraspaso]
+
     static constraints = {
 
         comentarios maxSize: 250

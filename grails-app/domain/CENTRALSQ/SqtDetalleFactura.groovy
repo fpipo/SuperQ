@@ -14,10 +14,16 @@ class SqtDetalleFactura {
     Double montoIsb
     String catSat
 
+    SqtTienda tienda
+    SqtUnidadMedida unidadMedida
+    SqtImpuesto impuesto
+    SqtMovimiento movimiento
+
     static belongsTo = [facturas:SqtFactura]
 
     static constraints = {
         descripcion maxSize: 50
         catSat maxSize: 50
+        enviado nulluable: true
     }
 }

@@ -6,15 +6,16 @@ class SqtDireccion {
     String municipio
     String cp
     String ciudad
+
     SqtUsuario usuario
     SqtEstado estado
     SqtPais pais
 
     static constraints = {
-        calle maxSize: 50, nullable: false
-        colonia maxSize: 50, nullable: false
-        municipio maxSize: 50, nullable: false
-        cp maxSize: 5, nullable: false
-        ciudad maxSize: 50, nullable: false
+        calle maxSize: 50
+        colonia maxSize: 50
+        municipio maxSize: 50
+        cp maxSize: 5
+        ciudad maxSize: 50
     }
 }

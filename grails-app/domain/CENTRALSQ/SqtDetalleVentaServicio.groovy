@@ -19,10 +19,14 @@ class SqtDetalleVentaServicio {
     SqtServicio servicio
     SqtEstatus estatus
     SqtUsuario usuarioMod
-    SqtPoliza poliza
-    SqtPoliza polizaMensual
+    SqtPoliza poliza, polizaMensual
+
+    static belongsTo = [traspasoS: SqtVenta]
 
     static constraints = {
+        contrato maxSize: 30
+        periodoPago maxSize: 10, nullable: true
+        ticket maxSize: 2, nullable: true
         comentarios maxSize: 250
         enviado nullable:true
     }

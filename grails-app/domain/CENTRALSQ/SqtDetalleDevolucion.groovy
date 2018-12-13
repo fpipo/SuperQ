@@ -11,15 +11,15 @@ class SqtDetalleDevolucion {
     String presentacion
     int enviado
 
-    SqtDevolucion devolucion
     SqtTienda tienda
     SqtProducto producto
-    SqtMovimiento movimiento
+    SqtMotivoDevolucion motivoDevolucion
     SqtUnidadMedida unidadMedida
 
     static  belongsTo = [devolucion:SqtDevolucion]
+
     static constraints = {
         presentacion maxSize: 50
-
+        enviado nulluable: true
     }
 }

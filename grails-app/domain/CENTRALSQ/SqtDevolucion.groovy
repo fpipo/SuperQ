@@ -9,10 +9,8 @@ class SqtDevolucion {
     Double total
     String comentarios
     int impresion
-
     Date fechaMod
     int enviado
-
 
     SqtProveedor proveedor
     SqtTienda tienda
@@ -28,7 +26,10 @@ class SqtDevolucion {
     static mapping = {
         id generator: 'uuid', name:'id'
     }
+
     static constraints = {
-    enviado nullable:true
+        comentarios maxSize: 500
+        enviado nullable:true
+        usuarioMod nullable: false
     }
 }
