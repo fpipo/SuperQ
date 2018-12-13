@@ -15,3 +15,5 @@ class SqtCantidadTienda {
         enviado nuluable: true
     }
 }
+
+/* Solo para ISYPOS*/
