@@ -12,3 +12,5 @@ class SqtCantidadCaja {
         caja maxSize: 2, nullable: false
     }
 }
+
+/* Solo para ISYPOS*/
