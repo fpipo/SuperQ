@@ -33,10 +33,8 @@ class SqtFactura {
     SqtCliente cliente
     SqtEstado estado
     SqtPais pais
-
     SqtEstatus estatus
-    SqtUsuario usuarioMod
-    SqtUsuario usuarioAutorizacion
+    SqtUsuario usuarioMod, usuarioAutorizacion
 
     static hasMany = [detalles:SqtDetalleFactura]
 
@@ -54,13 +52,11 @@ class SqtFactura {
         colonia maxSize: 50
         municipio maxSize: 50
         cp maxSize: 5
-        cuidad maxSize: 50
+        ciudad maxSize: 50
         comentarios maxSize: 50
         mensaje maxSize: 250
         tipoPago maxSize: 100
         numTarjeta maxSize: 100
-
         enviado nullable:true
-
     }
 }
