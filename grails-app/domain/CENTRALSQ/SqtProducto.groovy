@@ -9,13 +9,15 @@ class SqtProducto {
     int surteProveedor
     int aplicaA
     Double contenidoProducto
-    String idunidadmedida
+    String idUnidadMedida
     Double cantidadProducto
+    String idclasificacion
     Double ultimoPrecioCompra
     Double ultimoMontoIva
     Double ultimoPctVarianza
     Double ultimoPcompraRegalo
     Double ultimoMivaRegalo
+    String idUnidadMedidaC
     String contenidoUnidad
     Double pctCobro
     Double pctVenta
@@ -24,7 +26,7 @@ class SqtProducto {
     int completo
     int paraDevolucion
     Date fechamod
-    SqtUsuario usuarioMod
+    String usuarioMod
     int enviado
     int preinactivo
     int ta
@@ -47,7 +49,11 @@ class SqtProducto {
         descripcionCorta maxSize:50
         descripcionLarga maxSize: 250
         tipo maxSize:3
-
+        idUnidadMedida maxSize: 3
+        idclasificacion maxSize: 2
+        idUnidadMedidaC maxSize: 3
+        contenidoUnidad maxSize: 3
+        usuarioMod maxSize: 15
         enviado nullable:true
 
     }

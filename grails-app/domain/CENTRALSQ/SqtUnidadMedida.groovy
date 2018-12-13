@@ -10,5 +10,6 @@ class SqtUnidadMedida {
     static constraints = {
         descCorta maxSize: 3, nullable: false
         descripcion maxSize: 50, nullable: false
+        enviado nullable:true
     }
 }

@@ -37,6 +37,8 @@ class SqtVenta {
     }
     static constraints = {
         caja maxSize:3
+        ticket maxSize: 2
+        tipoventa maxSize: 3
         comentarios maxSize: 3000
         enviado nullable:true
 

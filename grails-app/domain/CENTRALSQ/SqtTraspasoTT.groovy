@@ -27,6 +27,7 @@ class SqtTraspasoTT {
 
     static constraints = {
         tipoTraspaso maxSize: 2
+        tipoConsumo maxSize: 2
         comentarios maxSize: 250, nullable: true
         impresionDestino maxSize: 10, nullable: true
         enviado nulluable: true

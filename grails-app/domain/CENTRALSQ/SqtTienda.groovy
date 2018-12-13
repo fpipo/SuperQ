@@ -7,11 +7,12 @@ class SqtTienda {
     String centroCostos
     Date fechaApertura
     String serie
+    String usuarioMod
     Date fechaMod
     int enviado
     String cc
     SqtDireccion direccion
-    SqtUsuario usuarioMod
+
 
     static mapping = {
         id generator: 'uuid', name:'id'
@@ -23,5 +24,6 @@ class SqtTienda {
         centroCostos maxSize: 30, nullable: false
         serie maxSize: 5, nullable: false
         cc maxSize: 3, nullable: false
+        usuarioMod maxSize: 15
     }
 }

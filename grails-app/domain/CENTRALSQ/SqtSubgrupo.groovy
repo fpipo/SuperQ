@@ -11,6 +11,7 @@ class SqtSubgrupo {
 
     static constraints = {
 
+        descripcion maxSize: 50
         enviado nullable:true
     }
 }

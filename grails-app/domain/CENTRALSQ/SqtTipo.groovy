@@ -10,5 +10,7 @@ class SqtTipo {
     static constraints = {
         descripcion maxSize: 50, nullable: false
         tipo maxSize: 2, nullable: true
+        enviado nullable:true
+
     }
 }

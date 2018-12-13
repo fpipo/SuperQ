@@ -19,6 +19,20 @@ class SqtServicio {
     String descripcionTicket
     Double comisionC
 
+    SqtEstatus estatus
+    SqtAcreedor acreedor
+    SqtProducto productoref
+    SqtProveedor proveedor
+    SqtCliente cliente
+
+    /*SqtAdeudor  no esta esta tabla
+    * */
+
     static constraints = {
+        descripcionCorta maxSize: 30
+        separador maxSize: 1
+        tipoArchivo maxSize: 10
+        enviado nullable:true
+
     }
 }

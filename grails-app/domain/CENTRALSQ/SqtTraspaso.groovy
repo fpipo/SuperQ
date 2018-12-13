@@ -33,7 +33,9 @@ class SqtTraspaso {
     static hasMany = [traspaso:SqtDetalleTraspaso]
 
     static constraints = {
-
+        tipotraspaso maxSize: 2
+        tipoConsumo maxSize: 2
+        impresionDestino maxSize: 10
         comentarios maxSize: 250
         enviado nullable:true
     }
