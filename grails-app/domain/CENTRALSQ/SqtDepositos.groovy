@@ -5,10 +5,17 @@ class SqtDepositos {
     String referencia
     Date diaOperacion
     Date fechaDeposito
-    SqtUsuario usuario
     String comentarios
     int enviado
     Date fechaMod
+
+    SqtTienda tienda
+    SqtBanco banco
+    SqtUsuario usuario
+
     static constraints = {
+        referencia maxSize: 12
+        comentarios maxSize: 250, nullable: true
+        enviado nulluable: true
     }
 }

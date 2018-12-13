@@ -9,6 +9,8 @@ class SqtBitacora {
     SqtUsuario usuario
     SqtTransaccion transaccion
 
+    static hasMany = [bitacora:SqtDetalleBitacora]
+
     static mapping = {
         id generator: 'uuid', name:'id'
     }

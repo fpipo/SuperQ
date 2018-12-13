@@ -1,7 +1,6 @@
 package CENTRALSQ
 
 class SqtInventario {
-
     String descripcion
     Date fecha
     int aplica
@@ -11,8 +10,7 @@ class SqtInventario {
     String comentarios
     int opcion
     Date fechaMod
-    String UsuarioMod
-
+    String usuarioMod
     int enviado
 
     SqtTienda tienda
@@ -21,13 +19,14 @@ class SqtInventario {
     SqtFactura factura
     SqtPoliza poliza
 
-
+    static belongsTo = [general:SqtInventarioGeneral]
 
     static constraints = {
-        horaFin maxSize: 10
-        horaInicio maxSize: 10
-        comentarios maxSize: 3000
+        descripcion maxSize: 250,nullable: true
+        toma maxSize: 2, nullable: true
+        horaFin maxSize: 10, nullable: true
+        horaInicio maxSize: 10, nullable: true
+        comentarios maxSize: 3000, nullable: true
         enviado nullable:true
-
     }
 }

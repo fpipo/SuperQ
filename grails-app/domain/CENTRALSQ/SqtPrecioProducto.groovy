@@ -1,7 +1,6 @@
 package CENTRALSQ
 
 class SqtPrecioProducto {
-
     Date fechaInicio
     Date fechaFin
     Double precioCompraSiva
@@ -22,15 +21,13 @@ class SqtPrecioProducto {
     String sugeridoPor
     Double pctVarianza
     Date fechaMod
-    SqtUsuario usuarioMod
     int enviado
     Double montoIsb
 
-
+    SqtUsuario usuarioMod
     SqtListaPrecios listaPrecios
     SqtProveedor proveedor
     SqtProducto producto
-
 
     static constraints = {
         enviado nullable:true

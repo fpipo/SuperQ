@@ -29,8 +29,6 @@ class SqtDetalleAjuste {
     static belongsTo = [ajuste:SqtAjuste]
 
     static constraints = {
-
         enviado nullable:true
-
     }
 }

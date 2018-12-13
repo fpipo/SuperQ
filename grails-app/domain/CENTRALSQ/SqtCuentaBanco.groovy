@@ -5,7 +5,7 @@ class SqtCuentaBanco {
     String tipocuenta
     String terminal
 
-    SqtBanco Banco
+    SqtBanco banco
     SqtTienda tienda
     SqtCaja caja
 
