@@ -9,6 +9,7 @@ class SqtProducto {
     int surteProveedor
     int aplicaA
     Double contenidoProducto
+    String idunidadmedida
     Double cantidadProducto
     Double ultimoPrecioCompra
     Double ultimoMontoIva
@@ -37,9 +38,15 @@ class SqtProducto {
     SqtGrupo grupo
     SqtSubgrupo subgrupo
     SqtUnidadMedida unidadMedida
+    SqtEstatus estatus
+
 
 
     static constraints = {
+
+        descripcionCorta maxSize:50
+        descripcionLarga maxSize: 250
+        tipo maxSize:3
 
         enviado nullable:true
 

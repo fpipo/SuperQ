@@ -6,5 +6,6 @@ class SqtPais {
 
     static constraints = {
         descripcion maxSize: 30, nullable: false
+        enviado nullable:true
     }
 }

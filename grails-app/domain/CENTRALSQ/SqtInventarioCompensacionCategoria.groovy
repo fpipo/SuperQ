@@ -10,7 +10,6 @@ class SqtInventarioCompensacionCategoria {
     int pmaxima
     int enviado
 
-    SqtInventario inventario
     SqtTienda tienda
     SqtCategoria categoria
     SqtImpuesto impuesto

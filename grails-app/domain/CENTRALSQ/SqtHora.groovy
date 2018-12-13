@@ -5,5 +5,6 @@ class SqtHora {
     int division
 
     static constraints = {
+        enviado nullable:true
     }
 }

@@ -8,6 +8,13 @@ class SqtPosionCodigo {
     int	digitoInicio
     int	enviado
 
+    SqtTipo idtipo
+    SqtNsegmento nsegmento
+
+
     static constraints = {
+        tipo maxSize: 3
+        enviado nullable:true
+
     }
 }

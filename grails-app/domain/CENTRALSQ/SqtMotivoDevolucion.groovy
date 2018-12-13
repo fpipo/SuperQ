@@ -11,5 +11,6 @@ class SqtMotivoDevolucion {
         clave maxSize: 3, nullable: false
         descripcion maxSize: 50, nullable: false
         origen maxSize: 10
+        enviado nullable:true
     }
 }

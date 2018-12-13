@@ -7,5 +7,7 @@ class SqtPassword {
     SqtUsuario usuario
 
     static constraints = {
+        password maxSize: 50
+
     }
 }

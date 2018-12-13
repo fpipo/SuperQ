@@ -5,5 +5,6 @@ class SqtNuevoSubgrupo {
     int enviado
 
     static constraints = {
+        enviado nullable:true
     }
 }

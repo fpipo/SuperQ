@@ -6,6 +6,12 @@ class SqtGrupoUsuario {
     Date fechaMod
     int enviado
 
+    SqtEstatus  estatus
+
     static constraints = {
+        descripcionCorta maxSize: 50
+        descripcionLarga maxSize: 250
+        enviado nullable:true
+
     }
 }

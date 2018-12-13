@@ -2,7 +2,8 @@ package CENTRALSQ
 
 class SqtPresupuestoVentas {
 
-    SqtTienda tienda
+    SqtTienda idtienda
+    String tienda
     int anio
     int mes
     Double ventaproy
@@ -10,5 +11,6 @@ class SqtPresupuestoVentas {
     Double trnProy
 
     static constraints = {
+        tienda maxSize: 100
     }
 }

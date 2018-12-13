@@ -4,9 +4,9 @@ class SqtInventarioGeneral {
     String descripcion
     Date fecha
     Date fechaMod
+    String usuarioMod
     int enviado
 
-    SqtUsuario usuarioMod
     SqtTienda tienda
     SqtEstatus estatus
 
@@ -14,6 +14,7 @@ class SqtInventarioGeneral {
 
     static constraints = {
         descripcion maxSize: 500, nullable: true
+        usuarioMod maxSize: 15
         enviado nullable:true
     }
 }

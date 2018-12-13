@@ -22,10 +22,20 @@ class SqtPreciosOferta {
     Double margenUtilidad
     int aplicaOferta
     Date fechaMod
-    SqtUsuario usuarioMod
+    String usuarioMod
     int enviado
     Double montoIsb
 
+    SqtListaPrecios listaPrecios
+    SqtProveedor proveedor
+    SqtProducto producto
+    SqtEstatus estatus
+
+
     static constraints = {
+        usuarioMod maxSize: 15
+        enviado nullable:true
+
+
     }
 }

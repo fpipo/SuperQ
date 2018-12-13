@@ -3,6 +3,7 @@ package CENTRALSQ
 class SqtInventarioCartegoria {
 
     Date fechamod
+    String usuarioMod
     int enviado
 
     SqtInventario inventario
@@ -10,10 +11,11 @@ class SqtInventarioCartegoria {
     SqtCategoria categoria
     SqtGrupo grupo
     SqtSubgrupo subgrupo
-    SqtUsuario usuarioMod
 
     static constraints = {
+        usuarioMod maxSize: 15
         enviado nullable:true
 
     }
 }
+

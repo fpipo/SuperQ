@@ -21,9 +21,16 @@ class SqtHistoricoPrecio {
     String sugeridoPor
     Double pctVarianza
     Date fechaMod
-    SqtUsuario usuarioMod
+    String  usuarioMod
     Double montoIsb
 
+    SqtListaPrecios listaPrecios
+    SqtProveedor proveedor
+    SqtProducto producto
+
     static constraints = {
+
+        sugeridoPor maxSize: 2
+        usuarioMod maxSize: 15
     }
 }

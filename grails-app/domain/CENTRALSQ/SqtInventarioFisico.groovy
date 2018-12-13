@@ -10,16 +10,16 @@ class SqtInventarioFisico {
     Double salidas
     int ajustado
     Date fechaMod
-    SqtUsuario usuarioMod
+    String usuarioMod
     int enviado
 
 
-    SqtInventario inventario
     SqtTienda tienda
     SqtProducto producto
 
     static constraints = {
-
+        inicial maxSize: 10
+        usuarioMod maxSize: 15
         enviado nullable:true
 
     }

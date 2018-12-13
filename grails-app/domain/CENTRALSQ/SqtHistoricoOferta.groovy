@@ -15,8 +15,17 @@ class SqtHistoricoOferta {
     Double precioVentaCiva
     int aplicaOferta
     Date fechaMod
-    SqtUsuario usuarioMod
+    String usuarioMod
+    SqtListaPrecios listaPrecios
+    SqtProveedor proveedor
+    SqtProducto producto
+
+
 
     static constraints = {
+
+        usuarioMod maxSize: 15
+
+
     }
 }

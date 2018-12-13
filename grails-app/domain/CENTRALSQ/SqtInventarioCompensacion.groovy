@@ -17,11 +17,10 @@ class SqtInventarioCompensacion {
     Double cobroPventaSiva
     Double iva
     Double total
-    String ajustado
+    int ajustado
     int enviado
     Double montoIsb
 
-    SqtInventario inventario
     SqtTienda tienda
     SqtProducto producto
     SqtImpuesto impuesto
