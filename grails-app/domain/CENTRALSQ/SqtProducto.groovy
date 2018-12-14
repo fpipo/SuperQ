@@ -7,26 +7,23 @@ class SqtProducto {
     int consignacion
     int inventariable
     int surteProveedor
+    int surteBodega
     int aplicaA
     Double contenidoProducto
-    String idUnidadMedida
     Double cantidadProducto
-    String idclasificacion
     Double ultimoPrecioCompra
     Double ultimoMontoIva
     Double ultimoPctVarianza
     Double ultimoPcompraRegalo
     Double ultimoMivaRegalo
-    String idUnidadMedidaC
-    String contenidoUnidad
     Double pctCobro
     Double pctVenta
+    String contenidoUnidad
     int prodTerminado
     int conCargo
     int completo
     int paraDevolucion
     Date fechamod
-    String usuarioMod
     int enviado
     int preinactivo
     int ta
@@ -37,24 +34,18 @@ class SqtProducto {
 
     SqtMarca marca
     SqtCategoria categoria
+    SqtUsuario usuarioMod
     SqtGrupo grupo
     SqtSubgrupo subgrupo
-    SqtUnidadMedida unidadMedida
+    SqtUnidadMedida idUnidadMedidaC, unidadMedida
     SqtEstatus estatus
-
-
+    SqtClasificacion clasificacion
 
     static constraints = {
-
         descripcionCorta maxSize:50
         descripcionLarga maxSize: 250
         tipo maxSize:3
-        idUnidadMedida maxSize: 3
-        idclasificacion maxSize: 2
-        idUnidadMedidaC maxSize: 3
-        contenidoUnidad maxSize: 3
-        usuarioMod maxSize: 15
+        contenidoUnidad maxSize: 3, nullable: true
         enviado nullable:true
-
     }
 }
