@@ -16,7 +16,7 @@ class SqtDatosTiendaPM {
         colocacion maxSize: 30, nullable: true
         pop maxSize: 100, nullable: true
         operacion maxSize: 100, nullable: true
-        an maxSize: 100, nullable: 100
+        an maxSize: 100, nullable: true
     }
 }
 

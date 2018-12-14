@@ -34,3 +34,5 @@ class SqtCierreVentaDia {
         preinactivo maxSize: 3, nullable: true
     }
 }
+
+/* Solo para CENTRALSQ*/
