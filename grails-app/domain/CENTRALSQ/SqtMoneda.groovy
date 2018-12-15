@@ -1,13 +1,12 @@
 package CENTRALSQ
 
-class SqtZona {
+class SqtMoneda {
     String descripcion
     int enviado
 
+
     static constraints = {
-        descripcion maxSize: 50, nullable: false
+        descripcion maxSize: 30
         enviado nullable:true
-
-
     }
 }
