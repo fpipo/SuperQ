@@ -13,7 +13,7 @@ class SqtCatalagoBritish {
         descripcion maxSize: 200
         codigoActivo maxSize: 30
         statusCambioCodigo maxSize: 100
-
-
     }
 }
+
+/* Solo para CENTRALSQ */

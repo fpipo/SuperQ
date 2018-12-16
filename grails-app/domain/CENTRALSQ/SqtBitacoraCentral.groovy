@@ -3,13 +3,11 @@ package CENTRALSQ
 class SqtBitacoraCentral {
 
     Date fecha
-    String usuario
 
-    SqtBitacora bitacora
+    SqtUsuario usuario
     SqtTienda tienda
     SqtTransaccion transaccion
 
     static constraints = {
-        usuario maxSize: 15
     }
 }

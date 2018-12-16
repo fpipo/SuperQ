@@ -20,3 +20,5 @@ class SqtCatalogoAjustes {
         enviado nullable: true
     }
 }
+
+/* Solo para CENTRALSQ */

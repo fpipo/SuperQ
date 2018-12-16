@@ -13,5 +13,7 @@ class SqtCantidadTienda {
 
     static constraints = {
         enviado nuluable: true
+        cantidad nulable: true
+        cantidadReal nulable: true
     }
 }

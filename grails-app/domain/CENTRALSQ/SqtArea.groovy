@@ -6,8 +6,8 @@ class SqtArea {
     int enviado
 
     static constraints = {
-        descripcion maxSize: 50
-        centroCostos maxSize: 30
+        descripcion maxSize: 50, nullable:true
+        centroCostos maxSize: 30, nullable:true
         enviado nullable: true
     }
 }

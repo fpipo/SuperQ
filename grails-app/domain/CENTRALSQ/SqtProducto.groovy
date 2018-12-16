@@ -41,6 +41,8 @@ class SqtProducto {
     SqtEstatus estatus
     SqtClasificacion clasificacion
 
+    static hasMany = [tiendas:SqtCajaProducto]
+
     static constraints = {
         descripcionCorta maxSize:50
         descripcionLarga maxSize: 250
