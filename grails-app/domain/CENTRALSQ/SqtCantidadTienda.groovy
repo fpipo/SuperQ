@@ -12,8 +12,11 @@ class SqtCantidadTienda {
     SqtFormaPago formaPago
 
     static constraints = {
+        cantidad nullable: true
+        cantidadReal nullable: true
+        aplica nullable:true
         enviado nuluable: true
-        cantidad nulable: true
-        cantidadReal nulable: true
+        sobrante nullable: true
+
     }
 }

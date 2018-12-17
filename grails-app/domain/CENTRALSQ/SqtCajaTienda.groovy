@@ -6,6 +6,6 @@ class SqtCajaTienda {
     SqtTienda tienda
 
     static constraints = {
-        caja maxSize: 2
+        caja maxSize: 2, nullable: false
     }
 }

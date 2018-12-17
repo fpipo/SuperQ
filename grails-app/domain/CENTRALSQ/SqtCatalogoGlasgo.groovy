@@ -10,5 +10,8 @@ class SqtCatalogoGlasgo {
 
     static constraints = {
         enviado nullable: true
+        compra nullable:true
+        venta nullable:true
+
     }
 }

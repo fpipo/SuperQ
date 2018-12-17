@@ -7,8 +7,7 @@ class SqtAjuste {
     int opcion
     Date fechaMod
     int enviado
-    String referenciaAjuste
-    String referenciaInventario
+    String referencia
     int numTransaccion
 
     SqtUsuario usuarioMod
@@ -25,11 +24,8 @@ class SqtAjuste {
     }
 
     static constraints = {
-        comentarios maxSize: 250, nullable: true
-        referenciaAjuste maxSize: 32 ,nullable: true
-        referenciaInventario maxSize: 32, nullable: true
+        comentarios maxSize: 250
+        referencia maxSize: 32 ,nullable: true
         enviado nullable:true
-        area nullable: true
-        opcion nullable: true
     }
 }

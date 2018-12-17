@@ -1,15 +1,14 @@
 package CENTRALSQ
 
-class SqtAfiliacion {
-    String numCaja
+class SqtAfiliacionAmerican {
+    SqtTienda tienda
+    SqtAfiliacion afiliacion
+    SqtBanco banco
     int enviado
 
-    SqtTienda tienda
-    SqtCaja caja
-    SqtBanco banco
-
     static constraints = {
-        numCaja maxSize: 2
+        afiliacion nullable: true
         enviado nullable:true
+
     }
 }

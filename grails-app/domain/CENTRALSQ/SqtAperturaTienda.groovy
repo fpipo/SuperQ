@@ -5,13 +5,12 @@ class SqtAperturaTienda {
     String comentarios
     Date fechaMod
     int enviado
-
     SqtTienda tienda
     SqtUsuario usuarioMod
     SqtEstatus estatus
 
     static constraints = {
-        comentarios maxSize: 250, nullable: true
+        comentarios maxSize: 250
         enviado nullable:true
     }
 }

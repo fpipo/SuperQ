@@ -7,9 +7,7 @@ class SqtAlmacen {
     int enviado
 
     static constraints = {
-        descripcion maxSize: 50, nullable: true
-        tipo maxSize: 2, nullable: true
-        inventariable nullable: true
-        enviado nullable: true
+        descripcion maxSize: 50
+        tipo maxSize: 2
     }
 }

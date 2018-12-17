@@ -21,5 +21,3 @@ class SqtCatalogoCigarros {
         enviado nuluable: true
     }
 }
-
-/* Solo para CENTRALSQ */

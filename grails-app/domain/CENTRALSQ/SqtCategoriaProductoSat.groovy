@@ -8,6 +8,9 @@ class SqtCategoriaProductoSat {
     SqtEstatus estatus
 
     static constraints = {
+        producto nullable:true
+        claveProdser nullable:true
+        estatus nullable: true
         enviado nullable:true
     }
 }

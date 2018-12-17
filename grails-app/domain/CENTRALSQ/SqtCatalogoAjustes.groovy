@@ -6,6 +6,7 @@ class SqtCatalogoAjustes {
     int orden
     String referenciaAjuste
     int consumible
+
     int enviado
     Date fechaMod
 
@@ -15,10 +16,12 @@ class SqtCatalogoAjustes {
 
     static constraints = {
         descripcion maxSize: 50
+        orden nullable:true
+        referenciaAjuste maxSize: 3 , nullable: true
         tipoAjuste maxSize: 2
         referenciaAjuste maxSize: 3, nullable: true
         enviado nullable: true
+        claseDocumento nullable: true
+        fechaMod nullable: true
     }
 }
-
-/* Solo para CENTRALSQ */

@@ -5,13 +5,13 @@ class SqtCajaProducto {
     int principal
     int enviado
 
+    SqtProducto producto
     SqtUnidadMedida unidadMedida
 
-    static belongsTo = [producto:SqtProducto]
-
     static constraints = {
+        contenido nullable:true
+        principal nullable:true
+        unidadMedida nullable: true
         enviado nulable: true
-        contenido nulable: true
-        unidadMedida nulable: true
     }
 }

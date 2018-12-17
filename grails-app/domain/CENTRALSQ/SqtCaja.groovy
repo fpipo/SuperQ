@@ -12,8 +12,10 @@ class SqtCaja {
     SqtUsuario usuarioMod
 
     static constraints = {
-        caja maxSize: 2
+        caja maxSize: 2, nullable: false
         enviado nulable: true
-        comentarios maxSize: 1000, nulable: true
+        estatus nullable: true
+        comentarios maxSize: 1000, nullable: true
+
     }
 }

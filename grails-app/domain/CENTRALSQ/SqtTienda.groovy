@@ -13,7 +13,6 @@ class SqtTienda {
     String cc
     SqtDireccion direccion
 
-    static hasMany = [tiendas:SqtAlmacenTienda]
 
     static mapping = {
         id generator: 'uuid', name:'id'

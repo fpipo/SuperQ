@@ -16,11 +16,10 @@ class SqtAcreedor {
 
     static constraints = {
         nombre maxSize: 70
-        rfc maxSize: 16, nullable: true
+        rfc maxSize: 16
         responsable maxSize: 15, nullable: true
         responsableTel maxSize: 30, nullable: true
         responsableEmail email: true, maxSize: 130, nullable: true
         enviado nullable:true
-        condicionPago nulluable: true
     }
 }
