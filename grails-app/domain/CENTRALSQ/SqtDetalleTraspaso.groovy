@@ -8,6 +8,7 @@ class SqtDetalleTraspaso {
     Double ivaCostoPromedio
     int sugerido
     int enviado
+    int redQline
     Double ventaSemana
 
     SqtTienda tienda
@@ -18,5 +19,14 @@ class SqtDetalleTraspaso {
 
     static constraints = {
         enviado nulluable: true
+        motivoDevolucion nullable: true
+        cantidadSugerida nullable: true
+        cantidadSurtida nullable: true
+        cantidadRecibida nullable: true
+        costoPromedio nullable: true
+        ivaCostoPromedio nullable: true
+        sugerido nullable: true
+        redQline nullable: true
+        ventaSemana nullable: true
     }
 }

@@ -18,7 +18,7 @@ class SqtDetalleVentaProducto {
     Double montoIsb
 
     SqtTienda tienda
-    SqtProducto producto, codigo
+    SqtProducto producto
     SqtUsuario usuarioAutorizacion
     SqtImpuesto impuesto
     SqtPoliza poliza
@@ -26,6 +26,15 @@ class SqtDetalleVentaProducto {
     static belongsTo = [traspasoP: SqtVenta]
 
     static constraints = {
+        descuento nullable: true
+        ivaDescuento nullable: true
+        usuarioAutorizacion nullable: true
+        montoFs nullable: true
+        impuesto nullable: true
+        poliza nullable: true
+        margenUtilidad nullable: true
+        precioCompraSiva nullable: true
         enviado nullable:true
+        montoIsb nullable: true
     }
 }

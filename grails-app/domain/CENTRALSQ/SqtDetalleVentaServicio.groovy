@@ -10,7 +10,7 @@ class SqtDetalleVentaServicio {
     int montoEditable
     int fechaEditable
     String comentarios
-    Date fechamod
+    Date fechaMod
     int enviado
     Double montoSiniva
 
@@ -19,7 +19,7 @@ class SqtDetalleVentaServicio {
     SqtServicio servicio
     SqtEstatus estatus
     SqtUsuario usuarioMod
-    SqtPoliza poliza, polizaMensual
+    SqtPoliza poliza
 
     static belongsTo = [traspasoS: SqtVenta]
 
@@ -27,7 +27,14 @@ class SqtDetalleVentaServicio {
         contrato maxSize: 30
         periodoPago maxSize: 10, nullable: true
         ticket maxSize: 2, nullable: true
-        comentarios maxSize: 250
+        fechaVencimiento nullable: true
+        comision nullable: true
+        fechaEditable nullable: true
+        montoEditable nullable: true
+        comentarios maxSize: 250, nullable: true
+        usuarioMod nullable: true
+        fechaMod nullable: true
         enviado nullable:true
+        montoSiniva nullable: true
     }
 }

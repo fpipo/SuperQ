@@ -14,6 +14,7 @@ class SqtDetallePoliza {
     String referenciaCabeceraOriginal
     int enviado
 
+    SqtPoliza poliza
     SqtTienda tienda
     SqtMovimiento movimiento
     SqtImpuesto impuesto
@@ -24,13 +25,18 @@ class SqtDetallePoliza {
     static belongsTo = [polizas: SqtPoliza]
 
     static constraints = {
-        cuentaContable maxSize: 30, nullable: false
-        contabilizacion maxSize: 2, nullable: false
-        division maxSize: 4
-        centroCostos maxSize: 30
-        textoCabecera maxSize: 25
-        referenciaCabecera maxSize: 16
-        textoDetalle maxSize: 25
-        referenciaCabeceraOriginal maxSize: 16
+        cuentaContable maxSize: 30
+        contabilizacion maxSize: 2
+        impuesto nullable: true
+        importe nullable: true
+        secuencia nulluable: true
+        condicionPago nullable: true
+        segmentos nullable: true
+        division maxSize: 4, nullable: true
+        centroCostos maxSize: 30, nullable: true
+        textoCabecera maxSize: 25, nullable: true
+        referenciaCabecera maxSize: 16, nullable: true
+        textoDetalle maxSize: 25, nullable: true
+        referenciaCabeceraOriginal maxSize: 16, nullable: true
     }
 }
