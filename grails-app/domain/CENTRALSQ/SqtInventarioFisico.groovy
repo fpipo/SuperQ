@@ -1,7 +1,6 @@
 package CENTRALSQ
 
 class SqtInventarioFisico {
-
     int	partida
     Date fecha
     String inicial
@@ -10,17 +9,18 @@ class SqtInventarioFisico {
     Double salidas
     int ajustado
     Date fechaMod
-    String usuarioMod
     int enviado
 
-
+    SqtInventario inventario
     SqtTienda tienda
     SqtProducto producto
+    SqtUsuario usuarioMod
 
     static constraints = {
+        entradas nullable:true
+        salidas nullable:true
+        ajustado nullable:true
         inicial maxSize: 10
-        usuarioMod maxSize: 15
         enviado nullable:true
-
     }
 }

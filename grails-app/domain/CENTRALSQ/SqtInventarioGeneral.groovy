@@ -4,17 +4,18 @@ class SqtInventarioGeneral {
     String descripcion
     Date fecha
     Date fechaMod
-    String usuarioMod
     int enviado
 
     SqtTienda tienda
     SqtEstatus estatus
+    SqtUsuario usuarioMod
 
     static hasMany = [general:SqtInventario]
 
     static constraints = {
         descripcion maxSize: 500, nullable: true
-        usuarioMod maxSize: 15
         enviado nullable:true
+        fechaMod nullable:true
+        estatus nullable:true
     }
 }

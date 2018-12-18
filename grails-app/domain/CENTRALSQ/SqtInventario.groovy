@@ -24,6 +24,9 @@ class SqtInventario {
     static constraints = {
         descripcion maxSize: 250,nullable: true
         toma maxSize: 2, nullable: true
+        aplica nullable:true
+        opcion nullable:true
+        factura nullable:true
         horaFin maxSize: 10, nullable: true
         horaInicio maxSize: 10, nullable: true
         comentarios maxSize: 3000, nullable: true
