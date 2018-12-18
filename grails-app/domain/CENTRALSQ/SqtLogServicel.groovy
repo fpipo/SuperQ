@@ -1,8 +1,8 @@
 package CENTRALSQ
 
 class SqtLogServicel {
-
     Date diaOperacion
+    String transaccion
     String telefono
     String monto
     String compania
@@ -20,26 +20,24 @@ class SqtLogServicel {
     int enviado
 
     SqtTienda tienda
-    SqtTransaccion transaccion
     SqtEstatus estatus
 
-
-
-
     static constraints = {
-
-        telefono maxSize: 20
-        monto maxSize: 50
-        compania maxSize: 50
-        mensaje maxSize: 100
-        respuesta maxSize: 2
-        tipo maxSize: 2
-        codigoRespuesta maxSize: 5
-        codAutorizacion maxSize: 50
-        identificadorPOS maxSize: 50
-        saldoInicial maxSize: 50
-        saldoFinal maxSize: 50
+        diaOperacion nullable: true
+        transaccion maxSize: 100, nullable:  true
+        telefono maxSize: 20, nullable:  true
+        monto maxSize: 50, nullable:  true
+        compania maxSize: 50, nullable:  true
+        mensaje maxSize: 100, nullable:  true
+        respuesta maxSize: 2, nullable:  true
+        tipo maxSize: 2, nullable:  true
+        codigoRespuesta maxSize: 5, nullable:  true
+        codAutorizacion maxSize: 50, nullable:  true
+        identificadorPOS maxSize: 50, nullable:  true
+        saldoInicial maxSize: 50, nullable:  true
+        saldoFinal maxSize: 50, nullable:  true
         enviado nullable:true
-
+        fechaSolicitud nullable:true
+        fechaRespuestaServicel nullable:true
     }
 }

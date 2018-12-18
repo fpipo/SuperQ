@@ -16,7 +16,7 @@ class SqtKardexBanamex {
     String horaTransaccion
     String iduOperacion
     String folio
-    String referenciaTransacion
+    String referenciaTransaccion
     Double importe
     Double comision
     Double iva
@@ -28,30 +28,33 @@ class SqtKardexBanamex {
     int enviado
 
     SqtTienda tienda
-
+    SqtKardex kardex
 
     static constraints = {
-
-        idCorresponsal maxSize: 20
-        corresponsal maxSize: 100
-        oficina maxSize: 300
-        mac maxSize: 20
-        usuario maxSize:200
-        nombreOperador maxSize: 100
-        maternoOperador maxSize: 50
-        paternoOperador maxSize: 50
-        nombreOperacion maxSize: 200
-        fechaTransaccion maxSize: 200
-        horaTransaccion maxSize: 15
-        iduOperacion maxSize: 100
-        folio maxSize: 100
-        referenciaTransacion maxSize: 100
-        numeroAutorizacion maxSize: 100
-        letra maxSize: 1000
+        idCorresponsal maxSize: 20, nullable: true
+        corresponsal maxSize: 100, nullable: true
+        idTerminal nullable: true
+        idOficina nullable: true
+        oficina maxSize: 300, nullable: true
+        mac maxSize: 20, nullable: true
+        usuario maxSize:200, nullable: true
+        nombreOperador maxSize: 100, nullable: true
+        maternoOperador maxSize: 50, nullable: true
+        paternoOperador maxSize: 50, nullable: true
+        nombreOperacion maxSize: 200, nullable: true
+        fechaTransaccion maxSize: 200, nullable: true
+        horaTransaccion maxSize: 15, nullable: true
+        iduOperacion maxSize: 100, nullable: true
+        folio maxSize: 100, nullable: true
+        referenciaTransaccion maxSize: 100, nullable: true
+        importe nullable: true
+        comision nullable: true
+        iva nullable: true
+        total nullable: true
+        importeRecibido nullable: true
+        cambio nullable: true
+        numeroAutorizacion maxSize: 100, nullable: true
+        letra maxSize: 1000, nullable: true
         enviado nullable:true
-
-
-
-
     }
 }
