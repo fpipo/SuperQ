@@ -5,7 +5,7 @@ import grails.testing.web.controllers.ControllerUnitTest
 import grails.validation.ValidationException
 import spock.lang.*
 
-class SqtMoviemientoContableControllerSpec extends Specification implements ControllerUnitTest<SqtMoviemientoContableController>, DomainUnitTest<SqtMovimientoContable> {
+class SqtMovimientoContableControllerSpec extends Specification implements ControllerUnitTest<SqtMovimientoContableController>, DomainUnitTest<SqtMovimientoContable> {
 
     def populateValidParams(params) {
         assert params != null
@@ -17,7 +17,7 @@ class SqtMoviemientoContableControllerSpec extends Specification implements Cont
 
     void "Test the index action returns the correct model"() {
         given:
-        controller.sqtMoviemientoContableService = Mock(SqtMoviemientoContableService) {
+        controller.sqtMovimientoContableService = Mock(SqtMovimientoContableService) {
             1 * list(_) >> []
             1 * count() >> 0
         }
@@ -26,8 +26,8 @@ class SqtMoviemientoContableControllerSpec extends Specification implements Cont
         controller.index()
 
         then:"The model is correct"
-        !model.sqtMoviemientoContableList
-        model.sqtMoviemientoContableCount == 0
+        !model.sqtMovimientoContableList
+        model.sqtMovimientoContableCount == 0
     }
 
     void "Test the create action returns the correct model"() {
@@ -35,7 +35,7 @@ class SqtMoviemientoContableControllerSpec extends Specification implements Cont
         controller.create()
 
         then:"The model is correctly created"
-        model.sqtMoviemientoContable!= null
+        model.sqtMovimientoContable!= null
     }
 
     void "Test the save action with a null instance"() {
@@ -45,13 +45,13 @@ class SqtMoviemientoContableControllerSpec extends Specification implements Cont
         controller.save(null)
 
         then:"A 404 error is returned"
-        response.redirectedUrl == '/sqtMoviemientoContable/index'
+        response.redirectedUrl == '/sqtMovimientoContable/index'
         flash.message != null
     }
 
     void "Test the save action correctly persists"() {
         given:
-        controller.sqtMoviemientoContableService = Mock(SqtMoviemientoContableService) {
+        controller.sqtMovimientoContableService = Mock(SqtMovimientoContableService) {
             1 * save(_ as SqtMovimientoContable)
         }
 
@@ -60,38 +60,38 @@ class SqtMoviemientoContableControllerSpec extends Specification implements Cont
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'POST'
         populateValidParams(params)
-        def sqtMoviemientoContable = new SqtMovimientoContable(params)
-        sqtMoviemientoContable.id = 1
+        def sqtMovimientoContable = new SqtMovimientoContable(params)
+        sqtMovimientoContable.id = 1
 
-        controller.save(sqtMoviemientoContable)
+        controller.save(sqtMovimientoContable)
 
         then:"A redirect is issued to the show action"
-        response.redirectedUrl == '/sqtMoviemientoContable/show/1'
+        response.redirectedUrl == '/sqtMovimientoContable/show/1'
         controller.flash.message != null
     }
 
     void "Test the save action with an invalid instance"() {
         given:
-        controller.sqtMoviemientoContableService = Mock(SqtMoviemientoContableService) {
-            1 * save(_ as SqtMovimientoContable) >> { SqtMovimientoContable sqtMoviemientoContable ->
-                throw new ValidationException("Invalid instance", sqtMoviemientoContable.errors)
+        controller.sqtMovimientoContableService = Mock(SqtMovimientoContableService) {
+            1 * save(_ as SqtMovimientoContable) >> { SqtMovimientoContable sqtMovimientoContable ->
+                throw new ValidationException("Invalid instance", sqtMovimientoContable.errors)
             }
         }
 
         when:"The save action is executed with an invalid instance"
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'POST'
-        def sqtMoviemientoContable = new SqtMovimientoContable()
-        controller.save(sqtMoviemientoContable)
+        def sqtMovimientoContable = new SqtMovimientoContable()
+        controller.save(sqtMovimientoContable)
 
         then:"The create view is rendered again with the correct model"
-        model.sqtMoviemientoContable != null
+        model.sqtMovimientoContable != null
         view == 'create'
     }
 
     void "Test the show action with a null id"() {
         given:
-        controller.sqtMoviemientoContableService = Mock(SqtMoviemientoContableService) {
+        controller.sqtMovimientoContableService = Mock(SqtMovimientoContableService) {
             1 * get(null) >> null
         }
 
@@ -104,7 +104,7 @@ class SqtMoviemientoContableControllerSpec extends Specification implements Cont
 
     void "Test the show action with a valid id"() {
         given:
-        controller.sqtMoviemientoContableService = Mock(SqtMoviemientoContableService) {
+        controller.sqtMovimientoContableService = Mock(SqtMovimientoContableService) {
             1 * get(2) >> new SqtMovimientoContable()
         }
 
@@ -112,12 +112,12 @@ class SqtMoviemientoContableControllerSpec extends Specification implements Cont
         controller.show(2)
 
         then:"A model is populated containing the domain instance"
-        model.sqtMoviemientoContable instanceof SqtMovimientoContable
+        model.sqtMovimientoContable instanceof SqtMovimientoContable
     }
 
     void "Test the edit action with a null id"() {
         given:
-        controller.sqtMoviemientoContableService = Mock(SqtMoviemientoContableService) {
+        controller.sqtMovimientoContableService = Mock(SqtMovimientoContableService) {
             1 * get(null) >> null
         }
 
@@ -130,7 +130,7 @@ class SqtMoviemientoContableControllerSpec extends Specification implements Cont
 
     void "Test the edit action with a valid id"() {
         given:
-        controller.sqtMoviemientoContableService = Mock(SqtMoviemientoContableService) {
+        controller.sqtMovimientoContableService = Mock(SqtMovimientoContableService) {
             1 * get(2) >> new SqtMovimientoContable()
         }
 
@@ -138,7 +138,7 @@ class SqtMoviemientoContableControllerSpec extends Specification implements Cont
         controller.edit(2)
 
         then:"A model is populated containing the domain instance"
-        model.sqtMoviemientoContable instanceof SqtMovimientoContable
+        model.sqtMovimientoContable instanceof SqtMovimientoContable
     }
 
 
@@ -149,13 +149,13 @@ class SqtMoviemientoContableControllerSpec extends Specification implements Cont
         controller.update(null)
 
         then:"A 404 error is returned"
-        response.redirectedUrl == '/sqtMoviemientoContable/index'
+        response.redirectedUrl == '/sqtMovimientoContable/index'
         flash.message != null
     }
 
     void "Test the update action correctly persists"() {
         given:
-        controller.sqtMoviemientoContableService = Mock(SqtMoviemientoContableService) {
+        controller.sqtMovimientoContableService = Mock(SqtMovimientoContableService) {
             1 * save(_ as SqtMovimientoContable)
         }
 
@@ -164,21 +164,21 @@ class SqtMoviemientoContableControllerSpec extends Specification implements Cont
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'PUT'
         populateValidParams(params)
-        def sqtMoviemientoContable = new SqtMovimientoContable(params)
-        sqtMoviemientoContable.id = 1
+        def sqtMovimientoContable = new SqtMovimientoContable(params)
+        sqtMovimientoContable.id = 1
 
-        controller.update(sqtMoviemientoContable)
+        controller.update(sqtMovimientoContable)
 
         then:"A redirect is issued to the show action"
-        response.redirectedUrl == '/sqtMoviemientoContable/show/1'
+        response.redirectedUrl == '/sqtMovimientoContable/show/1'
         controller.flash.message != null
     }
 
     void "Test the update action with an invalid instance"() {
         given:
-        controller.sqtMoviemientoContableService = Mock(SqtMoviemientoContableService) {
-            1 * save(_ as SqtMovimientoContable) >> { SqtMovimientoContable sqtMoviemientoContable ->
-                throw new ValidationException("Invalid instance", sqtMoviemientoContable.errors)
+        controller.sqtMovimientoContableService = Mock(SqtMovimientoContableService) {
+            1 * save(_ as SqtMovimientoContable) >> { SqtMovimientoContable sqtMovimientoContable ->
+                throw new ValidationException("Invalid instance", sqtMovimientoContable.errors)
             }
         }
 
@@ -188,7 +188,7 @@ class SqtMoviemientoContableControllerSpec extends Specification implements Cont
         controller.update(new SqtMovimientoContable())
 
         then:"The edit view is rendered again with the correct model"
-        model.sqtMoviemientoContable != null
+        model.sqtMovimientoContable != null
         view == 'edit'
     }
 
@@ -199,13 +199,13 @@ class SqtMoviemientoContableControllerSpec extends Specification implements Cont
         controller.delete(null)
 
         then:"A 404 is returned"
-        response.redirectedUrl == '/sqtMoviemientoContable/index'
+        response.redirectedUrl == '/sqtMovimientoContable/index'
         flash.message != null
     }
 
     void "Test the delete action with an instance"() {
         given:
-        controller.sqtMoviemientoContableService = Mock(SqtMoviemientoContableService) {
+        controller.sqtMovimientoContableService = Mock(SqtMovimientoContableService) {
             1 * delete(2)
         }
 
@@ -215,7 +215,7 @@ class SqtMoviemientoContableControllerSpec extends Specification implements Cont
         controller.delete(2)
 
         then:"The user is redirected to index"
-        response.redirectedUrl == '/sqtMoviemientoContable/index'
+        response.redirectedUrl == '/sqtMovimientoContable/index'
         flash.message != null
     }
 }

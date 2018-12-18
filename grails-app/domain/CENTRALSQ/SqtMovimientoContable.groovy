@@ -1,7 +1,6 @@
 package CENTRALSQ
 
-class SqtMoviemientoContable {
-
+class SqtMovimientoContable {
     String cuentaContable
     String idContabilizacion
     int secuencia
@@ -15,8 +14,7 @@ class SqtMoviemientoContable {
     String tipoLinea
 
     SqtGrupo grupo
-    SqtNsgementos nsgementos
-
+    SqtNsegmento nsgementos
 
     static constraints = {
         cuentaContable maxSize: 30

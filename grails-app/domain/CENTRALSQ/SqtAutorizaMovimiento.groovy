@@ -3,7 +3,7 @@ package CENTRALSQ
 class SqtAutorizaMovimiento {
     SqtMovimiento movimiento
     SqtFuncion funcion
-    SqtGrupoUsuario Grupo
+    SqtGrupoUsuario grupo
     String enviado
 
     static constraints = {
