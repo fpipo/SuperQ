@@ -1,7 +1,6 @@
 package CENTRALSQ
 
 class SqtDetallePedido {
-
     Double cantidadSugerida
     Double precioCompraSiva
     Double subTotal
@@ -13,6 +12,7 @@ class SqtDetallePedido {
     Double montoFs
     int enviado
 
+    SqtPedido pedido
     SqtTienda tienda
     SqtProducto producto
     SqtImpuesto impuesto
@@ -21,9 +21,14 @@ class SqtDetallePedido {
     static  belongsTo = [pedido:SqtPedido]
 
     static constraints = {
-        codigoCaja maxSize: 30
-        presentacion maxSize: 10
-        archivo maxSize: 30
+        precioCompraSiva nullable: true
+        subTotal nullable: true
+        unidadMedida nullable: true
+        codigoCaja maxSize: 30, nullable: true
+        presentacion maxSize: 10, nullable: true
+        archivo maxSize: 30, nullable: true
+        montoFs nullable: true
+        impuesto nullable: true
         enviado nullable:true
     }
 }
