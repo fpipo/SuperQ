@@ -7,3 +7,5 @@ class SqtEstatusCierre {
     static constraints = {
     }
 }
+
+/* Solo para ISYPOS */

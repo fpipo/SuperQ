@@ -21,10 +21,24 @@ class SqtExistenciaTienda {
     SqtTienda tienda
     SqtAlmacen almacen
     SqtUsuario usuarioMod
-    SqtProducto producto, codigo
+    SqtProducto producto
 
     static constraints = {
+        existencia nullable:true
+        contenidoExistencia nullable:true
+        stockMaximo nullable:true
+        puntoReorden nullable:true
+        puntoRedondeo nullable:true
+        costoPromedio nullable:true
+        precioVentaSiva nullable:true
+        ivaCostoPromedio nullable:true
+        montoivaPrecioVenta nullable:true
+        saldo nullable:true
+        margenUtilidad nullable:true
+        sugerido nullable:true
+        diferencia nullable:true
+        producto nullable:true
+        cambioStock nullable:true
         enviado nullable:true
-        codigo maxSize: 30
     }
 }
