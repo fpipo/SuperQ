@@ -14,6 +14,7 @@ class SqtDetalleFactura {
     Double montoIsb
     String catSat
 
+    SqtFactura factura
     SqtTienda tienda
     SqtUnidadMedida unidadMedida
     SqtImpuesto impuesto
@@ -22,8 +23,16 @@ class SqtDetalleFactura {
     static belongsTo = [facturas:SqtFactura]
 
     static constraints = {
-        descripcion maxSize: 50
-        catSat maxSize: 50
+        cantidad nullable: true
+        unidadMedida nullable: true
+        descripcion maxSize: 50, nullable: true
+        precioUnitario nullable: true
+        subTotal nullable: true
+        montoIva nullable: true
+        montoFs nullable: true
+        unidadesFs nulluable: true
+        imprimir nulluable: true
+        catSat maxSize: 50, nullable: true
         enviado nulluable: true
     }
 }
