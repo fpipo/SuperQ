@@ -1,7 +1,6 @@
 package CENTRALSQ
 
 class SqtDevolucion {
-
     String id
     Date fecha
     Double subtotal
@@ -28,7 +27,12 @@ class SqtDevolucion {
     }
 
     static constraints = {
+        impresion nullable: true
         comentarios maxSize: 500
+        pedido nullable: true
+        poliza nullable: true
+        transaccion nullable: true
+        factura nullable: true
         enviado nullable:true
         usuarioMod nullable: false
     }

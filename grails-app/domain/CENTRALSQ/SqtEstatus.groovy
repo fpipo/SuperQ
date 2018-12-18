@@ -9,6 +9,7 @@ class SqtEstatus {
     static constraints = {
         clave maxSize: 3
         descripcion maxSize: 50
+        visible nullable: true
         enviado nulluable: true
     }
 }

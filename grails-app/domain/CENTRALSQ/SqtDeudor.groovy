@@ -18,6 +18,8 @@ class SqtDeudor {
         nombre maxSize: 70
         rfc maxSize: 13, nullable: true
         subCuenta maxSize: 5, nullable: true
-        usuarioMod nullable: false
+        condicionPago nullable: true
+        conbinacion nullable: true
+        cliente nullable: true
     }
 }

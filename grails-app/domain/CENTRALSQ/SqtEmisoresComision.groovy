@@ -7,5 +7,7 @@ class SqtEmisoresComision {
 
     static constraints = {
         nombre maxSize: 100
+        comision nullable: true
+        comisionC nullable: true
     }
 }

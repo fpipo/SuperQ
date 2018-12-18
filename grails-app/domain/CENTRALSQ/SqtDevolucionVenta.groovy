@@ -19,7 +19,7 @@ class SqtDevolucionVenta {
     int enviado
     Date fecha
 
-    SqtTienda tienda, caja
+    SqtTienda tienda
     SqtUsuario usuarioMod
     SqtEstatus estatus
     SqtVenta venta
@@ -33,8 +33,17 @@ class SqtDevolucionVenta {
     }
 
     static constraints = {
+        ivaNeto nullable: true
+        totalNeto nullable: true
+        subtotal nullable: true
+        iva nullable: true
         ticket maxSize: 2, nullable: true
         comentarios maxSize: 500, nullable: true
+        cierreCajero nullable: true
+        cierreCaja nullable: true
+        cierreDia nullable: true
         tipoVenta maxSize: 3, nullable: true
+        enviado notEqual: true
+        fecha nullable: true
     }
 }
