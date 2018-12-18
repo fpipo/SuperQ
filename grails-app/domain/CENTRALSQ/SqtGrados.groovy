@@ -1,13 +1,11 @@
 package CENTRALSQ
 
 class SqtGrados {
-    String codigo
     Double grados
 
+    SqtProducto codigo
+
     static constraints = {
-
-    codigo maxSize: 30, nullable:true
-    codigo nullable:true
-
+    grados nullable:true
     }
 }

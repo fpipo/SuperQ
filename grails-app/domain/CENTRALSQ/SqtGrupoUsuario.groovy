@@ -10,8 +10,7 @@ class SqtGrupoUsuario {
 
     static constraints = {
         descripcionCorta maxSize: 50
-        descripcionLarga maxSize: 250
+        descripcionLarga maxSize: 250, nullable:true
         enviado nullable:true
-
     }
 }

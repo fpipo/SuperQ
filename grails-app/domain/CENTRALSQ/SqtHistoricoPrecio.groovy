@@ -29,8 +29,22 @@ class SqtHistoricoPrecio {
     SqtProducto producto
 
     static constraints = {
-
-        sugeridoPor maxSize: 2
-        usuarioMod maxSize: 15
+        fechaFin nullable:true
+        precioCompraSiva nullable:true
+        montoIvaPrecioCompra nullable:true
+        aplicaPcompraOferta nullable:true
+        pcompraOfertaCiva nullable:true
+        mIvaPcompraOferta nullable:true
+        precioVentaNormal nullable:true
+        margenUtilidadNormal nullable:true
+        precioVentaSiva nullable:true
+        montoFs nullable:true
+        sugerido nullable:true
+        precioSugerido nullable:true
+        montoIvaPrecioSugerido nullable:true
+        margenUtilidadSugerido nullable:true
+        sugeridoPor maxSize: 2, nullable:true
+        pctVarianza nullable:true
+        montoIsb nullable:true
     }
 }

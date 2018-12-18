@@ -6,5 +6,6 @@ class SqtHora {
 
     static constraints = {
         enviado nullable:true
+        division nullable:true
     }
 }

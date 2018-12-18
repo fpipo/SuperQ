@@ -1,7 +1,6 @@
 package CENTRALSQ
 
 class SqtImpuesto {
-    String id
     String descripcion
     Double valor
     String tipo
@@ -18,14 +17,12 @@ class SqtImpuesto {
     SqtFactura factura
     SqtPoliza poliza
 
-
-    static mapping = {
-        id generator: 'uuid', name:'id'
-    }
     static constraints = {
-        descripcion maxSize: 50
-        tipoMovimiento maxSize: 2
-        tipoDescripcion maxSize: 50
-        descripcionFactura maxSize: 30
+        descripcion maxSize: 50, nullable:true
+        ordenCierre nullable:true
+        tipoImpuesto maxSize: 3, nullable:true
+        tipoMovimiento maxSize: 3, nullable:true
+        tipoDescripcion maxSize: 50, nullable:true
+        descripcionFactura maxSize: 30, nullable:true
     }
 }

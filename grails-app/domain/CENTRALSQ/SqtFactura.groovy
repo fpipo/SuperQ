@@ -34,7 +34,7 @@ class SqtFactura {
     SqtEstado estado
     SqtPais pais
     SqtEstatus estatus
-    SqtUsuario usuarioMod, usuarioAutorizacion
+    SqtUsuario usuarioMod
 
     static hasMany = [detalles:SqtDetalleFactura]
 
@@ -43,20 +43,25 @@ class SqtFactura {
     }
 
     static constraints = {
-        nombre maxSize: 50
-        apaterno maxSize: 50
-        amaterno maxSize: 50
+        nombre maxSize: 50, nullable:true
+        apaterno maxSize: 50, nullable:true
+        amaterno maxSize: 50, nullable:true
         rfc maxSize: 15
-        razonSocial maxSize: 250
-        calle maxSize: 50
-        colonia maxSize: 50
-        municipio maxSize: 50
-        cp maxSize: 5
-        ciudad maxSize: 50
-        comentarios maxSize: 50
-        mensaje maxSize: 250
-        tipoPago maxSize: 100
-        numTarjeta maxSize: 100
+        razonSocial maxSize: 250, nullable:true
+        calle maxSize: 50, nullable:true
+        colonia maxSize: 50, nullable:true
+        municipio maxSize: 50, nullable:true
+        cp maxSize: 5, nullable:true
+        ciudad maxSize: 50, nullable:true
+        estado nullable:true
+        pais nullable:true
+        comentarios maxSize: 50, nullable:true
+        mensaje maxSize: 250, nullable:true
+        tipoPago maxSize: 100, nullable:true
+        numTarjeta maxSize: 100, nullable:true
         enviado nullable:true
+        usoCfdi maxSize: 10, nullable:true
+        serie maxSize: 10, nullable:true
+        metodoPago maxSize: 5, nullable:true
     }
 }

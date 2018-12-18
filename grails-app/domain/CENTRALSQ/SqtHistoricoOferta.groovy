@@ -1,8 +1,6 @@
 package CENTRALSQ
 
 class SqtHistoricoOferta {
-
-
     Date fechaInicio
     Date fechaFin
     Double precioCompraCiva
@@ -11,21 +9,26 @@ class SqtHistoricoOferta {
     Double pctDescuento
     Double montoDescuento
     Double precioVentaSiva
-    Double montoivaPrecioVenta
+    Double montoIvaPrecioVenta
     Double precioVentaCiva
     int aplicaOferta
     Date fechaMod
-    String usuarioMod
+
+    SqtUsuario usuarioMod
     SqtListaPrecios listaPrecios
     SqtProveedor proveedor
     SqtProducto producto
 
-
-
     static constraints = {
-
-        usuarioMod maxSize: 15
-
-
+        fechaFin nullable:true
+        montoivaPrecioCompra nullable:true
+        margenUtilidad nullable:true
+        pctDescuento nullable:true
+        montoDescuento nullable:true
+        precioVentaSiva nullable:true
+        montoIvaPrecioVenta nullable:true
+        precioVentaCiva nullable:true
+        precioCompraCiva nullable:true
+        aplicaOferta nullable:true
     }
 }
