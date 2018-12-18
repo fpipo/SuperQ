@@ -12,7 +12,6 @@ class SqtDetallePedido {
     Double montoFs
     int enviado
 
-    SqtPedido pedido
     SqtTienda tienda
     SqtProducto producto
     SqtImpuesto impuesto

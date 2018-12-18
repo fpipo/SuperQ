@@ -15,7 +15,6 @@ class SqtDetalleParcial {
     String comentarios
     int enviado
 
-    SqtPedido pedido
     SqtTienda tienda
     SqtProducto producto
     SqtFactura numFactura
