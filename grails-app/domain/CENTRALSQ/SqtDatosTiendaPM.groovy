@@ -3,6 +3,7 @@ package CENTRALSQ
 class SqtDatosTiendaPM {
     String territorio
     String gerencia
+    String noTienda
     String colocacion
     String pop
     String operacion
@@ -12,7 +13,8 @@ class SqtDatosTiendaPM {
 
     static constraints = {
         territorio maxSize: 30, nullable: true
-        gerencia maxSize: 30
+        gerencia maxSize: 30, nullable: true
+        noTienda maxSize: 30 , nullable: true
         colocacion maxSize: 30, nullable: true
         pop maxSize: 100, nullable: true
         operacion maxSize: 100, nullable: true

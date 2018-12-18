@@ -12,6 +12,8 @@ class SqtDetalleBitacora {
     static belongsTo = [bitacora:SqtBitacora]
 
     static constraints = {
+        precioVenta nullable: true
+        cantidad nullable: true
         enviado nulluable: true
     }
 }

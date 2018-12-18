@@ -30,5 +30,8 @@ class SqtCompaniaTa {
         pagWeb maxSize: 50, nullable: true
         refCarrie maxSize: 3, nullable: true
         enviado nullable: true
+        grupo nullable: true
+        cadena nullable:true
+
     }
 }

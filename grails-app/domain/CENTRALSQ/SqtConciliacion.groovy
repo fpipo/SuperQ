@@ -15,7 +15,7 @@ class SqtConciliacion {
         String mes
         String dia
         String nombreArchivo
-        Double montoTotal
+        String montoTotal
 
     static constraints = {
         indicadorFila maxSize: 3, nullable: true
@@ -30,5 +30,8 @@ class SqtConciliacion {
         mes maxSize: 2, nullable: true
         dia maxSize: 2, nullable: true
         nombreArchivo maxSize: 17, nullable: true
+        fecha nullable: true
+        montoTotal nullable: true ,maxSize: 12
+
     }
 }

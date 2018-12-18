@@ -17,5 +17,10 @@ class SqtCotizacionPedido {
 
     static constraints = {
         enviado nullable:true
+        precioNormal nullable: true
+        precioNormalSiva nullable: true
+        precioOferta nullable: true
+        precioUnitario nullable: true
+        precioRegalo nullable: true
     }
 }

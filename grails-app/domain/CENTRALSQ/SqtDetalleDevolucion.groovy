@@ -19,7 +19,13 @@ class SqtDetalleDevolucion {
     static  belongsTo = [devolucion:SqtDevolucion]
 
     static constraints = {
-        presentacion maxSize: 50
-        enviado nulluable: true
+        presentacion maxSize: 50 ,nullable: true
+        precioSiva nullable: true
+        ivaPrecio nullable: true
+        cantidadPresentacion nullable: true
+        iva nullable: true
+        motivoDevolucion nullable: true
+        unidadMedida nullable: true
+                enviado nulluable: true
     }
 }

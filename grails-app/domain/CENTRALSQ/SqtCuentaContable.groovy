@@ -8,7 +8,7 @@ class SqtCuentaContable {
 
     static constraints = {
         cuentaContable maxSize: 10
-        descripcion maxSize: 50
+        descripcion maxSize: 50 , nullable: true
         enviado nullable:true
     }
 }

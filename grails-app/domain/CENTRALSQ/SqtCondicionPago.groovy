@@ -5,7 +5,7 @@ class SqtCondicionPago {
     int enviado
 
     static constraints = {
-        descripcion maxSize: 50
+        descripcion maxSize: 50, nullable: true
         enviado nulluable: true
     }
 }

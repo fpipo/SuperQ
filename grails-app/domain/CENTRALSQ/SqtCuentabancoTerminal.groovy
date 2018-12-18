@@ -15,8 +15,11 @@ class SqtCuentabancoTerminal {
 
     static constraints = {
         numCuenta maxSize: 50
-        tipoCuenta maxSize: 15
-        terminal maxSize: 10
+        tipoCuenta maxSize: 15 ,nullable: true
+        terminal maxSize: 10 , nullable: true
         enviado nullable:true
+        tienda nullable: true
+        caja nullable: true
+
     }
 }

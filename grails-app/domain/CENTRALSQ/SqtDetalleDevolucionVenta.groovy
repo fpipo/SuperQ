@@ -28,6 +28,12 @@ class SqtDetalleDevolucionVenta {
     static belongsTo = [devolucion:SqtDevolucionVenta]
 
     static constraints = {
+        descuento nullable: true
+        ivaDescuento nullable: true
+        montoFs nullable: true
+        margenUtilidad nullable: true
+        precioCompraSiva nullable: true
+        montoIsb nullable: true
         enviado nullable:true
     }
 }

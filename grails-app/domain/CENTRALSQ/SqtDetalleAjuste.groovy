@@ -29,6 +29,24 @@ class SqtDetalleAjuste {
     static belongsTo = [ajuste:SqtAjuste]
 
     static constraints = {
+        costoPromedio nullable: true
+        ivaCostoPromedio nullable: true
+        ajusteCosto nullable: true
+        ivaCosto nullable: true
+        totalCosto nullable: true
+        precioVentaSiva nullable: true
+        montoivaPrecioVenta nullable: true
+        montoFS nullable: true
+        precioVentaCiva nullable: true
+        cobroPventaSiva nullable: true
+        iva nullable: true
+        total nullable: true
+        impuesto nullable: true
         enviado nullable:true
+        factura nullable: true
+        poliza nullable: true
+        conCargo nullable:true
+        montoISB nullable: true
+
     }
 }

@@ -13,5 +13,7 @@ class SqtCuentaBanco {
         numcuenta maxSize: 50
         tipocuenta maxSize: 15,nullable: true
         terminal maxSize: 50, nullable: true
+        tienda nullable: true
+        caja nullable: true
     }
 }

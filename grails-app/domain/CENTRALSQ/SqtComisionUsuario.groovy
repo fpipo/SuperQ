@@ -15,5 +15,8 @@ class SqtComisionUsuario {
     static constraints = {
         mes maxSize: 2
         anio maxSize: 4
+        enviado nullable:true
+        bono nullable: true
+
     }
 }

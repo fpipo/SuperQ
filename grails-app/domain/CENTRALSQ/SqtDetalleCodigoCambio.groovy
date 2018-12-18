@@ -5,10 +5,12 @@ class SqtDetalleCodigoCambio {
     int enviado
 
     SqtEstatus estatus
+    SqtTienda tienda
 
     static belongsTo = [cambio:SqtCodigoCambio]
 
     static constraints = {
         enviado nulluable: true
+        fechaAplico nullable: true
     }
 }
