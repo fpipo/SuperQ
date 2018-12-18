@@ -16,6 +16,7 @@ class SqtMovimiento {
     String referenciaTabla
     String criterioTipo
     String movimientoInversa
+    String movimientoReferencia
     int consumible
     int enviado
     SqtAlmacen almacen
@@ -26,15 +27,22 @@ class SqtMovimiento {
         descripcion maxSize: 50, nullable: false
         tipoMovimiento maxSize: 2, nullable: false
         textoCabecera maxSize: 25
-        referenciaCabecera maxSize: 16
-        grupo maxSize: 3
-        nombreSp maxSize: 50
-        criterioOrigen maxSize: 50
-        criterioDestino maxSize: 50
-        archivoDatos maxSize: 30
-        archivoControl maxSize: 30
-        referenciaTabla maxSize: 30
-        criterioTipo maxSize: 50
-        movimientoInversa maxSize: 3
+        referenciaCabecera maxSize: 16, nullable: true
+        grupo maxSize: 3, nullable: true
+        nombreSp maxSize: 50, nullable: true
+        criterioOrigen maxSize: 50, nullable: true
+        criterioDestino maxSize: 50, nullable: true
+        archivoDatos maxSize: 30, nullable: true
+        archivoControl maxSize: 30, nullable: true
+        referenciaTabla maxSize: 30, nullable: true
+        criterioTipo maxSize: 50, nullable: true
+        movimientoInversa maxSize: 3, nullable: true
+        consumible nullable: true
+        orden nullable: true
+        movimientoReferencia nullable: true
+        textoCabecera  nullable: true
+        opcion  nullable: true
+        listaPrecios nullable: true
+        claseDocumento maxSize: 2 , nullable: true
     }
 }

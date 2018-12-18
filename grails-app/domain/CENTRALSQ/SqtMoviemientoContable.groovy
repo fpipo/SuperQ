@@ -15,18 +15,21 @@ class SqtMoviemientoContable {
     String tipoLinea
 
     SqtGrupo grupo
+    SqtNsgementos nsgementos
 
 
     static constraints = {
         cuentaContable maxSize: 30
         idContabilizacion maxSize: 2
-        idIva maxSize: 2
-        texto maxSize: 50
-        referencia maxSize: 18
-        idContabilizacionInverso maxSize: 2
-        tipo maxSize: 1
+        idIva maxSize: 2 , nullable: true
+        texto maxSize: 50 , nullable: true
+        referencia maxSize: 18, nullable: true
+        ordenEnvio  nullable: true
+        idContabilizacionInverso maxSize: 2, nullable: true
+        tipo maxSize: 1, nullable: true
         enviado nullable:true
-        tipoLinea maxSize: 20
+        tipoLinea maxSize: 20, nullable: true
+        nsgementos  nullable: true
 
     }
 }

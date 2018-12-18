@@ -45,5 +45,10 @@ class SqtPedido {
         numRemision maxSize: 30
         archivo maxSize: 30
         enviado nullable:true
+        fechaMod nullable: true
+        fechaCierre nullable: true
+        iva  nullable: true
+        totalFactura  nullable: true
+        
     }
 }

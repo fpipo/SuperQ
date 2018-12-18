@@ -16,5 +16,10 @@ class SqtParamRemesas {
 
 
     static constraints = {
+        tienda  nullable: true
+        maximo nullable: true
+        minimo nullable: true
+        horaMax nullable: true
+        horaMin nullable: true
     }
 }

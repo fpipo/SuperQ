@@ -14,5 +14,7 @@ class SqtMapeoProducto {
 
     static constraints = {
         enviado nullable:true
+        usuarioMod nullable:true
+        fechaMod nullable: true
     }
 }

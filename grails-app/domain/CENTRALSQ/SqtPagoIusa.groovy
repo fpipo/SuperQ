@@ -31,20 +31,29 @@ class SqtPagoIusa {
     SqtCaja caja
 
     static constraints = {
-        contrato maxSize: 150
-        nombreCliente maxSize: 150
-        modalidadPago maxSize: 100
-        equipo maxSize: 50
-        operador maxSize: 20
-        desError maxSize: 150
-        medidor maxSize: 150
-        dependenciaNombre maxSize: 100
-        dependenciaRfc maxSize: 20
-        dependenciaDir maxSize: 500
-        domicilio maxSize: 50
-        poblacion maxSize: 50
-        cuenta maxSize: 50
-        tarifa maxSize: 20
+        resultado  nullable: true
+        folioIusa  nullable: true
+        contrato maxSize: 150, nullable: true
+        nombreCliente maxSize: 150, nullable: true
+        modalidadPago maxSize: 100, nullable: true
+        fechaPago  nullable: true
+        subTotal  nullable: true
+        iva  nullable: true
+        comision nullable: true
+        total  nullable: true
+        equipo maxSize: 50, nullable: true
+        operador maxSize: 20, nullable: true
+        servicioIusa  nullable: true
+        desError maxSize: 150, nullable: true
+        medidor maxSize: 150, nullable: true
+        dependenciaNombre maxSize: 100, nullable: true
+        dependenciaRfc maxSize: 20, nullable: true
+        dependenciaDir maxSize: 500, nullable: true
+        domicilio maxSize: 50, nullable: true
+        poblacion maxSize: 50, nullable: true
+        cuenta maxSize: 50, nullable: true
+        tarifa maxSize: 20, nullable: true
         enviado nullable:true
+        venta  nullable: true
     }
 }

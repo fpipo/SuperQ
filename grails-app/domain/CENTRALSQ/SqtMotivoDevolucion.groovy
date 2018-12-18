@@ -10,7 +10,8 @@ class SqtMotivoDevolucion {
     static constraints = {
         clave maxSize: 3, nullable: false
         descripcion maxSize: 50, nullable: false
-        origen maxSize: 10
+        origen maxSize: 10 , nullable: true
+        ocultar nullable: true
         enviado nullable:true
     }
 }

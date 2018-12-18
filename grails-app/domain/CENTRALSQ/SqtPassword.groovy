@@ -7,7 +7,9 @@ class SqtPassword {
     SqtUsuario usuario
 
     static constraints = {
-        password maxSize: 50
+        password maxSize: 50, nullable: true
+        fechaMod nullable:true
+
 
     }
 }

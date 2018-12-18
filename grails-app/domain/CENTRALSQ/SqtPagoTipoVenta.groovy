@@ -12,7 +12,7 @@ class SqtPagoTipoVenta {
     static constraints = {
         formaPago maxSize: 3
         tipoVenta maxSize: 3
-        cuentaContable maxSize: 30
+        cuentaContable maxSize: 30, nullable: true
         enviado nullable:true
     }
 }
