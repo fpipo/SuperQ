@@ -1,7 +1,6 @@
 package CENTRALSQ
 
-class SqTKardexTa {
-
+class SqtKardexTa {
 
     String autcod
     String telefono

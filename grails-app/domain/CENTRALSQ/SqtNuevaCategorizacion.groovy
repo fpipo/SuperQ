@@ -4,6 +4,6 @@ class SqtNuevaCategorizacion {
     int enviado
 
     static constraints = {
-        enviado nullable:truie
+        enviado nullable:true
     }
 }
