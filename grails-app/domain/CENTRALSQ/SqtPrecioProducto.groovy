@@ -30,6 +30,21 @@ class SqtPrecioProducto {
     SqtProducto producto
 
     static constraints = {
+        fechaFin nullable: true
+        precioCompraSiva nullable: true
+        montoIvaPrecioCompra nullable: true
+        pcompraOfertaSiva nullable: true
+        mIvaPcompraOferta nullable: true
+        precioVentaNormal nullable: true
+        margenUtilidadNormal nullable: true
+        montoFs nullable: true
+        sugerido nullable: true
+        precioSugerido nullable: true
+        montoIvaPrecioSugerido nullable: true
+        margenUtilidadSugerido nullable: true
+        sugeridoPor nullable: true
+        pctVarianza nullable: true
+        montoIsb nullable: true
         enviado nullable:true
     }
 }

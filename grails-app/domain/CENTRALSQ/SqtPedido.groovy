@@ -17,6 +17,7 @@ class SqtPedido {
     Date cierreCajero
     Date cierreCaja
     Date cierreDia
+    String referenciaFrog
     String archivo
     SqtUsuario usuarioMod
     Date fechaMod
@@ -40,15 +41,25 @@ class SqtPedido {
 
     static constraints = {
 
-        comentarios maxSize: 255
-        numFactura maxSize: 30
-        numRemision maxSize: 30
-        archivo maxSize: 30
+        comentarios maxSize: 255, nullable: true
+        numFactura maxSize: 30, nullable: true
+        numRemision maxSize: 30, nullable: true
+        archivo maxSize: 30, nullable: true
         enviado nullable:true
         fechaMod nullable: true
         fechaCierre nullable: true
+        fechaProceso nullable: true
         iva  nullable: true
         totalFactura  nullable: true
-        
+        tipoPedido nullable: true
+        tipoPrecio nullable: true
+        referenciaPedido nullable: true
+        poliza  nullable: true
+        cierreCajero  nullable: true
+        cierreCaja  nullable: true
+        cierreDia nullable: true
+        referenciaFrog maxSize: 30, nullable: true
+
+
     }
 }

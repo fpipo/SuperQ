@@ -12,6 +12,7 @@ class SqtPoliza {
     SqtUsuario usuarioMod
     SqtMovimiento movimiento
     SqtTienda tienda
+    SqtMoneda moneda
 
 
     static hasMany = [detalles:SqtDetallePoliza]
@@ -25,6 +26,6 @@ class SqtPoliza {
         periodo maxSize: 2, nullable: false
         comentarios maxSize: 250
         enviado nullable:true
-
+        moneda nullable:true
     }
 }
