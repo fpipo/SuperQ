@@ -27,7 +27,7 @@ class SqtTienda {
     SqtRuta ruta
     SqtGrupoTienda grupoTienda
     SqtEstatus estatus
-    SqtNsegmentos nsegmentos
+    SqtNsegmento nsegmentos
     SqtGrupoGlasgo grupoGlasgo
 
 

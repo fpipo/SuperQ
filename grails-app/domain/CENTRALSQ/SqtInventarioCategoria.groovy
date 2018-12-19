@@ -1,6 +1,6 @@
 package CENTRALSQ
 
-class SqtInventarioCartegoria {
+class SqtInventarioCategoria {
     Date fechamod
     int enviado
 
@@ -12,8 +12,7 @@ class SqtInventarioCartegoria {
     SqtUsuario usuarioMod
 
     static constraints = {
-        usuarioMod nullable:true
-        enviado nullable:true
+        usuarioMod nullable: true
+        enviado nullable: true
     }
 }
-

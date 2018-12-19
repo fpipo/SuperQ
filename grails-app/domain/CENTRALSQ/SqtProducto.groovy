@@ -41,7 +41,7 @@ class SqtProducto {
     SqtUsuario usuarioMod
     SqtGrupo grupo
     SqtSubgrupo subgrupo
-    SqtUnidadMedida idUnidadMedidaC, unidadMedida
+    SqtUnidadMedida unidadMedida
     SqtEstatus estatus
     SqtClasificacion clasificacion
 
@@ -64,10 +64,9 @@ class SqtProducto {
         ultimoPctVarianza nullable: true
         ultimoPcompraOferta nullable: true
         ultimoMivaRegalo nullable: true
-        idUnidadMedidaC nullable: true
         pctCobro nullable: true
         pctVenta nullable: true
-        prodTerminado
+        prodTerminado nullable: true
         conCargo nullable: true
         completo nullable: true
         paraDevolucion nullable: true
@@ -79,8 +78,6 @@ class SqtProducto {
         inactivoCompra nullable: true
         ventaConExis nullable: true
         esImporte nullable: true
-
-
         contenidoUnidad maxSize: 3, nullable: true
         enviado nullable:true
     }
