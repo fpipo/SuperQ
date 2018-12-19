@@ -45,6 +45,5 @@ class SqtDetalleAjuste {
         poliza nullable: true
         conCargo nullable:true
         montoISB nullable: true
-
     }
 }

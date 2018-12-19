@@ -1,15 +1,12 @@
 package CENTRALSQ
 
 class SqtRemesas {
-
-
     String desTranType
     String folio
     String mensaje
     String operador
     String claveEnvio
     Date fecha
-    Date hora
     String remitente
     String beneficiario
     String emisor
@@ -30,7 +27,6 @@ class SqtRemesas {
     SqtTienda tienda
     SqtTransaccion tranType
     SqtAsignacion asignacion
-
 
     static constraints = {
         folio maxSize: 50

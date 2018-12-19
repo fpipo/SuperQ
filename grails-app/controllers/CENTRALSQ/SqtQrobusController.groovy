@@ -3,70 +3,70 @@ package CENTRALSQ
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
 
-class SqtRedqController {
+class SqtQrobusController {
 
-    SqtRedqService sqtRedqService
+    SqtQrobusService sqtQrobusService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond sqtRedqService.list(params), model:[sqtRedqCount: sqtRedqService.count()]
+        respond sqtQrobusService.list(params), model:[sqtQrobusCount: sqtQrobusService.count()]
     }
 
     def show(Long id) {
-        respond sqtRedqService.get(id)
+        respond sqtQrobusService.get(id)
     }
 
     def create() {
         respond new SqtQrobus(params)
     }
 
-    def save(SqtQrobus sqtRedq) {
-        if (sqtRedq == null) {
+    def save(SqtQrobus sqtQrobus) {
+        if (sqtQrobus == null) {
             notFound()
             return
         }
 
         try {
-            sqtRedqService.save(sqtRedq)
+            sqtQrobusService.save(sqtQrobus)
         } catch (ValidationException e) {
-            respond sqtRedq.errors, view:'create'
+            respond sqtQrobus.errors, view:'create'
             return
         }
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.created.message', args: [message(code: 'sqtRedq.label', default: 'SqtQrobus'), sqtRedq.id])
-                redirect sqtRedq
+                flash.message = message(code: 'default.created.message', args: [message(code: 'sqtQrobus.label', default: 'SqtQrobus'), sqtQrobus.id])
+                redirect sqtQrobus
             }
-            '*' { respond sqtRedq, [status: CREATED] }
+            '*' { respond sqtQrobus, [status: CREATED] }
         }
     }
 
     def edit(Long id) {
-        respond sqtRedqService.get(id)
+        respond sqtQrobusService.get(id)
     }
 
-    def update(SqtQrobus sqtRedq) {
-        if (sqtRedq == null) {
+    def update(SqtQrobus sqtQrobus) {
+        if (sqtQrobus == null) {
             notFound()
             return
         }
 
         try {
-            sqtRedqService.save(sqtRedq)
+            sqtQrobusService.save(sqtQrobus)
         } catch (ValidationException e) {
-            respond sqtRedq.errors, view:'edit'
+            respond sqtQrobus.errors, view:'edit'
             return
         }
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'sqtRedq.label', default: 'SqtQrobus'), sqtRedq.id])
-                redirect sqtRedq
+                flash.message = message(code: 'default.updated.message', args: [message(code: 'sqtQrobus.label', default: 'SqtQrobus'), sqtQrobus.id])
+                redirect sqtQrobus
             }
-            '*'{ respond sqtRedq, [status: OK] }
+            '*'{ respond sqtQrobus, [status: OK] }
         }
     }
 
@@ -76,11 +76,11 @@ class SqtRedqController {
             return
         }
 
-        sqtRedqService.delete(id)
+        sqtQrobusService.delete(id)
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.deleted.message', args: [message(code: 'sqtRedq.label', default: 'SqtQrobus'), id])
+                flash.message = message(code: 'default.deleted.message', args: [message(code: 'sqtQrobus.label', default: 'SqtQrobus'), id])
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
@@ -90,7 +90,7 @@ class SqtRedqController {
     protected void notFound() {
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.not.found.message', args: [message(code: 'sqtRedq.label', default: 'SqtQrobus'), params.id])
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'sqtQrobus.label', default: 'SqtQrobus'), params.id])
                 redirect action: "index", method: "GET"
             }
             '*'{ render status: NOT_FOUND }

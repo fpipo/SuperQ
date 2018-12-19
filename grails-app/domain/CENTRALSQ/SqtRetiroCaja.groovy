@@ -1,14 +1,13 @@
 package CENTRALSQ
 
 class SqtRetiroCaja {
-
     String	caja
     Date	diaOperacion
     Double	cantidad
     String	comentarios
-    Date	cierrecajero
-    Date	cierrecaja
-    Date	cierredia
+    Date	cierreCajero
+    Date	cierreCaja
+    Date	cierreDia
     int	aplica
     int	retiroAlCierre
     Date	fechamod
@@ -23,17 +22,15 @@ class SqtRetiroCaja {
     SqtVenta venta
 
     static constraints = {
-
         caja maxSize: 2
         comentarios maxSize: 500, nullable: true
-        cierrecajero nullable: true
-        cierrecaja nullable: true
-        cierredia nullable: true
+        cierreCajero nullable: true
+        cierreCaja nullable: true
+        cierreDia nullable: true
         aplica nullable: true
         retiroAlCierre nullable: true
         enviado nullable:true
         idTipoRetiro nullable: true
         venta nullable: true
-
     }
 }

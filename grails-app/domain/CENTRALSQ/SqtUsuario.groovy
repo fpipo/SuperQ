@@ -1,7 +1,7 @@
 package CENTRALSQ
 
 class SqtUsuario {
-    String clave
+    String username
     String nombre
     String aPaterno
     String aMaterno
@@ -20,7 +20,7 @@ class SqtUsuario {
     String rfc
     String numInterior
     String numExterior
-    String entidadNac
+    String entidadNacimiento
     String estadoCivil
     String regimen
     Genero genero
@@ -30,6 +30,7 @@ class SqtUsuario {
     Date fechaRegistro
     int noEmpleado
     String foto
+    String password
 
     SqtEstado estado
     SqtPais pais
@@ -38,14 +39,14 @@ class SqtUsuario {
     SqtDeudor  deudor
     SqtCliente cliente
     SqtTelefono telefono
-    SqtPassword password
+    SqtPassword histPassword
 
     static mapping = {
         genero enumType: 'ordinal'
     }
 
     static constraints = {
-        clave maxSize: 15
+        username maxSize: 10
         foto maxSize: 50, nullable: true
         nombre maxSize: 50
         aPaterno maxSize: 50
@@ -63,7 +64,7 @@ class SqtUsuario {
         rfc maxSize: 13, nullable: true
         numInterior maxSize: 10, nullable: true
         numExterior maxSize: 20, nullable: true
-        entidadNac maxSize: 100, nullable: true
+        entidadNacimiento maxSize: 100, nullable: true
         estadoCivil maxSize: 50, nullable: true
         regimen maxSize: 50, nullable: true
         estudios maxSize: 50, nullable: true

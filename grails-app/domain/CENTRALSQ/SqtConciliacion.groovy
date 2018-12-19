@@ -4,7 +4,6 @@ class SqtConciliacion {
         String indicadorFila
         String contador
         Date fecha
-        String hora
         String numAutorizacion
         String telefono
         String carrier
@@ -20,7 +19,6 @@ class SqtConciliacion {
     static constraints = {
         indicadorFila maxSize: 3, nullable: true
         contador maxSize: 6, nullable: true
-        hora maxSize: 6, nullable: 6
         numAutorizacion maxSize: 6, nullable: true
         telefono maxSize: 10, nullable: true
         carrier maxSize: 4, nullable: true
@@ -32,6 +30,5 @@ class SqtConciliacion {
         nombreArchivo maxSize: 17, nullable: true
         fecha nullable: true
         montoTotal nullable: true ,maxSize: 12
-
     }
 }

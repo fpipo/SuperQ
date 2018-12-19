@@ -21,8 +21,7 @@ class SqtProductoPaquete {
 
     SqtListaPrecios listaPrecios
     SqtImpuesto impuesto
-
-
+    
     static constraints = {
         pctDescuento nullable: true
         sugerido nullable: true
@@ -32,6 +31,5 @@ class SqtProductoPaquete {
         precioCompraCiva nullable: true
         montoIsb nullable: true
         enviado nullable:true
-
     }
 }
