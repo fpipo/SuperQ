@@ -5,7 +5,7 @@ class SqtDetalleFactura {
     Double cantidad
     String descripcion
     Double precioUnitario
-    Double subTotal
+    Double subtotal
     Double montoIva
     int unidadesFs
     int imprimir
@@ -26,7 +26,7 @@ class SqtDetalleFactura {
         unidadMedida nullable: true
         descripcion maxSize: 50, nullable: true
         precioUnitario nullable: true
-        subTotal nullable: true
+        subtotal nullable: true
         montoIva nullable: true
         unidadesFs nulluable: true
         imprimir nulluable: true

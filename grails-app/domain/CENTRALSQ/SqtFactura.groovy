@@ -13,7 +13,7 @@ class SqtFactura {
     String municipio
     String cp
     String ciudad
-    Double subTotal
+    Double subtotal
     Double iva
     Double total
     int desglose

@@ -7,7 +7,7 @@ class SqtPagoIusa {
     String nombreCliente
     String modalidadPago
     Date fechaPago
-    Double subTotal
+    Double subtotal
     Double iva
     Double comision
     Double total
@@ -37,7 +37,7 @@ class SqtPagoIusa {
         nombreCliente maxSize: 150, nullable: true
         modalidadPago maxSize: 100, nullable: true
         fechaPago  nullable: true
-        subTotal  nullable: true
+        subtotal  nullable: true
         iva  nullable: true
         comision nullable: true
         total  nullable: true
