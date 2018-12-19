@@ -12,7 +12,9 @@ class SqtProductoProveedor {
 
 
     static constraints = {
-
+        status nullable: true
+        fechaMod nullable: true
+        usuarioMod nullable: true
         enviado nullable:true
 
     }

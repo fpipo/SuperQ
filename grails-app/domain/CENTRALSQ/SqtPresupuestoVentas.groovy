@@ -11,6 +11,14 @@ class SqtPresupuestoVentas {
     Double trnProy
 
     static constraints = {
+        idtienda nullable:true
+        tienda nullable: true
+        anio nullable: true
+        mes nullable: true
+        ventaproy nullable: true
+        tktPromProy nullable: true
+        trnProy nullable: true
         tienda maxSize: 100
+
     }
 }

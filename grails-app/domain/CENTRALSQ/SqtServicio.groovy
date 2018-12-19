@@ -14,6 +14,7 @@ class SqtServicio {
     int porPosicion
     String separador
     String tipoArchivo
+    int idAdeudor
     Double comisionServicio
     int enviado
     String descripcionTicket
@@ -29,10 +30,25 @@ class SqtServicio {
     * */
 
     static constraints = {
+        montoFijo nullable: true
+        contabiliza nullable: true
+        montoEditable nullable: true
+        diaVencimiento nullable: true
+        diaFinComision nullable: true
+        vigencia nullable: true
+        porPosicion nullable: true
         descripcionCorta maxSize: 30
-        separador maxSize: 1
+        separador maxSize: 1, nullable: true
+        acreedor nullable: true
+        idAdeudor nullable: true
+        comisionServicio nullable: true
         tipoArchivo maxSize: 10
         enviado nullable:true
+        descripcionTicket nullable: true
+        productoref nullable: true
+        comisionC nullable: true
+        proveedor nullable: true
+        cliente nullable: true
 
     }
 }

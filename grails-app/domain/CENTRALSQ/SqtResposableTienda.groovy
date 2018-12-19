@@ -9,6 +9,7 @@ class SqtResposableTienda {
     int enviado
 
     static constraints = {
+        fechaFin nullable: true
         enviado nullable:true
 
     }

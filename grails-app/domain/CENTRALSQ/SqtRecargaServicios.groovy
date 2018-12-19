@@ -9,6 +9,9 @@ class SqtRecargaServicios {
 
 
     static constraints = {
+        servicio nullable: true
+        monto nullable: true
+        estatus nullable: true
         enviado nullable:true
 
     }

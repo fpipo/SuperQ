@@ -5,7 +5,7 @@ class SqtTipoCliente {
     int enviado
 
     static constraints = {
-        descripcion maxSize: 50
+        descripcion maxSize: 50, nullable: true
         enviado nullable:true
     }
 }

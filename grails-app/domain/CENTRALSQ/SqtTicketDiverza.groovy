@@ -18,9 +18,11 @@ class SqtTicketDiverza {
         referenciaDiverza maxSize: 500
         tipo maxSize: 3
         archivo maxSize: 500
-        batchId maxSize: 500
-        mensaje maxSize: 8000
+        batchId maxSize: 500, nullable: true
+        mensaje maxSize: 8000, nullable: true
         enviado nullable:true
+        error nullable: true
+        enviado nullable: true
 
     }
 }

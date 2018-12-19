@@ -7,7 +7,7 @@ class SqtTipoRetiro {
 
     static constraints = {
 
-        descripcion maxSize: 50
+        descripcion maxSize: 100
 
     }
 }

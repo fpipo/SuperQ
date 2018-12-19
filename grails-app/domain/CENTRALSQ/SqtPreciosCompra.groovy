@@ -29,6 +29,24 @@ class SqtPreciosCompra {
 
 
     static constraints = {
+
+
+        precioCompra nullable: true
+        precioCompraSiva nullable: true
+        precioOferta nullable: true
+        precioRegalo nullable: true
+        pctIvaOferta nullable: true
+        pctIvaRegalo nullable: true
+        ivaPrecioCompra nullable: true
+        ivaPecioOferta nullable: true
+        ivaPrecioRegalo nullable:true
+        aplicaSugerido nullable: true
+        precioSugerido nullable: true
+        pctVarianza nullable: true
+        aplicaPrecioCompra nullable: true
+        montoFs nullable: true
+        fechaMod nullable: true
+        usuarioMod nullable: true
         enviado nullable:true
 
     }

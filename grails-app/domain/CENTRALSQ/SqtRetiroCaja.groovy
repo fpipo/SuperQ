@@ -13,6 +13,7 @@ class SqtRetiroCaja {
     int	retiroAlCierre
     Date	fechamod
     SqtUsuario	usuarioMod
+    String idTipoRetiro
     int	enviado
 
     SqtTienda tienda
@@ -24,8 +25,15 @@ class SqtRetiroCaja {
     static constraints = {
 
         caja maxSize: 2
-        comentarios maxSize: 500
+        comentarios maxSize: 500, nullable: true
+        cierrecajero nullable: true
+        cierrecaja nullable: true
+        cierredia nullable: true
+        aplica nullable: true
+        retiroAlCierre nullable: true
         enviado nullable:true
+        idTipoRetiro nullable: true
+        venta nullable: true
 
     }
 }

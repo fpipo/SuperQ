@@ -8,6 +8,7 @@ class SqtTiendaTipoVenta {
 
     static constraints = {
         tipoventa maxSize: 3
+        cambioPrecios nullable: true
         enviado nullable:true
     }
 }

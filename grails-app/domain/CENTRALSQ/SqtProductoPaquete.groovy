@@ -25,7 +25,14 @@ class SqtProductoPaquete {
 
 
     static constraints = {
-
+        pctDescuento nullable: true
+        sugerido nullable: true
+        precioSugerido nullable: true
+        margenUtilidadSugerido nullable: true
+        montoFs nullable: true
+        precioCompraSiva nullable: true
+        precioCompraCiva nullable: true
+        montoIsb nullable: true
         enviado nullable:true
 
     }

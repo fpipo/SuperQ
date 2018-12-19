@@ -35,6 +35,22 @@ class SqtPreciosOferta {
     static constraints = {
         usuarioMod maxSize: 15
         enviado nullable:true
+        fechaFin nullable: true
+        montoIvaPrecioCompra nullable: true
+        precioVentaSiva nullable: true
+        margenUtilidadNormal nullable: true
+        pctDescuento nullable: true
+        descuentoSiva nullable: true
+        montoIvaDescuento nullable: true
+        descuentoCiva nullable: true
+        precioVentaSiva nullable: true
+        montoIvaPrecioVenta nullable: true
+        montoFs nullable: true
+        precioVentaCiva nullable:true
+        margenUtilidad nullable:true
+        aplicaOferta nullable: true
+
+
 
 
     }

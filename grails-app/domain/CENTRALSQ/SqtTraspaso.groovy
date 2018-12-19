@@ -33,10 +33,21 @@ class SqtTraspaso {
     static hasMany = [traspaso:SqtDetalleTraspaso]
 
     static constraints = {
+        fechaSurte nullable: true
+        fechaCierre nullable: true
+        estatus nullable: true
         tipotraspaso maxSize: 2
-        tipoConsumo maxSize: 2
-        impresionDestino maxSize: 10
-        comentarios maxSize: 250
+        tipoConsumo maxSize: 2, nullable: true
+        impresion nullable: true
+        impresionDestino maxSize: 10, nullable: true
+        comentarios maxSize: 250,nullable: true
+        numTransaccion nullable: true
+        numTransaccionT nullable: true
+        pctEfectividad nullable: true
+        cantidadNoSolicitada nullable: true
         enviado nullable:true
+        totalSugerido nullable: true
+        totalSurtido nullable: true
+
     }
 }

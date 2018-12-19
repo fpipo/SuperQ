@@ -10,10 +10,12 @@ class SqtProducto {
     int surteBodega
     int aplicaA
     Double contenidoProducto
+    String unidadMedidaContenido
     Double cantidadProducto
     Double ultimoPrecioCompra
     Double ultimoMontoIva
     Double ultimoPctVarianza
+    Double ultimoPcompraOferta
     Double ultimoPcompraRegalo
     Double ultimoMivaRegalo
     Double pctCobro
@@ -27,7 +29,9 @@ class SqtProducto {
     int enviado
     int preinactivo
     int ta
+    int idCompania
     int esImporte
+    String idTiempoAire
     int libreCmp
     int inactivoCompra
     int ventaConExis
@@ -43,8 +47,40 @@ class SqtProducto {
 
     static constraints = {
         descripcionCorta maxSize:50
-        descripcionLarga maxSize: 250
+        descripcionLarga maxSize: 250, nullable: true
         tipo maxSize:3
+        marca nullable: true
+        consignacion nullable: true
+        inventariable nullable: true
+        surteProveedor nullable: true
+        surteBodega nullable: true
+        aplicaA nullable: true
+        contenidoUnidad nullable: true
+        unidadMedidaContenido maxSize: 3 , nullable: true
+        cantidadProducto nullable: true
+        clasificacion nullable: true
+        ultimoPrecioCompra nullable: true
+        ultimoMontoIva nullable: true
+        ultimoPctVarianza nullable: true
+        ultimoPcompraOferta nullable: true
+        ultimoMivaRegalo nullable: true
+        idUnidadMedidaC nullable: true
+        pctCobro nullable: true
+        pctVenta nullable: true
+        prodTerminado
+        conCargo nullable: true
+        completo nullable: true
+        paraDevolucion nullable: true
+        preinactivo nullable: true
+        ta nullable: true
+        idCompania nullable: true
+        idTiempoAire maxSize: 14 , nullable: true
+        libreCmp nullable: true
+        inactivoCompra nullable: true
+        ventaConExis nullable: true
+        esImporte nullable: true
+
+
         contenidoUnidad maxSize: 3, nullable: true
         enviado nullable:true
     }

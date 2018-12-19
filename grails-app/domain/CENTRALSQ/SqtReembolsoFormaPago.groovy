@@ -8,6 +8,7 @@ class SqtReembolsoFormaPago {
 
     static constraints = {
 
+        aplica nullable: true
         enviado nullable:true
     }
 }

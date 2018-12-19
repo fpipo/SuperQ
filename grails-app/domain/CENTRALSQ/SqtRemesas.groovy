@@ -25,9 +25,11 @@ class SqtRemesas {
     String origen
     String tipoIdentificacion
     String numeroIdentificacion
+    Date diaOperacion
 
     SqtTienda tienda
     SqtTransaccion tranType
+    SqtAsignacion asignacion
 
 
     static constraints = {
@@ -39,17 +41,18 @@ class SqtRemesas {
         beneficiario maxSize: 50
         emisor maxSize: 200
         autorizacion maxSize: 50
-        importeEnviar  maxSize: 20
-        comision maxSize: 20
-        total maxSize: 20
-        totalPagar maxSize: 20
-        tc maxSize: 20
+        importeEnviar  maxSize: 20, nullable: true
+        comision maxSize: 20, nullable: true
+        total maxSize: 20, nullable: true
+        totalPagar maxSize: 20, nullable: true
+        tc maxSize: 20, nullable: true
         enviado nullable:true
-        mensajeTicket maxSize: 500
-        caja maxSize: 3
-        origen maxSize: 300
-        tipoIdentificacion maxSize: 50
-        numeroIdentificacion maxSize: 50
-
+        mensajeTicket maxSize: 500, nullable: true
+        caja maxSize: 3, nullable: true
+        origen maxSize: 300, nullable: true
+        tipoIdentificacion maxSize: 50, nullable: true
+        numeroIdentificacion maxSize: 50,nullable: true
+        diaOperacion nullable: true
+        asignacion nullable: true
     }
 }

@@ -23,11 +23,15 @@ class SqtRedq {
     }
 
     static constraints = {
+        fechaAdmin nullable: true
+        fechaNatural nullable: true
         plaza maxSize: 5, nullable: false
-        hora maxSize: 12
+        hora maxSize: 12, nullable: true
+        tienda nullable: true
         idTarjeta maxSize: 20, nullable: false
         autorizacion maxSize: 30, nullable: false
         referencia maxSize: 50, nullable: false
         enviado nullable:true
+        enviadoRedq nullable: true
     }
 }

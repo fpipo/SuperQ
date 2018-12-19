@@ -17,9 +17,14 @@ class SqtRecaudacion {
 
 
     static constraints = {
+        comision nullable: true
+        fechaPago nullable: true
+        estatus nullable: true
         contrato maxSize: 30
-        archivo maxSize: 50
+        archivo maxSize: 50, nullable: true
+        fechaMod nullable: true
+        usuarioMod nullable: true
         enviado nullable:true
-        identificador maxSize: 50
+        identificador maxSize: 50, nullable: true
     }
 }

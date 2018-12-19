@@ -4,6 +4,6 @@ class SqtRoles {
     String nombre
 
     static constraints = {
-        nombre maxSize: 50
+        nombre maxSize: 50, nullable:true
     }
 }

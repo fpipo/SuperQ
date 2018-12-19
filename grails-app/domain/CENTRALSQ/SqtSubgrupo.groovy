@@ -10,7 +10,8 @@ class SqtSubgrupo {
 
 
     static constraints = {
-
+        aplicaFs nullable: true
+        pctCompra nullable: true
         descripcion maxSize: 50
         enviado nullable:true
     }

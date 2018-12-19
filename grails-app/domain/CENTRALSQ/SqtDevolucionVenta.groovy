@@ -14,7 +14,7 @@ class SqtDevolucionVenta {
     Date cierreCajero
     Date cierreCaja
     Date cierreDia
-    Date fechamod
+    Date fechaMod
     String tipoVenta
     int enviado
     Date fecha
