@@ -31,13 +31,12 @@ class SqtProveedor {
     String idCondicionPago
     String idCondicionDefault
 
-
     static constraints = {
         nombre maxSize: 70
         razonSocial maxSize: 70
         base nullable: true
         idTipoProveedor nullable: true
-        rfc maxSize: 16
+        rfc maxSize: 13
         calle maxSize: 50 , nullable: true
         colonia maxSize: 50, nullable: true
         municipio maxSize: 50, nullable: true

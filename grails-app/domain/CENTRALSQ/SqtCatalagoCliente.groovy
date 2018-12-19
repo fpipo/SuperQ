@@ -16,7 +16,7 @@ class SqtCatalagoCliente {
     static constraints = {
         nombre maxSize: 200
         futuro maxSize: 3, nullable: true
-        rfc maxSize: 20, nullable: true
+        rfc maxSize: 13, nullable: true
         usuarioMod nullable: true
         enviado nullable: true
     }

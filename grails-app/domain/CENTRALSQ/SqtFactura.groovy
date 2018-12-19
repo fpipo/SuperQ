@@ -46,7 +46,7 @@ class SqtFactura {
         nombre maxSize: 50, nullable:true
         apaterno maxSize: 50, nullable:true
         amaterno maxSize: 50, nullable:true
-        rfc maxSize: 15
+        rfc maxSize: 13
         razonSocial maxSize: 250, nullable:true
         calle maxSize: 50, nullable:true
         colonia maxSize: 50, nullable:true

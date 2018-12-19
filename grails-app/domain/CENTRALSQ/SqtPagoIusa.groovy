@@ -47,7 +47,7 @@ class SqtPagoIusa {
         desError maxSize: 150, nullable: true
         medidor maxSize: 150, nullable: true
         dependenciaNombre maxSize: 100, nullable: true
-        dependenciaRfc maxSize: 20, nullable: true
+        dependenciaRfc maxSize: 13, nullable: true
         dependenciaDir maxSize: 500, nullable: true
         domicilio maxSize: 50, nullable: true
         poblacion maxSize: 50, nullable: true
