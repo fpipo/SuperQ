@@ -13,7 +13,6 @@ class SqtDetalleFactura {
     Double montoIsb
     String catSat
 
-    SqtFactura factura
     SqtTienda tienda
     SqtUnidadMedida unidadMedida
     SqtImpuesto impuesto
