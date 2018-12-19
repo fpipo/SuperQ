@@ -7,18 +7,18 @@ import org.hibernate.SessionFactory
 
 @Integration
 @Rollback
-class SqtQrobusServiceSpec extends Specification {
+class SqtRedqServiceSpec extends Specification {
 
     SqtRedqService sqtRedqService
     SessionFactory sessionFactory
 
     private Long setupData() {
         // TODO: Populate valid domain instances and return a valid ID
-        //new SqtQrobus(...).save(flush: true, failOnError: true)
-        //new SqtQrobus(...).save(flush: true, failOnError: true)
-        //SqtQrobus sqtRedq = new SqtQrobus(...).save(flush: true, failOnError: true)
-        //new SqtQrobus(...).save(flush: true, failOnError: true)
-        //new SqtQrobus(...).save(flush: true, failOnError: true)
+        //new SqtRedq(...).save(flush: true, failOnError: true)
+        //new SqtRedq(...).save(flush: true, failOnError: true)
+        //SqtRedq sqtRedq = new SqtRedq(...).save(flush: true, failOnError: true)
+        //new SqtRedq(...).save(flush: true, failOnError: true)
+        //new SqtRedq(...).save(flush: true, failOnError: true)
         assert false, "TODO: Provide a setupData() implementation for this generated test suite"
         //sqtRedq.id
     }
@@ -34,7 +34,7 @@ class SqtQrobusServiceSpec extends Specification {
         setupData()
 
         when:
-        List<SqtQrobus> sqtRedqList = sqtRedqService.list(max: 2, offset: 2)
+        List<SqtRedq> sqtRedqList = sqtRedqService.list(max: 2, offset: 2)
 
         then:
         sqtRedqList.size() == 2
@@ -65,7 +65,7 @@ class SqtQrobusServiceSpec extends Specification {
     void "test save"() {
         when:
         assert false, "TODO: Provide a valid instance to save"
-        SqtQrobus sqtRedq = new SqtQrobus()
+        SqtRedq sqtRedq = new SqtRedq()
         sqtRedqService.save(sqtRedq)
 
         then:

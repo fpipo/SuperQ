@@ -19,10 +19,10 @@ class SqtRedqController {
     }
 
     def create() {
-        respond new SqtQrobus(params)
+        respond new SqtRedq(params)
     }
 
-    def save(SqtQrobus sqtRedq) {
+    def save(SqtRedq sqtRedq) {
         if (sqtRedq == null) {
             notFound()
             return
@@ -37,7 +37,7 @@ class SqtRedqController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.created.message', args: [message(code: 'sqtRedq.label', default: 'SqtQrobus'), sqtRedq.id])
+                flash.message = message(code: 'default.created.message', args: [message(code: 'sqtRedq.label', default: 'SqtRedq'), sqtRedq.id])
                 redirect sqtRedq
             }
             '*' { respond sqtRedq, [status: CREATED] }
@@ -48,7 +48,7 @@ class SqtRedqController {
         respond sqtRedqService.get(id)
     }
 
-    def update(SqtQrobus sqtRedq) {
+    def update(SqtRedq sqtRedq) {
         if (sqtRedq == null) {
             notFound()
             return
@@ -63,7 +63,7 @@ class SqtRedqController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'sqtRedq.label', default: 'SqtQrobus'), sqtRedq.id])
+                flash.message = message(code: 'default.updated.message', args: [message(code: 'sqtRedq.label', default: 'SqtRedq'), sqtRedq.id])
                 redirect sqtRedq
             }
             '*'{ respond sqtRedq, [status: OK] }
@@ -80,7 +80,7 @@ class SqtRedqController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.deleted.message', args: [message(code: 'sqtRedq.label', default: 'SqtQrobus'), id])
+                flash.message = message(code: 'default.deleted.message', args: [message(code: 'sqtRedq.label', default: 'SqtRedq'), id])
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
@@ -90,7 +90,7 @@ class SqtRedqController {
     protected void notFound() {
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.not.found.message', args: [message(code: 'sqtRedq.label', default: 'SqtQrobus'), params.id])
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'sqtRedq.label', default: 'SqtRedq'), params.id])
                 redirect action: "index", method: "GET"
             }
             '*'{ render status: NOT_FOUND }

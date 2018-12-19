@@ -5,7 +5,7 @@ import grails.testing.web.controllers.ControllerUnitTest
 import grails.validation.ValidationException
 import spock.lang.*
 
-class SqtQrobusControllerSpec extends Specification implements ControllerUnitTest<SqtRedqController>, DomainUnitTest<SqtQrobus> {
+class SqtRedqControllerSpec extends Specification implements ControllerUnitTest<SqtRedqController>, DomainUnitTest<SqtRedq> {
 
     def populateValidParams(params) {
         assert params != null
@@ -52,7 +52,7 @@ class SqtQrobusControllerSpec extends Specification implements ControllerUnitTes
     void "Test the save action correctly persists"() {
         given:
         controller.sqtRedqService = Mock(SqtRedqService) {
-            1 * save(_ as SqtQrobus)
+            1 * save(_ as SqtRedq)
         }
 
         when:"The save action is executed with a valid instance"
@@ -60,7 +60,7 @@ class SqtQrobusControllerSpec extends Specification implements ControllerUnitTes
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'POST'
         populateValidParams(params)
-        def sqtRedq = new SqtQrobus(params)
+        def sqtRedq = new SqtRedq(params)
         sqtRedq.id = 1
 
         controller.save(sqtRedq)
@@ -73,7 +73,7 @@ class SqtQrobusControllerSpec extends Specification implements ControllerUnitTes
     void "Test the save action with an invalid instance"() {
         given:
         controller.sqtRedqService = Mock(SqtRedqService) {
-            1 * save(_ as SqtQrobus) >> { SqtQrobus sqtRedq ->
+            1 * save(_ as SqtRedq) >> { SqtRedq sqtRedq ->
                 throw new ValidationException("Invalid instance", sqtRedq.errors)
             }
         }
@@ -81,7 +81,7 @@ class SqtQrobusControllerSpec extends Specification implements ControllerUnitTes
         when:"The save action is executed with an invalid instance"
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'POST'
-        def sqtRedq = new SqtQrobus()
+        def sqtRedq = new SqtRedq()
         controller.save(sqtRedq)
 
         then:"The create view is rendered again with the correct model"
@@ -105,14 +105,14 @@ class SqtQrobusControllerSpec extends Specification implements ControllerUnitTes
     void "Test the show action with a valid id"() {
         given:
         controller.sqtRedqService = Mock(SqtRedqService) {
-            1 * get(2) >> new SqtQrobus()
+            1 * get(2) >> new SqtRedq()
         }
 
         when:"A domain instance is passed to the show action"
         controller.show(2)
 
         then:"A model is populated containing the domain instance"
-        model.sqtRedq instanceof SqtQrobus
+        model.sqtRedq instanceof SqtRedq
     }
 
     void "Test the edit action with a null id"() {
@@ -131,14 +131,14 @@ class SqtQrobusControllerSpec extends Specification implements ControllerUnitTes
     void "Test the edit action with a valid id"() {
         given:
         controller.sqtRedqService = Mock(SqtRedqService) {
-            1 * get(2) >> new SqtQrobus()
+            1 * get(2) >> new SqtRedq()
         }
 
         when:"A domain instance is passed to the show action"
         controller.edit(2)
 
         then:"A model is populated containing the domain instance"
-        model.sqtRedq instanceof SqtQrobus
+        model.sqtRedq instanceof SqtRedq
     }
 
 
@@ -156,7 +156,7 @@ class SqtQrobusControllerSpec extends Specification implements ControllerUnitTes
     void "Test the update action correctly persists"() {
         given:
         controller.sqtRedqService = Mock(SqtRedqService) {
-            1 * save(_ as SqtQrobus)
+            1 * save(_ as SqtRedq)
         }
 
         when:"The save action is executed with a valid instance"
@@ -164,7 +164,7 @@ class SqtQrobusControllerSpec extends Specification implements ControllerUnitTes
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'PUT'
         populateValidParams(params)
-        def sqtRedq = new SqtQrobus(params)
+        def sqtRedq = new SqtRedq(params)
         sqtRedq.id = 1
 
         controller.update(sqtRedq)
@@ -177,7 +177,7 @@ class SqtQrobusControllerSpec extends Specification implements ControllerUnitTes
     void "Test the update action with an invalid instance"() {
         given:
         controller.sqtRedqService = Mock(SqtRedqService) {
-            1 * save(_ as SqtQrobus) >> { SqtQrobus sqtRedq ->
+            1 * save(_ as SqtRedq) >> { SqtRedq sqtRedq ->
                 throw new ValidationException("Invalid instance", sqtRedq.errors)
             }
         }
@@ -185,7 +185,7 @@ class SqtQrobusControllerSpec extends Specification implements ControllerUnitTes
         when:"The save action is executed with an invalid instance"
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'PUT'
-        controller.update(new SqtQrobus())
+        controller.update(new SqtRedq())
 
         then:"The edit view is rendered again with the correct model"
         model.sqtRedq != null

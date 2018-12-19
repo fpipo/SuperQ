@@ -22,7 +22,7 @@ class SqtServicio {
 
     SqtEstatus estatus
     SqtAcreedor acreedor
-    SqtProducto productoref
+    SqtProducto producto
     SqtProveedor proveedor
     SqtCliente cliente
 
@@ -45,10 +45,9 @@ class SqtServicio {
         tipoArchivo maxSize: 10
         enviado nullable:true
         descripcionTicket nullable: true
-        productoref nullable: true
+        producto nullable: true
         comisionC nullable: true
         proveedor nullable: true
         cliente nullable: true
-
     }
 }

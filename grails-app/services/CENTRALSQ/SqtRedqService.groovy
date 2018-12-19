@@ -2,17 +2,17 @@ package CENTRALSQ
 
 import grails.gorm.services.Service
 
-@Service(SqtQrobus)
+@Service(SqtRedq)
 interface SqtRedqService {
 
-    SqtQrobus get(Serializable id)
+    SqtRedq get(Serializable id)
 
-    List<SqtQrobus> list(Map args)
+    List<SqtRedq> list(Map args)
 
     Long count()
 
     void delete(Serializable id)
 
-    SqtQrobus save(SqtQrobus sqtRedq)
+    SqtRedq save(SqtRedq sqtRedq)
 
 }
