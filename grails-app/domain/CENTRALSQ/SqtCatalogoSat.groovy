@@ -4,6 +4,7 @@ class SqtCatalogoSat {
     int claveProdSer
     String descripcion
     int enviado
+
     SqtEstatus estatus
     SqtGrupo grupo
 

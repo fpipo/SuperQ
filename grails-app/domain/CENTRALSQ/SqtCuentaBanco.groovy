@@ -1,8 +1,8 @@
 package CENTRALSQ
 
 class SqtCuentaBanco {
-    String numcuenta
-    String tipocuenta
+    String numCuenta
+    String tipoCuenta
     String terminal
 
     SqtBanco banco
@@ -10,8 +10,8 @@ class SqtCuentaBanco {
     SqtCaja caja
 
     static constraints = {
-        numcuenta maxSize: 50
-        tipocuenta maxSize: 15,nullable: true
+        numCuenta maxSize: 50
+        tipoCuenta maxSize: 15,nullable: true
         terminal maxSize: 50, nullable: true
         tienda nullable: true
         caja nullable: true

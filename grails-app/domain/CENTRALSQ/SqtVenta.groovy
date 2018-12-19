@@ -3,7 +3,6 @@ package CENTRALSQ
 class SqtVenta {
     String id
     Date diaOperacion
-    String caja
     Double ivaNeto
     Double totalNeto
     Double subtotal
@@ -16,16 +15,15 @@ class SqtVenta {
     String ticket
     String tipoventa
     String comentarios
-    Date cierrecajero
-    Date cierrecaja
-    Date cierredia
+    Date cierreCajero
+    Date cierreCaja
+    Date cierreDia
     SqtUsuario usuarioMod
     Date fechamod
     int enviado
     Date fecha
 
     SqtTienda tienda
-
     SqtListaPrecios listaPrecios
     SqtEstatus estatus
     SqtFactura factura
@@ -36,12 +34,21 @@ class SqtVenta {
         id generator: 'uuid', name:'id'
     }
     static constraints = {
-        caja maxSize:3
-        ticket maxSize: 2
+        ivaNeto nullable: true
+        totalNeto nullable: true
+        subtotal nullable: true
+        iva nullable: true
+        descuento nullable: true
+        totalProducto nullable: true
+        totalServicio nullable: true
+        ticket maxSize: 2, nullable: true
         tipoventa maxSize: 3
-        comentarios maxSize: 3000
+        comentarios maxSize: 3000, nullable: true
+        cierreCajero nullable: true
+        cierreDia nullable: true
+        cierreCaja nullable: true
         enviado nullable:true
-
-
+        factura nullable: true
+        fecha nullable: true
     }
 }
