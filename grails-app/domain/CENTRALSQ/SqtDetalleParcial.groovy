@@ -33,6 +33,6 @@ class SqtDetalleParcial {
         impuesto nullable: true
         totalFactura nullable: true
         comentarios maxSize: 255
-        enviado nullable:true
+        enviado nullable: true
     }
 }
