@@ -17,7 +17,6 @@ class SqtPreciosCompra {
     Double precioSugerido
     Double pctVarianza
     int aplicaPrecioCompra
-    Double montoFs
     Date fechaMod
     SqtUsuario usuarioMod
     int enviado
@@ -44,7 +43,6 @@ class SqtPreciosCompra {
         precioSugerido nullable: true
         pctVarianza nullable: true
         aplicaPrecioCompra nullable: true
-        montoFs nullable: true
         fechaMod nullable: true
         usuarioMod nullable: true
         enviado nullable:true

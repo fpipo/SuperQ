@@ -7,7 +7,6 @@ class SqtVoucher {
     Double monto
     String autcod
     Date fecha
-    String hora
     String venc
     String nombre
     String apellido
@@ -31,7 +30,7 @@ class SqtVoucher {
 
     SqtTienda tienda
     SqtAfiliacion afiliacion
-    SqtVenta referencia
+    SqtVenta venta
     SqtEstatus estatus
     SqtMovimiento movimiento
 
@@ -43,7 +42,6 @@ class SqtVoucher {
         tarjeta maxSize: 16,nullable: true
         emisor maxSize: 30,nullable: true
         autcod maxSize: 50
-        hora maxSize: 12
         venc maxSize: 5
         nombre maxSize: 30, nullable: false
         apellido maxSize: 30, nullable: false

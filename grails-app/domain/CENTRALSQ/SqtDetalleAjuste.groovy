@@ -10,7 +10,6 @@ class SqtDetalleAjuste {
     Double totalCosto
     Double precioVentaSiva
     Double montoivaPrecioVenta
-    Double montoFS
     Double precioVentaCiva
     Double cobroPventaSiva
     Double iva
@@ -36,7 +35,6 @@ class SqtDetalleAjuste {
         totalCosto nullable: true
         precioVentaSiva nullable: true
         montoivaPrecioVenta nullable: true
-        montoFS nullable: true
         precioVentaCiva nullable: true
         cobroPventaSiva nullable: true
         iva nullable: true

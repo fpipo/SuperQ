@@ -11,7 +11,6 @@ class SqtLogServicel {
     String tipo
     String codigoRespuesta
     String codAutorizacion
-    String identificadorPOS
     Date fechaSolicitud
     Date fechaRespuestaServicel
     String saldoInicial
@@ -21,6 +20,7 @@ class SqtLogServicel {
 
     SqtTienda tienda
     SqtEstatus estatus
+    SqtVenta ventaenta
 
     static constraints = {
         diaOperacion nullable: true

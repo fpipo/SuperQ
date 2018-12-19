@@ -7,7 +7,6 @@ class SqtDetalleFactura {
     Double precioUnitario
     Double subTotal
     Double montoIva
-    Double montoFs
     int unidadesFs
     int imprimir
     int enviado
@@ -29,7 +28,6 @@ class SqtDetalleFactura {
         precioUnitario nullable: true
         subTotal nullable: true
         montoIva nullable: true
-        montoFs nullable: true
         unidadesFs nulluable: true
         imprimir nulluable: true
         catSat maxSize: 50, nullable: true

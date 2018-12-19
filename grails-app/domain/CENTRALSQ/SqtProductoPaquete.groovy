@@ -14,7 +14,6 @@ class SqtProductoPaquete {
     Double margenUtilidadSugerido
     Double precioVentaSiva
     Double montoIva
-    Double montoFs
     Double precioCompraSiva
     Double precioCompraCiva
     int enviado
@@ -29,7 +28,6 @@ class SqtProductoPaquete {
         sugerido nullable: true
         precioSugerido nullable: true
         margenUtilidadSugerido nullable: true
-        montoFs nullable: true
         precioCompraSiva nullable: true
         precioCompraCiva nullable: true
         montoIsb nullable: true

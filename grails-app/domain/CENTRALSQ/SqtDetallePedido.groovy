@@ -9,7 +9,6 @@ class SqtDetallePedido {
     String codigoCaja
     String presentacion
     String archivo
-    Double montoFs
     int enviado
 
     SqtTienda tienda
@@ -26,7 +25,6 @@ class SqtDetallePedido {
         codigoCaja maxSize: 30, nullable: true
         presentacion maxSize: 10, nullable: true
         archivo maxSize: 30, nullable: true
-        montoFs nullable: true
         impuesto nullable: true
         enviado nullable:true
     }

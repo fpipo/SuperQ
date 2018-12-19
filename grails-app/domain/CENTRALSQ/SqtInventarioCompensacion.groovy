@@ -12,7 +12,6 @@ class SqtInventarioCompensacion {
     Double totalCosto
     Double precioVentaSiva
     Double ivaPrecioVenta
-    Double montoFs
     Double precioVentaCiva
     Double cobroPventaSiva
     Double iva
@@ -37,7 +36,6 @@ class SqtInventarioCompensacion {
         totalCosto nullable:true
         precioVentaSiva nullable:true
         ivaPrecioVenta nullable:true
-        montoFs nullable:true
         precioVentaCiva nullable:true
         cobroPventaSiva nullable:true
         iva nullable:true

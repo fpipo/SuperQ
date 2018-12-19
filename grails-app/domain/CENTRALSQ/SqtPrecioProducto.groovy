@@ -12,7 +12,6 @@ class SqtPrecioProducto {
     Double margenUtilidadNormal
     Double precioVentaSiva
     Double montoIvaPrecioVenta
-    Double montoFs
     Double precioVentaCiva
     int sugerido
     Double precioSugerido
@@ -37,7 +36,6 @@ class SqtPrecioProducto {
         mIvaPcompraOferta nullable: true
         precioVentaNormal nullable: true
         margenUtilidadNormal nullable: true
-        montoFs nullable: true
         sugerido nullable: true
         precioSugerido nullable: true
         montoIvaPrecioSugerido nullable: true

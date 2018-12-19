@@ -3,7 +3,6 @@ package CENTRALSQ
 class SqtKardex {
     String id
     Date fecha
-    String hora
     Double existenciaInical
     Double cantidad
     Double existenciaFinal
@@ -15,7 +14,6 @@ class SqtKardex {
     Double saldo
     Double precioVentaSiva
     Double montoIvaPrecioVenta
-    Double montoFs
     Double margenUtilidad
     Date fechaMod
     int enviado
@@ -36,7 +34,6 @@ class SqtKardex {
     }
 
     static constraints = {
-        hora maxSize: 12
         existenciaInical nullable:true
         cantidad nullable:true
         existenciaFinal nullable:true
@@ -51,7 +48,6 @@ class SqtKardex {
         factura nullable:true
         impuesto nullable:true
         poliza nullable:true
-        montoFs nullable:true
         margenUtilidad nullable:true
         comentarios maxSize: 1000
         enviado nullable:true

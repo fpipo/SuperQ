@@ -12,7 +12,6 @@ class SqtDetalleDevolucionVenta {
     Double total
     Double descuento
     Double ivaDescuento
-    Double montoFs
     Double margenUtilidad
     Double precioCompraSiva
     int enviado
@@ -30,7 +29,6 @@ class SqtDetalleDevolucionVenta {
     static constraints = {
         descuento nullable: true
         ivaDescuento nullable: true
-        montoFs nullable: true
         margenUtilidad nullable: true
         precioCompraSiva nullable: true
         montoIsb nullable: true

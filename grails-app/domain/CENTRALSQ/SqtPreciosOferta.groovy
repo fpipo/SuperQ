@@ -17,7 +17,6 @@ class SqtPreciosOferta {
     Double descuentoCiva
     Double precioVentaSiva
     Double montoIvaPrecioVenta
-    Double montoFs
     Double precioVentaCiva
     Double margenUtilidad
     int aplicaOferta
@@ -45,7 +44,6 @@ class SqtPreciosOferta {
         descuentoCiva nullable: true
         precioVentaSiva nullable: true
         montoIvaPrecioVenta nullable: true
-        montoFs nullable: true
         precioVentaCiva nullable:true
         margenUtilidad nullable:true
         aplicaOferta nullable: true

@@ -11,7 +11,6 @@ class SqtDetalleVentaProducto {
     Double total
     Double descuento
     Double ivaDescuento
-    Double montoFs
     Double margenUtilidad
     Double precioCompraSiva
     int enviado
@@ -29,7 +28,6 @@ class SqtDetalleVentaProducto {
         descuento nullable: true
         ivaDescuento nullable: true
         usuarioAutorizacion nullable: true
-        montoFs nullable: true
         impuesto nullable: true
         poliza nullable: true
         margenUtilidad nullable: true

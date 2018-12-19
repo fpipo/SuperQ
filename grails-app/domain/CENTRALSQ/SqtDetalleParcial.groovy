@@ -10,7 +10,6 @@ class SqtDetalleParcial {
     Double total
     Date fechaAplicacion
     int impresion
-    Double montoFs
     Double totalFactura
     String comentarios
     int enviado
@@ -31,7 +30,6 @@ class SqtDetalleParcial {
         numFactura nullable: true
         numRemision nullable: true
         poliza nullable: true
-        montoFs nullable: true
         impuesto nullable: true
         totalFactura nullable: true
         comentarios maxSize: 255

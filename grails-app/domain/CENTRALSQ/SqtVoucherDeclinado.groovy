@@ -6,7 +6,6 @@ class SqtVoucherDeclinado {
     Double monto
     String autcod
     Date fecha
-    String hora
     String venc
     String nombre
     String apellido
@@ -27,7 +26,7 @@ class SqtVoucherDeclinado {
     SqtVoucher voucher
     SqtTienda tienda
     SqtAfiliacion afiliacion
-    SqtVenta referencia
+    SqtVenta venta
     SqtEstatus estatus
     SqtMovimiento movimiento
     SqtTransaccion transaccion
@@ -35,7 +34,6 @@ class SqtVoucherDeclinado {
     static constraints = {
         tarjeta maxSize: 16,nullable: true
         emisor maxSize: 30,nullable: true
-        hora maxSize: 12
         venc maxSize: 5
         nombre maxSize: 30
         apellido maxSize: 30
