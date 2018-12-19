@@ -14,7 +14,6 @@ class SqtDetallePoliza {
     String referenciaCabeceraOriginal
     int enviado
 
-    SqtPoliza poliza
     SqtTienda tienda
     SqtMovimiento movimiento
     SqtImpuesto impuesto
