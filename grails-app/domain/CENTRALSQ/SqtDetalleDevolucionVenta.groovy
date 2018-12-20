@@ -19,7 +19,6 @@ class SqtDetalleDevolucionVenta {
 
     SqtTienda tienda
     SqtProducto producto
-    SqtProducto codigo
     SqtMotivoDevolucion motivoDevolucion
     SqtImpuesto impuesto
     SqtPoliza poliza

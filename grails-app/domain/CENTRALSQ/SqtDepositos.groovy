@@ -17,5 +17,7 @@ class SqtDepositos {
         referencia maxSize: 12
         comentarios maxSize: 250, nullable: true
         enviado nulluable: true
+        fechaDeposito nullable: true
+        fechaMod nullable: true
     }
 }

@@ -8,7 +8,6 @@ class SqtDetalleTraspaso {
     Double ivaCostoPromedio
     int sugerido
     int enviado
-    int redQline
     Double ventaSemana
 
     SqtTienda tienda
@@ -26,7 +25,6 @@ class SqtDetalleTraspaso {
         costoPromedio nullable: true
         ivaCostoPromedio nullable: true
         sugerido nullable: true
-        redQline nullable: true
         ventaSemana nullable: true
     }
 }

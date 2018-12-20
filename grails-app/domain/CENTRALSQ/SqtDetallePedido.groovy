@@ -26,5 +26,6 @@ class SqtDetallePedido {
         presentacion maxSize: 10, nullable: true
         impuesto nullable: true
         enviado nullable:true
+        archivo nullable: true
     }
 }

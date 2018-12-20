@@ -12,6 +12,7 @@ class SqtDetalleIusa {
     static constraints = {
         monto nullable: true
         iva nullable:  true
+        concepto maxSize: 150
         referencia maxSize: 150, nullable: true
     }
 }

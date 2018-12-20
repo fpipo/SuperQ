@@ -18,7 +18,7 @@ class SqtDetallePoliza {
     SqtMovimiento movimiento
     SqtImpuesto impuesto
     SqtCondicionPago condicionPago
-    SqtSegmentos segmentos
+    SqtNsegmento segmento
     SqtGrupo grupo
 
     static belongsTo = [polizas: SqtPoliza]
@@ -30,7 +30,7 @@ class SqtDetallePoliza {
         importe nullable: true
         secuencia nulluable: true
         condicionPago nullable: true
-        segmentos nullable: true
+        segmento nullable: true
         division maxSize: 4, nullable: true
         centroCostos maxSize: 30, nullable: true
         textoCabecera maxSize: 25, nullable: true
