@@ -8,10 +8,9 @@ class SqtTicket {
 
     SqtVenta operacion
     SqtTienda tienda
-    SqtVenta Venta
+    SqtVenta venta
 
     static constraints = {
-
        operacion nullable: true
         tipo maxSize: 3
         diaOperacion nullable: true
