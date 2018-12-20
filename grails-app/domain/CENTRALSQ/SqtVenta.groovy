@@ -28,7 +28,7 @@ class SqtVenta {
     SqtEstatus estatus
     SqtFactura factura
 
-    static hasMany = [traspasoP:SqtDetalleVentaProducto, traspasoS:SqtDetalleVentaServicio]
+    static hasMany = [ventaP:SqtDetalleVentaProducto, ventaS:SqtDetalleVentaServicio]
 
     static mapping = {
         id generator: 'uuid', name:'id'

@@ -5,6 +5,7 @@ class SqtEstatusCierre {
     Date fechaInicio
 
     static constraints = {
+        fechaInicio nullable: true
     }
 }
 

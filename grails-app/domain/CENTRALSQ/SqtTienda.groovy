@@ -13,7 +13,7 @@ class SqtTienda {
     String centroCostos
     Date fechaApertura
     String serie
-    String usuarioMod
+    SqtUsuario usuarioMod
     Date fechaMod
     int enviado
     String cc
@@ -51,7 +51,6 @@ class SqtTienda {
         fechaApertura nullable: true
         serie maxSize: 5, nullable:true
         cc maxSize: 3, nullable: true
-        usuarioMod maxSize: 15
         enviado nullable: true
         idServidor nullable: true
         grupoGlasgo nullable: true

@@ -5,7 +5,6 @@ class SqtImpuestoProducto {
     Double monto
     int aplica
     int iva
-    int fs
     int ivaCompra
     int enviado
     int isb
@@ -18,7 +17,6 @@ class SqtImpuestoProducto {
         monto nullable:true
         aplica nullable:true
         iva nullable:true
-        fs nullable:true
         ivaCompra nullable:true
         enviado nullable:true
         isb nullable:true

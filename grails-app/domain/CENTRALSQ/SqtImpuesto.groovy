@@ -14,7 +14,6 @@ class SqtImpuesto {
     SqtTienda tienda
     SqtUsuario usuario
     SqtEstatus estatus
-    SqtFactura factura
     SqtPoliza poliza
 
     static constraints = {

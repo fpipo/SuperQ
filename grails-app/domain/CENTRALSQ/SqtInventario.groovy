@@ -10,7 +10,6 @@ class SqtInventario {
     String comentarios
     int opcion
     Date fechaMod
-    String usuarioMod
     int enviado
 
     SqtTienda tienda

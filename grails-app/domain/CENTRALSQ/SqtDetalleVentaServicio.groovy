@@ -21,7 +21,7 @@ class SqtDetalleVentaServicio {
     SqtUsuario usuarioMod
     SqtPoliza poliza
 
-    static belongsTo = [traspasoS: SqtVenta]
+    static belongsTo = [ventaS: SqtVenta]
 
     static constraints = {
         contrato maxSize: 30

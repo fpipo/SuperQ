@@ -22,7 +22,7 @@ class SqtDetalleVentaProducto {
     SqtImpuesto impuesto
     SqtPoliza poliza
 
-    static belongsTo = [traspasoP: SqtVenta]
+    static belongsTo = [ventaP: SqtVenta]
 
     static constraints = {
         descuento nullable: true

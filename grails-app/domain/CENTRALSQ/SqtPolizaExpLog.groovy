@@ -5,7 +5,7 @@ class SqtPolizaExpLog {
     String tipoPoliza
     int error
     String descripcion
-    String usuarioMod
+    SqtUsuario usuarioMod
     Date fechaMod
 
     SqtPoliza poliza
@@ -15,6 +15,5 @@ class SqtPolizaExpLog {
     static constraints = {
         tipoPoliza maxSize: 3
         descripcion maxSize: 255
-        usuarioMod maxSize: 30
     }
 }
