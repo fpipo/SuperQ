@@ -12,7 +12,8 @@ class SqtAsignacion {
     SqtUsuario usuarioMod
 
     static constraints = {
-        comentarios maxSize: 250
+        comentarios maxSize: 250, nullable: true
         enviado nullable:true
+        cantidadInicial nullable: true
     }
 }
