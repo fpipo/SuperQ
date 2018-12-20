@@ -13,5 +13,6 @@ class SqtClasificacion {
         cuentaContable maxSize: 30, nullable:true
         enviado nuluable: true
         grupo nullable: true
+        segmento nullable: true
     }
 }

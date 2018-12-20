@@ -6,8 +6,8 @@ class SqtBanco {
     String numCuenta
 
     static constraints = {
-        clave maxSize: 3, nullable: false
-        descripcion maxSize: 50, nullable: false
-        numCuenta maxSize: 20, nullable: false
+        clave maxSize: 3
+        descripcion maxSize: 50
+        numCuenta maxSize: 20
     }
 }

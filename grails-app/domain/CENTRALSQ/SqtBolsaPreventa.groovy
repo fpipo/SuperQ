@@ -10,6 +10,7 @@ class SqtBolsaPreventa {
     SqtUsuario usuarioMod
 
     static constraints = {
-        tipoPedido maxSize: 1, nullable: false
+        tipoPedido maxSize: 1
+        importeSurtido nullable: true
     }
 }

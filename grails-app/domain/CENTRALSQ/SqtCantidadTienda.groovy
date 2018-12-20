@@ -17,6 +17,5 @@ class SqtCantidadTienda {
         aplica nullable:true
         enviado nuluable: true
         sobrante nullable: true
-
     }
 }

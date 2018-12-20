@@ -32,6 +32,5 @@ class SqtCompaniaTa {
         enviado nullable: true
         grupo nullable: true
         cadena nullable:true
-
     }
 }

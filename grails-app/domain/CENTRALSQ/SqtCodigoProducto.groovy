@@ -1,6 +1,7 @@
 package CENTRALSQ
 
 class SqtCodigoProducto {
+    int base
     String codigo
     int enviado
 

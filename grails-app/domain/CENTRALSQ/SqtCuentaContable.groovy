@@ -7,7 +7,7 @@ class SqtCuentaContable {
     int enviado
 
     static constraints = {
-        cuentaContable maxSize: 10
+        cuentaContable maxSize: 30
         descripcion maxSize: 50 , nullable: true
         enviado nullable:true
     }

@@ -1,6 +1,7 @@
 package CENTRALSQ
 
 class SqtConfiguracion {
+    String clave
     String	descripcion
     String	valor
     Date	fechaMod
@@ -9,6 +10,7 @@ class SqtConfiguracion {
     SqtUsuario usuarioMod
 
     static constraints = {
+        clave maxSize: 5
         descripcion maxSize: 50
         valor maxSize: 250
         enviado nulluable: true
