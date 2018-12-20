@@ -12,6 +12,7 @@ class SqtTicketDiverza {
 
     SqtTienda tienda
     SqtEstatus estatus
+    SqtVenta venta
 
     static constraints = {
         referenciaDiverza maxSize: 500

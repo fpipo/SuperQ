@@ -11,6 +11,5 @@ class SqtResposableTienda {
     static constraints = {
         fechaFin nullable: true
         enviado nullable:true
-
     }
 }

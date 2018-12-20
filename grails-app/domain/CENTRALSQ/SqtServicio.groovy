@@ -25,9 +25,7 @@ class SqtServicio {
     SqtProducto producto
     SqtProveedor proveedor
     SqtCliente cliente
-
-    /*SqtAdeudor  no esta esta tabla
-    * */
+    SqtDeudor deudor
 
     static constraints = {
         montoFijo nullable: true
@@ -49,5 +47,6 @@ class SqtServicio {
         comisionC nullable: true
         proveedor nullable: true
         cliente nullable: true
+        deudor nullable: true
     }
 }

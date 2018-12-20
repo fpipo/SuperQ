@@ -2,7 +2,7 @@ package CENTRALSQ
 
 class SqtSegmentos {
     String descripcion
-   int enviado
+    int enviado
 
     static constraints = {
         descripcion maxSize: 250

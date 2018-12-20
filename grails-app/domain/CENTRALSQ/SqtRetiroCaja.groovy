@@ -30,7 +30,7 @@ class SqtRetiroCaja {
         aplica nullable: true
         retiroAlCierre nullable: true
         enviado nullable:true
-        idTipoRetiro nullable: true
+        tipoRetiro nullable: true
         venta nullable: true
     }
 }

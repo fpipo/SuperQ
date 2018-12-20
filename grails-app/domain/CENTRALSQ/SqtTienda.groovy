@@ -27,10 +27,8 @@ class SqtTienda {
     SqtRuta ruta
     SqtGrupoTienda grupoTienda
     SqtEstatus estatus
-    SqtNsegmento nsegmentos
+    SqtSegmentos segmento
     SqtGrupoGlasgo grupoGlasgo
-
-
 
     static mapping = {
         id generator: 'uuid', name:'id'
@@ -54,7 +52,7 @@ class SqtTienda {
         enviado nullable: true
         idServidor nullable: true
         grupoGlasgo nullable: true
-        nsegmentos nullable: true
+        segmento nullable: true
         idGrupoTiendaExtra nullable: true
     }
 }

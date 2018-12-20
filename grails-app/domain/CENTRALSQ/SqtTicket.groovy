@@ -1,17 +1,14 @@
 package CENTRALSQ
 
 class SqtTicket {
-
     Date diaOperacion
     String tipo
     int enviado
     int idDetalle
 
-
     SqtVenta operacion
     SqtTienda tienda
-    /*
-    * SqtDetalle */
+    SqtVenta Venta
 
     static constraints = {
 
@@ -20,5 +17,6 @@ class SqtTicket {
         diaOperacion nullable: true
         idDetalle nullable: true
         enviado nullable:true
+        venta nullable: true
     }
 }
