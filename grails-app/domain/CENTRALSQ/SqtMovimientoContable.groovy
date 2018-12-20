@@ -13,6 +13,7 @@ class SqtMovimientoContable {
     int enviado
     String tipoLinea
 
+    SqtMovimiento movimiento
     SqtGrupo grupo
     SqtNsegmento nsgementos
 

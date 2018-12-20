@@ -1,7 +1,6 @@
 package CENTRALSQ
 
 class SqtPolizaExpLog {
-
     String tipoPoliza
     int error
     String descripcion

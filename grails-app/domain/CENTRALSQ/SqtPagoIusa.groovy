@@ -55,5 +55,6 @@ class SqtPagoIusa {
         tarifa maxSize: 20, nullable: true
         enviado nullable:true
         venta  nullable: true
+        fechaAlta nullable: true
     }
 }

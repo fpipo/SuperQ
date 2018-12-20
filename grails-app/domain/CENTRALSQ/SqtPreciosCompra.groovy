@@ -1,7 +1,6 @@
 package CENTRALSQ
 
 class SqtPreciosCompra {
-
     Date fechaAplica
     Double precioCompra
     Double precioCompraSiva
@@ -25,11 +24,7 @@ class SqtPreciosCompra {
     SqtProducto producto
     SqtGrupoTienda grupoTienda
 
-
-
     static constraints = {
-
-
         precioCompra nullable: true
         precioCompraSiva nullable: true
         precioOferta nullable: true
@@ -43,9 +38,6 @@ class SqtPreciosCompra {
         precioSugerido nullable: true
         pctVarianza nullable: true
         aplicaPrecioCompra nullable: true
-        fechaMod nullable: true
-        usuarioMod nullable: true
         enviado nullable:true
-
     }
 }

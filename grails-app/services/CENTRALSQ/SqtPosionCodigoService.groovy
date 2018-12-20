@@ -2,17 +2,17 @@ package CENTRALSQ
 
 import grails.gorm.services.Service
 
-@Service(SqtPosionCodigo)
+@Service(SqtPosicionCodigo)
 interface SqtPosionCodigoService {
 
-    SqtPosionCodigo get(Serializable id)
+    SqtPosicionCodigo get(Serializable id)
 
-    List<SqtPosionCodigo> list(Map args)
+    List<SqtPosicionCodigo> list(Map args)
 
     Long count()
 
     void delete(Serializable id)
 
-    SqtPosionCodigo save(SqtPosionCodigo sqtPosionCodigo)
+    SqtPosicionCodigo save(SqtPosicionCodigo sqtPosionCodigo)
 
 }

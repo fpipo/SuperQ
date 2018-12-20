@@ -19,10 +19,10 @@ class SqtPosionCodigoController {
     }
 
     def create() {
-        respond new SqtPosionCodigo(params)
+        respond new SqtPosicionCodigo(params)
     }
 
-    def save(SqtPosionCodigo sqtPosionCodigo) {
+    def save(SqtPosicionCodigo sqtPosionCodigo) {
         if (sqtPosionCodigo == null) {
             notFound()
             return
@@ -37,7 +37,7 @@ class SqtPosionCodigoController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.created.message', args: [message(code: 'sqtPosionCodigo.label', default: 'SqtPosionCodigo'), sqtPosionCodigo.id])
+                flash.message = message(code: 'default.created.message', args: [message(code: 'sqtPosionCodigo.label', default: 'SqtPosicionCodigo'), sqtPosionCodigo.id])
                 redirect sqtPosionCodigo
             }
             '*' { respond sqtPosionCodigo, [status: CREATED] }
@@ -48,7 +48,7 @@ class SqtPosionCodigoController {
         respond sqtPosionCodigoService.get(id)
     }
 
-    def update(SqtPosionCodigo sqtPosionCodigo) {
+    def update(SqtPosicionCodigo sqtPosionCodigo) {
         if (sqtPosionCodigo == null) {
             notFound()
             return
@@ -63,7 +63,7 @@ class SqtPosionCodigoController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'sqtPosionCodigo.label', default: 'SqtPosionCodigo'), sqtPosionCodigo.id])
+                flash.message = message(code: 'default.updated.message', args: [message(code: 'sqtPosionCodigo.label', default: 'SqtPosicionCodigo'), sqtPosionCodigo.id])
                 redirect sqtPosionCodigo
             }
             '*'{ respond sqtPosionCodigo, [status: OK] }
@@ -80,7 +80,7 @@ class SqtPosionCodigoController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.deleted.message', args: [message(code: 'sqtPosionCodigo.label', default: 'SqtPosionCodigo'), id])
+                flash.message = message(code: 'default.deleted.message', args: [message(code: 'sqtPosionCodigo.label', default: 'SqtPosicionCodigo'), id])
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
@@ -90,7 +90,7 @@ class SqtPosionCodigoController {
     protected void notFound() {
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.not.found.message', args: [message(code: 'sqtPosionCodigo.label', default: 'SqtPosionCodigo'), params.id])
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'sqtPosionCodigo.label', default: 'SqtPosicionCodigo'), params.id])
                 redirect action: "index", method: "GET"
             }
             '*'{ render status: NOT_FOUND }

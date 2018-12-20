@@ -8,7 +8,7 @@ class SqtListaPrecios {
     int enviado
 
     static constraints = {
-        descripcionCorta maxSize: 80, nullable: false
+        descripcionCorta maxSize: 80
         base nullable: true
         tipo maxSize: 2, nullable: true
         enviado nullable:true

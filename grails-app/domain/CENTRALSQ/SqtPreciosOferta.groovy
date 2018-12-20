@@ -1,7 +1,6 @@
 package CENTRALSQ
 
 class SqtPreciosOferta {
-
     Date fechaInicio
     Date fechaFin
     Double precioCompraCiva
@@ -45,5 +44,6 @@ class SqtPreciosOferta {
         precioVentaCiva nullable:true
         margenUtilidad nullable:true
         aplicaOferta nullable: true
+        estatus nullable: true
     }
 }

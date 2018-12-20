@@ -13,6 +13,7 @@ class SqtLogServicel {
     String codAutorizacion
     Date fechaSolicitud
     Date fechaRespuestaServicel
+    String identificadorPOS
     String saldoInicial
     String saldoFinal
     SqtUsuario usuarioMod

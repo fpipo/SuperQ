@@ -1,15 +1,12 @@
 package CENTRALSQ
 
 class SqtMapeoProducto {
-
-
     Date fechaInicio
     String  usuarioMod
     Date fechaMod
     int enviado
 
-    SqtProducto productoOrigienal
-    SqtProducto productoSustituto
+    SqtProducto productoOrigienal, productoSustituto
     SqtEstatus estatus
 
     static constraints = {

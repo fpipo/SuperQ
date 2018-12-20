@@ -16,6 +16,7 @@ class SqtInventarioGeneral {
         descripcion maxSize: 500, nullable: true
         enviado nullable:true
         fechaMod nullable:true
+        usuarioMod nullable: true
         estatus nullable:true
     }
 }

@@ -56,7 +56,7 @@ class SqtPedido {
         cierreCaja  nullable: true
         cierreDia nullable: true
         referenciaFrog maxSize: 30, nullable: true
-
-
+        transaccion nullable:true
+        archivo nullable:true
     }
 }

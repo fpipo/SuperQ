@@ -5,7 +5,7 @@ import grails.testing.web.controllers.ControllerUnitTest
 import grails.validation.ValidationException
 import spock.lang.*
 
-class SqtPosionCodigoControllerSpec extends Specification implements ControllerUnitTest<SqtPosionCodigoController>, DomainUnitTest<SqtPosionCodigo> {
+class SqtQroBusControllerSpec extends Specification implements ControllerUnitTest<SqtRedqController>, DomainUnitTest<SqtQroBus> {
 
     def populateValidParams(params) {
         assert params != null
@@ -17,7 +17,7 @@ class SqtPosionCodigoControllerSpec extends Specification implements ControllerU
 
     void "Test the index action returns the correct model"() {
         given:
-        controller.sqtPosionCodigoService = Mock(SqtPosionCodigoService) {
+        controller.sqtRedqService = Mock(SqtRedqService) {
             1 * list(_) >> []
             1 * count() >> 0
         }
@@ -26,8 +26,8 @@ class SqtPosionCodigoControllerSpec extends Specification implements ControllerU
         controller.index()
 
         then:"The model is correct"
-        !model.sqtPosionCodigoList
-        model.sqtPosionCodigoCount == 0
+        !model.sqtRedqList
+        model.sqtRedqCount == 0
     }
 
     void "Test the create action returns the correct model"() {
@@ -35,7 +35,7 @@ class SqtPosionCodigoControllerSpec extends Specification implements ControllerU
         controller.create()
 
         then:"The model is correctly created"
-        model.sqtPosionCodigo!= null
+        model.sqtRedq!= null
     }
 
     void "Test the save action with a null instance"() {
@@ -45,14 +45,14 @@ class SqtPosionCodigoControllerSpec extends Specification implements ControllerU
         controller.save(null)
 
         then:"A 404 error is returned"
-        response.redirectedUrl == '/sqtPosionCodigo/index'
+        response.redirectedUrl == '/sqtRedq/index'
         flash.message != null
     }
 
     void "Test the save action correctly persists"() {
         given:
-        controller.sqtPosionCodigoService = Mock(SqtPosionCodigoService) {
-            1 * save(_ as SqtPosionCodigo)
+        controller.sqtRedqService = Mock(SqtRedqService) {
+            1 * save(_ as SqtQroBus)
         }
 
         when:"The save action is executed with a valid instance"
@@ -60,38 +60,38 @@ class SqtPosionCodigoControllerSpec extends Specification implements ControllerU
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'POST'
         populateValidParams(params)
-        def sqtPosionCodigo = new SqtPosionCodigo(params)
-        sqtPosionCodigo.id = 1
+        def sqtRedq = new SqtQroBus(params)
+        sqtRedq.id = 1
 
-        controller.save(sqtPosionCodigo)
+        controller.save(sqtRedq)
 
         then:"A redirect is issued to the show action"
-        response.redirectedUrl == '/sqtPosionCodigo/show/1'
+        response.redirectedUrl == '/sqtRedq/show/1'
         controller.flash.message != null
     }
 
     void "Test the save action with an invalid instance"() {
         given:
-        controller.sqtPosionCodigoService = Mock(SqtPosionCodigoService) {
-            1 * save(_ as SqtPosionCodigo) >> { SqtPosionCodigo sqtPosionCodigo ->
-                throw new ValidationException("Invalid instance", sqtPosionCodigo.errors)
+        controller.sqtRedqService = Mock(SqtRedqService) {
+            1 * save(_ as SqtQroBus) >> { SqtQroBus sqtRedq ->
+                throw new ValidationException("Invalid instance", sqtRedq.errors)
             }
         }
 
         when:"The save action is executed with an invalid instance"
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'POST'
-        def sqtPosionCodigo = new SqtPosionCodigo()
-        controller.save(sqtPosionCodigo)
+        def sqtRedq = new SqtQroBus()
+        controller.save(sqtRedq)
 
         then:"The create view is rendered again with the correct model"
-        model.sqtPosionCodigo != null
+        model.sqtRedq != null
         view == 'create'
     }
 
     void "Test the show action with a null id"() {
         given:
-        controller.sqtPosionCodigoService = Mock(SqtPosionCodigoService) {
+        controller.sqtRedqService = Mock(SqtRedqService) {
             1 * get(null) >> null
         }
 
@@ -104,20 +104,20 @@ class SqtPosionCodigoControllerSpec extends Specification implements ControllerU
 
     void "Test the show action with a valid id"() {
         given:
-        controller.sqtPosionCodigoService = Mock(SqtPosionCodigoService) {
-            1 * get(2) >> new SqtPosionCodigo()
+        controller.sqtRedqService = Mock(SqtRedqService) {
+            1 * get(2) >> new SqtQroBus()
         }
 
         when:"A domain instance is passed to the show action"
         controller.show(2)
 
         then:"A model is populated containing the domain instance"
-        model.sqtPosionCodigo instanceof SqtPosionCodigo
+        model.sqtRedq instanceof SqtQroBus
     }
 
     void "Test the edit action with a null id"() {
         given:
-        controller.sqtPosionCodigoService = Mock(SqtPosionCodigoService) {
+        controller.sqtRedqService = Mock(SqtRedqService) {
             1 * get(null) >> null
         }
 
@@ -130,15 +130,15 @@ class SqtPosionCodigoControllerSpec extends Specification implements ControllerU
 
     void "Test the edit action with a valid id"() {
         given:
-        controller.sqtPosionCodigoService = Mock(SqtPosionCodigoService) {
-            1 * get(2) >> new SqtPosionCodigo()
+        controller.sqtRedqService = Mock(SqtRedqService) {
+            1 * get(2) >> new SqtQroBus()
         }
 
         when:"A domain instance is passed to the show action"
         controller.edit(2)
 
         then:"A model is populated containing the domain instance"
-        model.sqtPosionCodigo instanceof SqtPosionCodigo
+        model.sqtRedq instanceof SqtQroBus
     }
 
 
@@ -149,14 +149,14 @@ class SqtPosionCodigoControllerSpec extends Specification implements ControllerU
         controller.update(null)
 
         then:"A 404 error is returned"
-        response.redirectedUrl == '/sqtPosionCodigo/index'
+        response.redirectedUrl == '/sqtRedq/index'
         flash.message != null
     }
 
     void "Test the update action correctly persists"() {
         given:
-        controller.sqtPosionCodigoService = Mock(SqtPosionCodigoService) {
-            1 * save(_ as SqtPosionCodigo)
+        controller.sqtRedqService = Mock(SqtRedqService) {
+            1 * save(_ as SqtQroBus)
         }
 
         when:"The save action is executed with a valid instance"
@@ -164,31 +164,31 @@ class SqtPosionCodigoControllerSpec extends Specification implements ControllerU
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'PUT'
         populateValidParams(params)
-        def sqtPosionCodigo = new SqtPosionCodigo(params)
-        sqtPosionCodigo.id = 1
+        def sqtRedq = new SqtQroBus(params)
+        sqtRedq.id = 1
 
-        controller.update(sqtPosionCodigo)
+        controller.update(sqtRedq)
 
         then:"A redirect is issued to the show action"
-        response.redirectedUrl == '/sqtPosionCodigo/show/1'
+        response.redirectedUrl == '/sqtRedq/show/1'
         controller.flash.message != null
     }
 
     void "Test the update action with an invalid instance"() {
         given:
-        controller.sqtPosionCodigoService = Mock(SqtPosionCodigoService) {
-            1 * save(_ as SqtPosionCodigo) >> { SqtPosionCodigo sqtPosionCodigo ->
-                throw new ValidationException("Invalid instance", sqtPosionCodigo.errors)
+        controller.sqtRedqService = Mock(SqtRedqService) {
+            1 * save(_ as SqtQroBus) >> { SqtQroBus sqtRedq ->
+                throw new ValidationException("Invalid instance", sqtRedq.errors)
             }
         }
 
         when:"The save action is executed with an invalid instance"
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'PUT'
-        controller.update(new SqtPosionCodigo())
+        controller.update(new SqtQroBus())
 
         then:"The edit view is rendered again with the correct model"
-        model.sqtPosionCodigo != null
+        model.sqtRedq != null
         view == 'edit'
     }
 
@@ -199,13 +199,13 @@ class SqtPosionCodigoControllerSpec extends Specification implements ControllerU
         controller.delete(null)
 
         then:"A 404 is returned"
-        response.redirectedUrl == '/sqtPosionCodigo/index'
+        response.redirectedUrl == '/sqtRedq/index'
         flash.message != null
     }
 
     void "Test the delete action with an instance"() {
         given:
-        controller.sqtPosionCodigoService = Mock(SqtPosionCodigoService) {
+        controller.sqtRedqService = Mock(SqtRedqService) {
             1 * delete(2)
         }
 
@@ -215,7 +215,7 @@ class SqtPosionCodigoControllerSpec extends Specification implements ControllerU
         controller.delete(2)
 
         then:"The user is redirected to index"
-        response.redirectedUrl == '/sqtPosionCodigo/index'
+        response.redirectedUrl == '/sqtRedq/index'
         flash.message != null
     }
 }

@@ -3,7 +3,7 @@ package CENTRALSQ
 import grails.gorm.services.Service
 
 @Service(SqtQroBus)
-interface SqtRedqService {
+interface SqtQroBusService {
 
     SqtQroBus get(Serializable id)
 
@@ -13,6 +13,6 @@ interface SqtRedqService {
 
     void delete(Serializable id)
 
-    SqtQroBus save(SqtQroBus sqtRedq)
+    SqtQroBus save(SqtQroBus sqtQroBus)
 
 }

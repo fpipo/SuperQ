@@ -1,18 +1,14 @@
 package CENTRALSQ
 
 class SqtPagoTipoVenta {
-    String formaPago
-    String tipoVenta
-    String cuentaContable
     int enviado
 
-
-
+    SqtFormaPago formaPago
+    SqtCuentaContable cuentaContable
+    SqtMovimiento tipoVenta
 
     static constraints = {
-        formaPago maxSize: 3
-        tipoVenta maxSize: 3
-        cuentaContable maxSize: 30, nullable: true
+        cuentaContable nullable:true
         enviado nullable:true
     }
 }

@@ -19,6 +19,7 @@ class SqtMovimiento {
     String movimientoReferencia
     int consumible
     int enviado
+
     SqtAlmacen almacen
     SqtListaPrecios listaPrecios
     SqtClaseDocumento claseDocumento

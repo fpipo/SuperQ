@@ -9,11 +9,11 @@ class SqtPoliza {
     String comentarios
     Date fechaMod
     int enviado
+
     SqtUsuario usuarioMod
     SqtMovimiento movimiento
     SqtTienda tienda
     SqtMoneda moneda
-
 
     static hasMany = [detalles:SqtDetallePoliza]
 
@@ -22,8 +22,8 @@ class SqtPoliza {
     }
 
     static constraints = {
-        sociedad maxSize: 4, nullable: false
-        periodo maxSize: 2, nullable: false
+        sociedad maxSize: 4
+        periodo maxSize: 2
         comentarios maxSize: 250
         enviado nullable:true
         moneda nullable:true

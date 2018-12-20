@@ -1,6 +1,6 @@
 package CENTRALSQ
 
-class SqtRedq {
+class SqtQroBus {
     String id
     String plaza
     Date fechaAdmin

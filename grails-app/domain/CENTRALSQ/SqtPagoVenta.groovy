@@ -8,10 +8,10 @@ class SqtPagoVenta {
 
     SqtTienda tienda
     SqtFormaPago formaPago
-
+    SqtVenta venta
 
     static constraints = {
-        tarjeta maxSize: 16, nullable: 16
+        tarjeta maxSize: 16
         enviado nullable:true
     }
 }

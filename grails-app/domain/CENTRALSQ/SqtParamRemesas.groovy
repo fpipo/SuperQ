@@ -13,8 +13,6 @@ class SqtParamRemesas {
     Date horaMin
     Date horaMax
 
-
-
     static constraints = {
         tienda  nullable: true
         maximo nullable: true

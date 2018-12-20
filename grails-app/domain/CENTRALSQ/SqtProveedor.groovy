@@ -46,7 +46,7 @@ class SqtProveedor {
         pais nullable: true
         telefono nullable: true
         paginaweb maxSize: 50, nullable: true
-        email maxSize: 50, nullable: true
+        email email: true, maxSize: 50, nullable: true
         estatus nullable: true
         tipo nullable: true
         responsable maxSize: 15, nullable: true
@@ -56,12 +56,6 @@ class SqtProveedor {
         idCondicionDefault nullable: true
         idCondicionPago nullable: true
         criterioAgrupacion nullable: true
-
-
-
-
-
-
-
+        condicionPago nullable: true
     }
 }

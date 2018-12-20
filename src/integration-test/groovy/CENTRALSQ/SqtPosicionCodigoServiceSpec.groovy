@@ -7,18 +7,18 @@ import org.hibernate.SessionFactory
 
 @Integration
 @Rollback
-class SqtPosionCodigoServiceSpec extends Specification {
+class SqtPosicionCodigoServiceSpec extends Specification {
 
     SqtPosionCodigoService sqtPosionCodigoService
     SessionFactory sessionFactory
 
     private Long setupData() {
         // TODO: Populate valid domain instances and return a valid ID
-        //new SqtPosionCodigo(...).save(flush: true, failOnError: true)
-        //new SqtPosionCodigo(...).save(flush: true, failOnError: true)
-        //SqtPosionCodigo sqtPosionCodigo = new SqtPosionCodigo(...).save(flush: true, failOnError: true)
-        //new SqtPosionCodigo(...).save(flush: true, failOnError: true)
-        //new SqtPosionCodigo(...).save(flush: true, failOnError: true)
+        //new SqtPosicionCodigo(...).save(flush: true, failOnError: true)
+        //new SqtPosicionCodigo(...).save(flush: true, failOnError: true)
+        //SqtPosicionCodigo sqtPosionCodigo = new SqtPosicionCodigo(...).save(flush: true, failOnError: true)
+        //new SqtPosicionCodigo(...).save(flush: true, failOnError: true)
+        //new SqtPosicionCodigo(...).save(flush: true, failOnError: true)
         assert false, "TODO: Provide a setupData() implementation for this generated test suite"
         //sqtPosionCodigo.id
     }
@@ -34,7 +34,7 @@ class SqtPosionCodigoServiceSpec extends Specification {
         setupData()
 
         when:
-        List<SqtPosionCodigo> sqtPosionCodigoList = sqtPosionCodigoService.list(max: 2, offset: 2)
+        List<SqtPosicionCodigo> sqtPosionCodigoList = sqtPosionCodigoService.list(max: 2, offset: 2)
 
         then:
         sqtPosionCodigoList.size() == 2
@@ -65,7 +65,7 @@ class SqtPosionCodigoServiceSpec extends Specification {
     void "test save"() {
         when:
         assert false, "TODO: Provide a valid instance to save"
-        SqtPosionCodigo sqtPosionCodigo = new SqtPosionCodigo()
+        SqtPosicionCodigo sqtPosionCodigo = new SqtPosicionCodigo()
         sqtPosionCodigoService.save(sqtPosionCodigo)
 
         then:

@@ -1,6 +1,6 @@
 package CENTRALSQ
 
-class SqtPosionCodigo {
+class SqtPosicionCodigo {
     String	tipo
     int	posicionInicio
     int	posicionFin
@@ -8,9 +8,7 @@ class SqtPosionCodigo {
     int	digitoInicio
     int	enviado
 
-    SqtTipo idtipo
-    SqtNsegmento nsegmento
-
+    SqtSegmentos segmento
 
     static constraints = {
         tipo maxSize: 3
@@ -19,7 +17,5 @@ class SqtPosionCodigo {
         posicionInicio nullable: true
         digitos nullable: true
         digitoInicio nullable: true
-
-
     }
 }

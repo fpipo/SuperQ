@@ -9,7 +9,6 @@ class SqtKardexTa {
     String legal
     String ticket
 
-    SqtKardex kardex
     SqtVenta venta
     SqtTienda tienda
     SqtProducto producto

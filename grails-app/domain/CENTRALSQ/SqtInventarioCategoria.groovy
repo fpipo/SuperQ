@@ -12,7 +12,6 @@ class SqtInventarioCategoria {
     SqtUsuario usuarioMod
 
     static constraints = {
-        usuarioMod nullable: true
         enviado nullable: true
     }
 }
