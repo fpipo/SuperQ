@@ -13,13 +13,13 @@ class SqtVenta {
     Double granTotal
     Double granTotalRedondeado
     String ticket
-    String tipoventa
+    String tipoVenta
     String comentarios
     Date cierreCajero
     Date cierreCaja
     Date cierreDia
     SqtUsuario usuarioMod
-    Date fechamod
+    Date fechaMod
     int enviado
     Date fecha
 

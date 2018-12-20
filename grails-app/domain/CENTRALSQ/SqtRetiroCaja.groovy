@@ -10,7 +10,7 @@ class SqtRetiroCaja {
     Date	cierreDia
     int	aplica
     int	retiroAlCierre
-    Date	fechamod
+    Date	fechaMod
     SqtUsuario	usuarioMod
     String idTipoRetiro
     int	enviado

@@ -1,7 +1,7 @@
 package CENTRALSQ
 
 class SqtInventarioCategoria {
-    Date fechamod
+    Date fechaMod
     int enviado
 
     SqtInventario inventario

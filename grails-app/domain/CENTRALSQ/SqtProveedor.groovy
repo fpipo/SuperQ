@@ -17,8 +17,8 @@ class SqtProveedor {
     String responsable
     String responsableTel
     String responsableEmail
-    Date fechamod
-    String usuariomod
+    Date fechaMod
+    String usuarioMod
     int enviado
     int criterioAgrupacion
 

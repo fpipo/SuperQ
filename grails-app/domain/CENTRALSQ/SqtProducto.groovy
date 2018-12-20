@@ -25,7 +25,7 @@ class SqtProducto {
     int conCargo
     int completo
     int paraDevolucion
-    Date fechamod
+    Date fechaMod
     int enviado
     int preinactivo
     int ta
