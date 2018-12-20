@@ -24,8 +24,12 @@ class SqtAjuste {
     }
 
     static constraints = {
-        comentarios maxSize: 250
+        comentarios maxSize: 250,nullable: true
         referencia maxSize: 32 ,nullable: true
+        area nullable: true
         enviado nullable:true
+        numTransaccion nullable: true
+        inventario nullable: true
+        opcion nullable: true
     }
 }
