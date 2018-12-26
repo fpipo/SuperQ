@@ -23,7 +23,6 @@ class SqtFactura {
     Date fechaCancelacion
     Date fechaMod
     int enviado
-    String tipoPago
     String numTarjeta
     String usoCfdi
     String serie
@@ -44,8 +43,8 @@ class SqtFactura {
 
     static constraints = {
         nombre maxSize: 50, nullable:true
-        apaterno maxSize: 50, nullable:true
-        amaterno maxSize: 50, nullable:true
+        aPaterno maxSize: 50, nullable:true
+        aMaterno maxSize: 50, nullable:true
         rfc maxSize: 13
         razonSocial maxSize: 250, nullable:true
         calle maxSize: 50, nullable:true
@@ -57,7 +56,6 @@ class SqtFactura {
         pais nullable:true
         comentarios maxSize: 50, nullable:true
         mensaje maxSize: 250, nullable:true
-        tipoPago maxSize: 100, nullable:true
         numTarjeta maxSize: 100, nullable:true
         enviado nullable:true
         usoCfdi maxSize: 10, nullable:true
