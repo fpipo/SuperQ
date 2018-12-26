@@ -13,7 +13,7 @@ class SqtQroBus {
     int error
     Double saldo
     int enviado
-    int enviadoRedq
+    int enviadoQroBus
     SqtVenta venta
     SqtTienda tienda
     SqtCaja caja
@@ -32,6 +32,6 @@ class SqtQroBus {
         autorizacion maxSize: 30, nullable: false
         referencia maxSize: 50, nullable: false
         enviado nullable:true
-        enviadoRedq nullable: true
+        enviadoQroBus nullable: true
     }
 }
