@@ -34,7 +34,7 @@ class SqtProducto {
     String idTiempoAire
     int libreCmp
     int inactivoCompra
-    int ventaConExis
+    int inactivoCedisComisariato
 
     SqtMarca marca
     SqtCategoria categoria
@@ -68,7 +68,6 @@ class SqtProducto {
         pctVenta nullable: true
         prodTerminado nullable: true
         conCargo nullable: true
-        completo nullable: true
         paraDevolucion nullable: true
         preinactivo nullable: true
         ta nullable: true
@@ -76,9 +75,9 @@ class SqtProducto {
         idTiempoAire maxSize: 14 , nullable: true
         libreCmp nullable: true
         inactivoCompra nullable: true
-        ventaConExis nullable: true
         esImporte nullable: true
         contenidoUnidad maxSize: 3, nullable: true
         enviado nullable:true
+        inactivoCedisComisariato nullable:  true
     }
 }
