@@ -17,6 +17,7 @@ class SqtPolizaCentral {
 
     static constraints = {
         cliente nullable: true
+        comentarios maxSize: 250, nullable: true
     }
 }
 
