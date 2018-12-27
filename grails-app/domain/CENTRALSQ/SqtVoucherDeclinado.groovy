@@ -53,6 +53,7 @@ class SqtVoucherDeclinado {
         enviado nullable: true
         estatus nullable: true
         transaccion nullable: true
+        autcod maxSize: 50
     }
 }
 
