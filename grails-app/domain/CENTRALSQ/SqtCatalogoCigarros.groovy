@@ -18,6 +18,6 @@ class SqtCatalogoCigarros {
         fa maxSize: 50, nullable: true
         codigoActivo maxSize: 100, nullable: true
         statusCambioCodigo maxSize: 100, nullable: true
-        enviado nuluable: true
+        enviado nullable: true
     }
 }

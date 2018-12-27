@@ -8,7 +8,7 @@ class SqtComisionRango {
     Date fecha
 
     static constraints = {
-        enviado nulluable: true
+        enviado nullable: true
         rangoFin nullable: true
         pctComision nullable: true
         fecha nullable: true

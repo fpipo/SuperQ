@@ -6,8 +6,6 @@ class SqtCatalogoTostato {
     int enviado
 
     static constraints = {
-
         enviado nullable:true
-
     }
 }

@@ -14,7 +14,5 @@ class SqtCatalogoBritish {
         codigoActivo maxSize: 30 , nullable: true
         statusCambioCodigo maxSize: 100, nullable: true
         codigoAds nullable:true
-
-
     }
 }

@@ -4,7 +4,7 @@ class SqtAutorizaMovimiento {
     SqtMovimiento movimiento
     SqtFuncion funcion
     SqtGrupoUsuario grupo
-    String enviado
+    int enviado
 
     static constraints = {
         enviado nullable: true

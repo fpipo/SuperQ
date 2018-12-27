@@ -10,6 +10,6 @@ class SqtEstatus {
         clave maxSize: 3
         descripcion maxSize: 50
         visible nullable: true
-        enviado nulluable: true
+        enviado nullable: true
     }
 }

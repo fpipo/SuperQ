@@ -17,7 +17,7 @@ class SqtDetalleTraspasoTT {
     static belongsTo = [traspasos: SqtTraspasoTT]
 
     static constraints = {
-        enviado nulluable: true
+        enviado nullable: true
         motivoDevolucion nullable: true
         cantidadSugerida nullable: true
         cantidadSurtida nullable: true

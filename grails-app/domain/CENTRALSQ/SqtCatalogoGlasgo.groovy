@@ -12,6 +12,5 @@ class SqtCatalogoGlasgo {
         enviado nullable: true
         compra nullable:true
         venta nullable:true
-
     }
 }

@@ -6,6 +6,6 @@ class SqtCatalogoPanHorneado {
     SqtEstatus estatus
 
     static constraints = {
-        enviado nuluble: true
+        enviado nullable: true
     }
 }

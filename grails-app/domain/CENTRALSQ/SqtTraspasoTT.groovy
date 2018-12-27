@@ -40,6 +40,6 @@ class SqtTraspasoTT {
         cantidadNoSolicitada nullable: true
         totalSurtido nullable: true
         totalSugerido nullable: true
-        enviado nulluable: true
+        enviado nullable: true
     }
 }

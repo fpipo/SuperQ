@@ -43,7 +43,7 @@ class SqtDevolucionVenta {
         cierreCaja nullable: true
         cierreDia nullable: true
         tipoVenta maxSize: 3, nullable: true
-        enviado notEqual: true
+        enviado nullable: true
         fecha nullable: true
     }
 }

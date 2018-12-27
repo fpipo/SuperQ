@@ -10,7 +10,7 @@ class SqtDetalleCodigoCambio {
     static belongsTo = [cambio:SqtCodigoCambio]
 
     static constraints = {
-        enviado nulluable: true
+        enviado nullable: true
         fechaAplico nullable: true
     }
 }

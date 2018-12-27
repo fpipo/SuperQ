@@ -12,6 +12,6 @@ class SqtCajaProducto {
         contenido nullable:true
         principal nullable:true
         unidadMedida nullable: true
-        enviado nulable: true
+        enviado nullable: true
     }
 }

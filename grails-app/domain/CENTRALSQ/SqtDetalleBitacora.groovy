@@ -17,6 +17,6 @@ class SqtDetalleBitacora {
     static constraints = {
         precioVenta nullable: true
         cantidad nullable: true
-        enviado nulluable: true
+        enviado nullable: true
     }
 }

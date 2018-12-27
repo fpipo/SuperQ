@@ -9,6 +9,5 @@ class SqtAfiliacionAmerican {
     static constraints = {
         afiliacion nullable: true
         enviado nullable:true
-
     }
 }

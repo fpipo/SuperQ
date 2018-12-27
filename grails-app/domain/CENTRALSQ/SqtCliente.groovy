@@ -40,7 +40,7 @@ class SqtCliente {
         estado nullable: true
         telefono nullable: true
         email email: true, maxSize: 50, nullable: true
-        enviado nuluable: true
+        enviado nullable: true
         tienda nullable: true
         numInt nullable: true
         numExt nullable: true

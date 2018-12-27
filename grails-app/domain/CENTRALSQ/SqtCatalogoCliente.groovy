@@ -13,7 +13,6 @@ class SqtCatalogoCliente {
     String usuarioMod
     int enviado
     SqtUsuario usuario
-    
 
     static constraints = {
         nombre maxSize: 200
@@ -25,7 +24,5 @@ class SqtCatalogoCliente {
         usuario nullable: true
         enviado nullable:true
         fechaMod nullable: true
-
-
     }
 }

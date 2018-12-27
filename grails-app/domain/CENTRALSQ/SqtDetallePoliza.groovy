@@ -28,7 +28,7 @@ class SqtDetallePoliza {
         contabilizacion maxSize: 2
         impuesto nullable: true
         importe nullable: true
-        secuencia nulluable: true
+        secuencia nullable: true
         condicionPago nullable: true
         segmento nullable: true
         division maxSize: 4, nullable: true

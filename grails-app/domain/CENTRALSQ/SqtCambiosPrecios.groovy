@@ -10,7 +10,7 @@ class SqtCambiosPrecios {
     SqtEstatus estatus
 
     static constraints = {
-        enviado nuluable: true
+        enviado nullable: true
         estatus nullable: true
     }
 }

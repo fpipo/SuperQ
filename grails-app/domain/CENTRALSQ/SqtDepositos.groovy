@@ -16,7 +16,7 @@ class SqtDepositos {
     static constraints = {
         referencia maxSize: 12
         comentarios maxSize: 250, nullable: true
-        enviado nulluable: true
+        enviado nullable: true
         fechaDeposito nullable: true
         fechaMod nullable: true
     }

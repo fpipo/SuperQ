@@ -11,6 +11,6 @@ class SqtCierreTienda {
     static constraints = {
         fechaMod nullable: true
         usuarioMod nullable: true
-        enviado nuluable: true
+        enviado nullable: true
     }
 }

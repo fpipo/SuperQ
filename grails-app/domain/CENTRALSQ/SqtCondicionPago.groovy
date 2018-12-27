@@ -8,6 +8,6 @@ class SqtCondicionPago {
     static constraints = {
         condicion maxSize: 10, nullable: true
         descripcion maxSize: 50, nullable: true
-        enviado nulluable: true
+        enviado nullable: true
     }
 }

@@ -26,6 +26,6 @@ class SqtDetalleDevolucion {
         iva nullable: true
         motivoDevolucion nullable: true
         unidadMedida nullable: true
-        enviado nulluable: true
+        enviado nullable: true
     }
 }

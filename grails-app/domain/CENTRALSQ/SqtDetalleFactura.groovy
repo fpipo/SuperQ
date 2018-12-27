@@ -26,8 +26,8 @@ class SqtDetalleFactura {
         precioUnitario nullable: true
         subtotal nullable: true
         montoIva nullable: true
-        imprimir nulluable: true
+        imprimir nullable: true
         catSat maxSize: 50, nullable: true
-        enviado nulluable: true
+        enviado nullable: true
     }
 }

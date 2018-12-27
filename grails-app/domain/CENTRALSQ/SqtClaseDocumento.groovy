@@ -8,6 +8,6 @@ class SqtClaseDocumento {
     static constraints = {
         clave maxSize: 2
         descripcion maxSize: 50, nullable: true
-        enviado nuluable: true
+        enviado nullable: true
     }
 }

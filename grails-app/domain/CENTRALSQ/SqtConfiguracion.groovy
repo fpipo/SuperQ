@@ -13,6 +13,6 @@ class SqtConfiguracion {
         clave maxSize: 5
         descripcion maxSize: 50
         valor maxSize: 250
-        enviado nulluable: true
+        enviado nullable: true
     }
 }

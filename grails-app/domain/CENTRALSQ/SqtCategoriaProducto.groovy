@@ -9,7 +9,7 @@ class SqtCategoriaProducto {
     SqtMarca marca
 
     static constraints = {
-        enviado nulluable: true
+        enviado nullable: true
         grupo nullable: true
         marca nullable: true
         subgrupo nullable: true

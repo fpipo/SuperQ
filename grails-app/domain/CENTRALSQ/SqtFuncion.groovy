@@ -1,8 +1,8 @@
 package CENTRALSQ
 
 class SqtFuncion {
-    String descripcioncorta
-    String descripcionlarga
+    String descripcionCorta
+    String descripcionLarga
     int bitacora
     String forma
     String tipo
@@ -28,11 +28,10 @@ class SqtFuncion {
 
 
     static constraints = {
-        descripcioncorta maxSize: 50, nullable: false
-        descripcionlarga maxSize: 250
+        descripcionCorta maxSize: 50, nullable: false
+        descripcionLarga maxSize: 250
         forma maxSize: 50
         tipo maxSize: 2
         enviado nullable:true
-
     }
 }
