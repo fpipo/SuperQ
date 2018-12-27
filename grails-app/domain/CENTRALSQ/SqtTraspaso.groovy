@@ -2,7 +2,7 @@ package CENTRALSQ
 
 class SqtTraspaso {
     String id
-    String tipotraspaso
+    String tipoTraspaso
     Date fechaProceso
     Date fechaSurte
     Date fechaCierre
@@ -36,7 +36,7 @@ class SqtTraspaso {
         fechaSurte nullable: true
         fechaCierre nullable: true
         estatus nullable: true
-        tipotraspaso maxSize: 2
+        tipoTraspaso maxSize: 2
         tipoConsumo maxSize: 2, nullable: true
         impresion nullable: true
         impresionDestino maxSize: 10, nullable: true
@@ -48,6 +48,5 @@ class SqtTraspaso {
         enviado nullable:true
         totalSugerido nullable: true
         totalSurtido nullable: true
-
     }
 }
