@@ -18,11 +18,11 @@ class SqtPedido {
     Date cierreCaja
     Date cierreDia
     String referenciaFrog
-    SqtArchivo archivo
-    SqtUsuario usuarioMod
     Date fechaMod
     int enviado
 
+    SqtArchivo archivo
+    SqtUsuario usuarioMod
     SqtTienda tienda
     SqtCaja caja
     SqtMovimiento movimiento
