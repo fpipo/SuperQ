@@ -14,10 +14,8 @@ class SqtPolizaCentral {
     SqtEstatus estatus
     SqtUsuario usuarioMod
     SqtCliente cliente
-    SqtMoneda moneda
 
     static constraints = {
-        moneda nullable: true
         cliente nullable: true
     }
 }
