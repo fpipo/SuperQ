@@ -16,10 +16,10 @@ class SqtCliente {
     int enviado
     int numInt
     int numExt
+    String telefono
 
     SqtEstado estado
     SqtPais pais
-    SqtTelefono telefono
     SqtEstatus estatus
     SqtUsuario usuarioMod
     SqtTipo tipoCliente
@@ -44,5 +44,6 @@ class SqtCliente {
         tienda nullable: true
         numInt nullable: true
         numExt nullable: true
+        telefono maxSize: 10, nullable: true
     }
 }

@@ -22,6 +22,8 @@ class SqtUsuario {
     String numExterior
     String entidadNacimiento
     String estadoCivil
+    String telefono
+    String celular
     String regimen
     Genero genero
     String estudios
@@ -38,7 +40,6 @@ class SqtUsuario {
     SqtAcreedor acreedor
     SqtDeudor  deudor
     SqtCliente cliente
-    SqtTelefono telefono
     SqtPassword histPassword
 
     static mapping = {
@@ -72,5 +73,7 @@ class SqtUsuario {
         cuentaBancaria maxSize: 30, nullable: true
         fechaRegistro nullable: true
         noEmpleado nullable: true
+        telefono maxSize: 10, nullable: true
+        celular maxSize: 10, nullable: true
     }
 }

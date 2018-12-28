@@ -23,7 +23,7 @@ class SqtTienda {
     SqtZona zona
     SqtEstado estado
     SqtPais pais
-    SqtTelefono telefono
+    String telefono
     SqtRuta ruta
     SqtGrupoTienda grupoTienda
     SqtEstatus estatus
@@ -54,5 +54,6 @@ class SqtTienda {
         grupoGlasgo nullable: true
         segmento nullable: true
         idGrupoTiendaExtra nullable: true
+        telefono maxSize: 10, nullable: true
     }
 }

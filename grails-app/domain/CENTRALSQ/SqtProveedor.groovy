@@ -24,7 +24,7 @@ class SqtProveedor {
 
     SqtEstado estado
     SqtPais pais
-    SqtTelefono telefono
+    String telefono
     SqtCondicionPago condicionPago
     SqtEstatus estatus
 
@@ -49,6 +49,7 @@ class SqtProveedor {
         email email: true, maxSize: 50, nullable: true
         estatus nullable: true
         tipo nullable: true
+        telefono maxSize: 10, nullable: true
         responsable maxSize: 15, nullable: true
         responsableTel maxSize: 30, nullable: true
         responsableEmail email:true,nullable: true
