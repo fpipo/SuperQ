@@ -1,7 +1,6 @@
 package CENTRALSQ
 
 class SqtTienda {
-    String id
     String descripcion
     String calle
     String colonia
@@ -28,9 +27,10 @@ class SqtTienda {
     SqtEstatus estatus
     SqtSegmentos segmento
     SqtGrupoGlasgo grupoGlasgo
+    String id
 
     static mapping = {
-        id generator: 'uuid', name:'id'
+        id generator: 'uuid', name:'id', sqlType: 'uniqueidentifier'
     }
 
     static constraints = {
@@ -42,7 +42,6 @@ class SqtTienda {
         ciudad maxSize: 50, nullable: true
         estado nullable: true
         pais maxSize: 50, nullable: true
-        telefono maxSize: 10, nullable: true
         tipo maxSize: 2, nullable: true
         centroCostos maxSize: 30, nullable: true
         fechaApertura nullable: true
