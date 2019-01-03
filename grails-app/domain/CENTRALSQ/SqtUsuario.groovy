@@ -75,5 +75,10 @@ class SqtUsuario {
         noEmpleado nullable: true
         telefono maxSize: 10, nullable: true
         celular maxSize: 10, nullable: true
+        genero nullable: true
+        estado nullable: true
+        pais nullable: true
+        password maxSize: 15
+        histPassword nullable: true
     }
 }

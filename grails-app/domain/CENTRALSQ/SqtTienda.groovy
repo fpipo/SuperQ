@@ -8,7 +8,6 @@ class SqtTienda {
     String municipio
     String cp
     String ciudad
-
     String tipo
     String centroCostos
     Date fechaApertura
@@ -36,14 +35,14 @@ class SqtTienda {
 
     static constraints = {
         descripcion maxSize: 80, nullable: false
-        calle nullable: true
-        colonia nullable: true
-        municipio nullable: true
-        cp nullable: true
-        ciudad nullable: true
+        calle maxSize: 50, nullable: true
+        colonia maxSize: 50, nullable: true
+        municipio maxSize: 50, nullable: true
+        cp maxSize: 5, nullable: true
+        ciudad maxSize: 50, nullable: true
         estado nullable: true
-        pais nullable: true
-        telefono nullable: true
+        pais maxSize: 50, nullable: true
+        telefono maxSize: 10, nullable: true
         tipo maxSize: 2, nullable: true
         centroCostos maxSize: 30, nullable: true
         fechaApertura nullable: true
