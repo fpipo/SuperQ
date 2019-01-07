@@ -1,6 +1,7 @@
 package CENTRALSQ
 
 class SqtMovimiento {
+    String clave
     String descripcion
     String tipoMovimiento
     int orden
@@ -25,6 +26,7 @@ class SqtMovimiento {
     SqtClaseDocumento claseDocumento
 
     static constraints = {
+        clave maxSize: 3
         descripcion maxSize: 50, nullable: false
         tipoMovimiento maxSize: 2, nullable: false
         textoCabecera maxSize: 25
