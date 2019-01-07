@@ -47,7 +47,7 @@ class SqtUsuario {
     }
 
     static constraints = {
-        username maxSize: 10
+        username maxSize: 15
         foto maxSize: 50, nullable: true
         nombre maxSize: 50
         aPaterno maxSize: 50
