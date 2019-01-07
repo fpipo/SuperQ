@@ -1,6 +1,7 @@
 package CENTRALSQ
 
 class SqtProducto {
+    String idArticulo
     String descripcionCorta
     String descripcionLarga
     String tipo
@@ -37,19 +38,19 @@ class SqtProducto {
     int inactivoCedisComisariato
 
     SqtMarca marca
-    SqtCategoria categoria
+    SqtCategoria categoria                      /* Vendra de SAP */
     SqtUsuario usuarioMod
-    SqtGrupo grupo
-    SqtSubgrupo subgrupo
+    SqtGrupo grupo                              /* Vendra de SAP */
+    SqtSubgrupo subgrupo                        /* Vendra de SAP */
     SqtUnidadMedida unidadMedida
     SqtEstatus estatus
-    SqtClasificacion clasificacion
 
     static constraints = {
-        descripcionCorta maxSize:50
-        descripcionLarga maxSize: 250, nullable: true
+        idArticulo maxSize: 18, nullable: true   /* Vendra de SAP*/
+        descripcionCorta maxSize: 50
+        descripcionLarga maxSize: 40, nullable: true   /* Vendra de SAP */
         tipo maxSize:3
-        marca nullable: true
+        marca nullable: true                            /* Vendra de SAP */
         consignacion nullable: true
         inventariable nullable: true
         surteProveedor nullable: true
@@ -58,7 +59,6 @@ class SqtProducto {
         contenidoUnidad nullable: true
         unidadMedidaContenido maxSize: 3 , nullable: true
         cantidadProducto nullable: true
-        clasificacion nullable: true
         ultimoPrecioCompra nullable: true
         ultimoMontoIva nullable: true
         ultimoPctVarianza nullable: true
