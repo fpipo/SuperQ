@@ -36,7 +36,7 @@ class SqtPedido {
         id generator: 'uuid', name:'id'
     }
 
-    static hasMany = [pedido:SqtDetallePedido, parcial:SqtDetalleParcial]
+    static hasMany = [pedido:SqtDetallePedido]
 
     static constraints = {
         comentarios maxSize: 255, nullable: true
