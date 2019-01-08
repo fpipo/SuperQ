@@ -20,6 +20,7 @@ class SqtPedido {
     String referenciaFrog
     Date fechaMod
     int enviado
+    int transaccion
 
     SqtArchivo archivo
     SqtUsuario usuarioMod
@@ -30,7 +31,6 @@ class SqtPedido {
     SqtProveedor proveedor
     SqtPoliza poliza
     SqtPedido referenciaPedido
-    SqtTransaccion transaccion
 
     static mapping = {
         id generator: 'uuid', name:'id'
