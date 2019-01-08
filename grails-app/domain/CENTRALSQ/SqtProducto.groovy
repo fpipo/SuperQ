@@ -30,7 +30,7 @@ class SqtProducto {
     int enviado
     int preinactivo
     int ta
-    int idCompania
+    String idCompania
     int esImporte
     String idTiempoAire
     int libreCmp
@@ -44,6 +44,8 @@ class SqtProducto {
     SqtSubgrupo subgrupo                        /* Vendra de SAP */
     SqtUnidadMedida unidadMedida
     SqtEstatus estatus
+
+    static hasMany = [base:SqtCodigoProducto]
 
     static constraints = {
         idArticulo maxSize: 18, nullable: true   /* Vendra de SAP*/
@@ -63,6 +65,8 @@ class SqtProducto {
         ultimoMontoIva nullable: true
         ultimoPctVarianza nullable: true
         ultimoPcompraOferta nullable: true
+        ultimoPcompraRegalo nullable: true
+        completo nullable: true
         ultimoMivaRegalo nullable: true
         pctCobro nullable: true
         pctVenta nullable: true
@@ -71,7 +75,7 @@ class SqtProducto {
         paraDevolucion nullable: true
         preinactivo nullable: true
         ta nullable: true
-        idCompania nullable: true
+        idCompania maxSize: 3, nullable: true
         idTiempoAire maxSize: 14 , nullable: true
         libreCmp nullable: true
         inactivoCompra nullable: true
@@ -79,5 +83,6 @@ class SqtProducto {
         contenidoUnidad maxSize: 3, nullable: true
         enviado nullable:true
         inactivoCedisComisariato nullable:  true
+        contenidoProducto nullable: true
     }
 }

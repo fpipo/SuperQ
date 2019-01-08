@@ -1,11 +1,12 @@
 package CENTRALSQ
 
 class SqtCodigoProducto {
-    int base
     String codigo
     int enviado
 
-    SqtProducto producto
+    SqtProducto base
+
+    static belongsTo = [base:SqtProducto]
 
     static constraints = {
         codigo maxSize: 30
