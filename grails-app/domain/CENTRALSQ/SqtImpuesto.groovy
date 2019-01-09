@@ -1,6 +1,7 @@
 package CENTRALSQ
 
 class SqtImpuesto {
+    String clave
     String descripcion
     Double valor
     String tipo
@@ -11,12 +12,8 @@ class SqtImpuesto {
     String descripcionFactura
     int enviado
 
-    SqtTienda tienda
-    SqtUsuario usuario
-    SqtEstatus estatus
-    SqtPoliza poliza
-
     static constraints = {
+        clave maxSize: 2
         descripcion maxSize: 50, nullable:true
         ordenCierre nullable:true
         tipoImpuesto maxSize: 3, nullable:true

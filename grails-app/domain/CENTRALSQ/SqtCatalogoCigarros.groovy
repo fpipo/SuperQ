@@ -11,7 +11,6 @@ class SqtCatalogoCigarros {
     int	codigoADS
 
     SqtEstatus estatus
-    SqtProducto codigo
 
     static constraints = {
         descripcionProv maxSize: 50, nullable: false
