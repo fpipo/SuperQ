@@ -13,6 +13,7 @@ class SqtPoliza {
     SqtUsuario usuarioMod
     SqtMovimiento movimiento
     SqtTienda tienda
+    SqtEstatus estatus
 
     static hasMany = [detalles:SqtDetallePoliza]
 
