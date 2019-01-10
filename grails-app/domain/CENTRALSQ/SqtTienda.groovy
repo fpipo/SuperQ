@@ -1,6 +1,7 @@
 package CENTRALSQ
 
 class SqtTienda {
+    String id
     String descripcion
     String calle
     String colonia
@@ -27,10 +28,9 @@ class SqtTienda {
     SqtEstatus estatus
     SqtSegmentos segmento
     SqtGrupoGlasgo grupoGlasgo
-    String id
 
     static mapping = {
-        id generator: 'uuid', name:'id', sqlType: 'uniqueidentifier'
+        id generator: 'uuid', name:'id'
     }
 
     static constraints = {

@@ -1,8 +1,7 @@
 package CENTRALSQ
 
-import java.sql.SQLType
-
 class SqtPoliza {
+    String id
     Date fechaDocumento
     String sociedad
     Date fechaContabilizacion
@@ -19,7 +18,7 @@ class SqtPoliza {
     static hasMany = [detalles:SqtDetallePoliza]
 
     static mapping = {
-        id generator: 'uuid', name:'id', sqlType: 'uniqueidentifier'
+        id generator: 'uuid', name:'id'
     }
 
     static constraints = {
