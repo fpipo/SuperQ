@@ -7,18 +7,18 @@ import org.hibernate.SessionFactory
 
 @Integration
 @Rollback
-class SqtAsignacionServiceSpec extends Specification {
+class SqtCajeroTiendaServiceSpec extends Specification {
 
     SqtAsignacionService sqtAsignacionService
     SessionFactory sessionFactory
 
     private Long setupData() {
         // TODO: Populate valid domain instances and return a valid ID
-        //new SqtAsignacion(...).save(flush: true, failOnError: true)
-        //new SqtAsignacion(...).save(flush: true, failOnError: true)
-        //SqtAsignacion sqtAsignacion = new SqtAsignacion(...).save(flush: true, failOnError: true)
-        //new SqtAsignacion(...).save(flush: true, failOnError: true)
-        //new SqtAsignacion(...).save(flush: true, failOnError: true)
+        //new SqtCajeroTienda(...).save(flush: true, failOnError: true)
+        //new SqtCajeroTienda(...).save(flush: true, failOnError: true)
+        //SqtCajeroTienda sqtAsignacion = new SqtCajeroTienda(...).save(flush: true, failOnError: true)
+        //new SqtCajeroTienda(...).save(flush: true, failOnError: true)
+        //new SqtCajeroTienda(...).save(flush: true, failOnError: true)
         assert false, "TODO: Provide a setupData() implementation for this generated test suite"
         //sqtAsignacion.id
     }
@@ -34,7 +34,7 @@ class SqtAsignacionServiceSpec extends Specification {
         setupData()
 
         when:
-        List<SqtAsignacion> sqtAsignacionList = sqtAsignacionService.list(max: 2, offset: 2)
+        List<SqtCajeroTienda> sqtAsignacionList = sqtAsignacionService.list(max: 2, offset: 2)
 
         then:
         sqtAsignacionList.size() == 2
@@ -65,7 +65,7 @@ class SqtAsignacionServiceSpec extends Specification {
     void "test save"() {
         when:
         assert false, "TODO: Provide a valid instance to save"
-        SqtAsignacion sqtAsignacion = new SqtAsignacion()
+        SqtCajeroTienda sqtAsignacion = new SqtCajeroTienda()
         sqtAsignacionService.save(sqtAsignacion)
 
         then:

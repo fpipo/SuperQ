@@ -5,7 +5,7 @@ class SqtCantidadCaja {
     String caja
 
     SqtTienda tienda
-    SqtAsignacion asignacion
+    SqtCajeroTienda asignacion
     SqtFormaPago formaPago
 
     static constraints = {

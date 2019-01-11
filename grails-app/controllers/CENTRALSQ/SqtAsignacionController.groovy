@@ -19,10 +19,10 @@ class SqtAsignacionController {
     }
 
     def create() {
-        respond new SqtAsignacion(params)
+        respond new SqtCajeroTienda(params)
     }
 
-    def save(SqtAsignacion sqtAsignacion) {
+    def save(SqtCajeroTienda sqtAsignacion) {
         if (sqtAsignacion == null) {
             notFound()
             return
@@ -37,7 +37,7 @@ class SqtAsignacionController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.created.message', args: [message(code: 'sqtAsignacion.label', default: 'SqtAsignacion'), sqtAsignacion.id])
+                flash.message = message(code: 'default.created.message', args: [message(code: 'sqtAsignacion.label', default: 'SqtCajeroTienda'), sqtAsignacion.id])
                 redirect sqtAsignacion
             }
             '*' { respond sqtAsignacion, [status: CREATED] }
@@ -48,7 +48,7 @@ class SqtAsignacionController {
         respond sqtAsignacionService.get(id)
     }
 
-    def update(SqtAsignacion sqtAsignacion) {
+    def update(SqtCajeroTienda sqtAsignacion) {
         if (sqtAsignacion == null) {
             notFound()
             return
@@ -63,7 +63,7 @@ class SqtAsignacionController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'sqtAsignacion.label', default: 'SqtAsignacion'), sqtAsignacion.id])
+                flash.message = message(code: 'default.updated.message', args: [message(code: 'sqtAsignacion.label', default: 'SqtCajeroTienda'), sqtAsignacion.id])
                 redirect sqtAsignacion
             }
             '*'{ respond sqtAsignacion, [status: OK] }
@@ -80,7 +80,7 @@ class SqtAsignacionController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.deleted.message', args: [message(code: 'sqtAsignacion.label', default: 'SqtAsignacion'), id])
+                flash.message = message(code: 'default.deleted.message', args: [message(code: 'sqtAsignacion.label', default: 'SqtCajeroTienda'), id])
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
@@ -90,7 +90,7 @@ class SqtAsignacionController {
     protected void notFound() {
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.not.found.message', args: [message(code: 'sqtAsignacion.label', default: 'SqtAsignacion'), params.id])
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'sqtAsignacion.label', default: 'SqtCajeroTienda'), params.id])
                 redirect action: "index", method: "GET"
             }
             '*'{ render status: NOT_FOUND }

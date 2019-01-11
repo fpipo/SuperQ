@@ -2,17 +2,17 @@ package CENTRALSQ
 
 import grails.gorm.services.Service
 
-@Service(SqtAsignacion)
+@Service(SqtCajeroTienda)
 interface SqtAsignacionService {
 
-    SqtAsignacion get(Serializable id)
+    SqtCajeroTienda get(Serializable id)
 
-    List<SqtAsignacion> list(Map args)
+    List<SqtCajeroTienda> list(Map args)
 
     Long count()
 
     void delete(Serializable id)
 
-    SqtAsignacion save(SqtAsignacion sqtAsignacion)
+    SqtCajeroTienda save(SqtCajeroTienda sqtAsignacion)
 
 }

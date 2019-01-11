@@ -17,7 +17,6 @@ class SqtRetiroCaja {
 
     SqtTienda tienda
     SqtFormaPago formaPago
-    SqtAsignacion asignacion
     SqtTipoRetiro tipoRetiro
     SqtVenta venta
 

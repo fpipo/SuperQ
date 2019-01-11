@@ -5,7 +5,7 @@ import grails.testing.web.controllers.ControllerUnitTest
 import grails.validation.ValidationException
 import spock.lang.*
 
-class SqtAsignacionControllerSpec extends Specification implements ControllerUnitTest<SqtAsignacionController>, DomainUnitTest<SqtAsignacion> {
+class SqtCajeroTiendaControllerSpec extends Specification implements ControllerUnitTest<SqtAsignacionController>, DomainUnitTest<SqtCajeroTienda> {
 
     def populateValidParams(params) {
         assert params != null
@@ -52,7 +52,7 @@ class SqtAsignacionControllerSpec extends Specification implements ControllerUni
     void "Test the save action correctly persists"() {
         given:
         controller.sqtAsignacionService = Mock(SqtAsignacionService) {
-            1 * save(_ as SqtAsignacion)
+            1 * save(_ as SqtCajeroTienda)
         }
 
         when:"The save action is executed with a valid instance"
@@ -60,7 +60,7 @@ class SqtAsignacionControllerSpec extends Specification implements ControllerUni
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'POST'
         populateValidParams(params)
-        def sqtAsignacion = new SqtAsignacion(params)
+        def sqtAsignacion = new SqtCajeroTienda(params)
         sqtAsignacion.id = 1
 
         controller.save(sqtAsignacion)
@@ -73,7 +73,7 @@ class SqtAsignacionControllerSpec extends Specification implements ControllerUni
     void "Test the save action with an invalid instance"() {
         given:
         controller.sqtAsignacionService = Mock(SqtAsignacionService) {
-            1 * save(_ as SqtAsignacion) >> { SqtAsignacion sqtAsignacion ->
+            1 * save(_ as SqtCajeroTienda) >> { SqtCajeroTienda sqtAsignacion ->
                 throw new ValidationException("Invalid instance", sqtAsignacion.errors)
             }
         }
@@ -81,7 +81,7 @@ class SqtAsignacionControllerSpec extends Specification implements ControllerUni
         when:"The save action is executed with an invalid instance"
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'POST'
-        def sqtAsignacion = new SqtAsignacion()
+        def sqtAsignacion = new SqtCajeroTienda()
         controller.save(sqtAsignacion)
 
         then:"The create view is rendered again with the correct model"
@@ -105,14 +105,14 @@ class SqtAsignacionControllerSpec extends Specification implements ControllerUni
     void "Test the show action with a valid id"() {
         given:
         controller.sqtAsignacionService = Mock(SqtAsignacionService) {
-            1 * get(2) >> new SqtAsignacion()
+            1 * get(2) >> new SqtCajeroTienda()
         }
 
         when:"A domain instance is passed to the show action"
         controller.show(2)
 
         then:"A model is populated containing the domain instance"
-        model.sqtAsignacion instanceof SqtAsignacion
+        model.sqtAsignacion instanceof SqtCajeroTienda
     }
 
     void "Test the edit action with a null id"() {
@@ -131,14 +131,14 @@ class SqtAsignacionControllerSpec extends Specification implements ControllerUni
     void "Test the edit action with a valid id"() {
         given:
         controller.sqtAsignacionService = Mock(SqtAsignacionService) {
-            1 * get(2) >> new SqtAsignacion()
+            1 * get(2) >> new SqtCajeroTienda()
         }
 
         when:"A domain instance is passed to the show action"
         controller.edit(2)
 
         then:"A model is populated containing the domain instance"
-        model.sqtAsignacion instanceof SqtAsignacion
+        model.sqtAsignacion instanceof SqtCajeroTienda
     }
 
 
@@ -156,7 +156,7 @@ class SqtAsignacionControllerSpec extends Specification implements ControllerUni
     void "Test the update action correctly persists"() {
         given:
         controller.sqtAsignacionService = Mock(SqtAsignacionService) {
-            1 * save(_ as SqtAsignacion)
+            1 * save(_ as SqtCajeroTienda)
         }
 
         when:"The save action is executed with a valid instance"
@@ -164,7 +164,7 @@ class SqtAsignacionControllerSpec extends Specification implements ControllerUni
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'PUT'
         populateValidParams(params)
-        def sqtAsignacion = new SqtAsignacion(params)
+        def sqtAsignacion = new SqtCajeroTienda(params)
         sqtAsignacion.id = 1
 
         controller.update(sqtAsignacion)
@@ -177,7 +177,7 @@ class SqtAsignacionControllerSpec extends Specification implements ControllerUni
     void "Test the update action with an invalid instance"() {
         given:
         controller.sqtAsignacionService = Mock(SqtAsignacionService) {
-            1 * save(_ as SqtAsignacion) >> { SqtAsignacion sqtAsignacion ->
+            1 * save(_ as SqtCajeroTienda) >> { SqtCajeroTienda sqtAsignacion ->
                 throw new ValidationException("Invalid instance", sqtAsignacion.errors)
             }
         }
@@ -185,7 +185,7 @@ class SqtAsignacionControllerSpec extends Specification implements ControllerUni
         when:"The save action is executed with an invalid instance"
         request.contentType = FORM_CONTENT_TYPE
         request.method = 'PUT'
-        controller.update(new SqtAsignacion())
+        controller.update(new SqtCajeroTienda())
 
         then:"The edit view is rendered again with the correct model"
         model.sqtAsignacion != null

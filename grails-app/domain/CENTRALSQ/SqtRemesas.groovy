@@ -26,7 +26,6 @@ class SqtRemesas {
 
     SqtTienda tienda
     SqtTransaccion tranType
-    SqtAsignacion asignacion
 
     static constraints = {
         folio maxSize: 50
