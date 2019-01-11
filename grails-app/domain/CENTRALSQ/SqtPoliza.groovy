@@ -2,6 +2,7 @@ package CENTRALSQ
 
 class SqtPoliza {
     String id
+    int clavePol
     Date fechaDocumento
     String sociedad
     Date fechaContabilizacion

@@ -1,6 +1,7 @@
 package CENTRALSQ
 
 class SqtDetallePedido {
+    int clavePol
     int partida
     Double cantidadSugerida
     Double precioCompraSiva
