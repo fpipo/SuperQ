@@ -6,7 +6,7 @@ class SqtCuentabancoTerminal {
     String numCuenta
     String tipoCuenta
     String terminal
-    String caja
+    int caja
     int enviado
 
 

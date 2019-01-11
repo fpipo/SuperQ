@@ -18,7 +18,7 @@ class SqtRemesas {
     String tc
     int enviado
     String mensajeTicket
-    String caja
+    int caja
     String origen
     String tipoIdentificacion
     String numeroIdentificacion
@@ -43,7 +43,6 @@ class SqtRemesas {
         tc maxSize: 20, nullable: true
         enviado nullable:true
         mensajeTicket maxSize: 500, nullable: true
-        caja maxSize: 3, nullable: true
         origen maxSize: 300, nullable: true
         tipoIdentificacion maxSize: 50, nullable: true
         numeroIdentificacion maxSize: 50,nullable: true

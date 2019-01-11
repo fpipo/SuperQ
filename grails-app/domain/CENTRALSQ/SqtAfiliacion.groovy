@@ -11,7 +11,7 @@ class SqtAfiliacion {
 
     static constraints = {
         afiliacion maxSize: 50
-        numCaja maxSize: 2
+        num: 2
         enviado nullable:true
         estatus nullable: true
     }

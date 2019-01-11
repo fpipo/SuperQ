@@ -2,14 +2,13 @@ package CENTRALSQ
 
 class SqtCantidadCaja {
     Double cantidad
-    String caja
+    int caja
 
     SqtTienda tienda
     SqtCajeroTienda asignacion
     SqtFormaPago formaPago
 
     static constraints = {
-        caja maxSize: 2
     }
 }
 

@@ -39,7 +39,6 @@ class SqtDetallePedido {
         precioCompraSiva nullable: true
         subtotal nullable: true
         unidadMedida nullable: true
-        codigoCaja maxSize: 30, nullable: true
         presentacion maxSize: 10, nullable: true
         impuesto nullable: true
         enviado nullable:true

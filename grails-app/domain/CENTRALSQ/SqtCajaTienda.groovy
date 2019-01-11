@@ -1,11 +1,10 @@
 package CENTRALSQ
 
 class SqtCajaTienda {
-    String caja
+    int caja
 
     SqtTienda tienda
 
     static constraints = {
-        caja maxSize: 2
     }
 }
